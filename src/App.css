@@ -1,0 +1,25 @@
+/*
+:::::::::::::::::::
+  --> GLOBALS <-- 
+:::::::::::::::::::
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--MainColor);
+}
+
+/* Variables */
+:root {
+  --MainColor: #c6a4e2;
+}
+
+/*
+:::::::::::::::::::
+  --> NAVBAR <-- 
+:::::::::::::::::::
+*/
