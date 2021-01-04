@@ -1,11 +1,9 @@
 import './App.css';
+// Pages
+import Homepage from './Pages/Homepage';
 
 function App() {
-  return (
-    <div className='App'>
-      <h1>Waldmann</h1>
-    </div>
-  );
+  return <Homepage></Homepage>;
 }
 
 export default App;
