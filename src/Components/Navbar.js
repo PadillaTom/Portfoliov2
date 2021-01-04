@@ -35,7 +35,7 @@ const Navbar = () => {
 
 // ::: CSS :::
 const NavContainer = styled.nav`
-  height: 6.25rem;
+  height: 5rem;
   background: violet;
 
   .nav-center {
@@ -60,6 +60,10 @@ const NavContainer = styled.nav`
     justify-content: space-around;
     li {
       margin-left: 1rem;
+      border-bottom: 3px solid violet;
+    }
+    li:hover {
+      border-bottom: 3px solid white;
     }
     a {
       color: white;
