@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Hero = () => {
+const AboutPage = () => {
   return (
     <Wrapper>
-      <h1>PAGINA INICIAL</h1>
+      <h1>Quienes Somos?</h1>
     </Wrapper>
   );
 };
@@ -19,4 +19,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Hero;
+export default AboutPage;
