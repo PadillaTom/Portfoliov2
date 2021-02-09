@@ -4,7 +4,7 @@
 :::::::::::::::::::
 */
 
-export const hompage = [
+export const homepage = [
   {
     id: 1,
     title: 'Tomas Padilla',
@@ -93,6 +93,29 @@ React | Context API | SASS | GSAP | Photoshop`,
 
 /*
 :::::::::::::::::::
-  --> DATA <-- 
+  --> NAVIGATION <-- 
 :::::::::::::::::::
 */
+
+export const links = [
+  {
+    id: 1,
+    title: 'Home',
+    url: '/',
+  },
+  {
+    id: 1,
+    title: 'About',
+    url: '/about',
+  },
+  {
+    id: 1,
+    title: 'Works',
+    url: '/works',
+  },
+  {
+    id: 1,
+    title: 'Contact',
+    url: '/contact',
+  },
+];

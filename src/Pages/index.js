@@ -1,2 +1,3 @@
 import Homepage from './Homepage';
-export { Homepage };
+import ErrorPage from './ErrorPage';
+export { Homepage, ErrorPage };
