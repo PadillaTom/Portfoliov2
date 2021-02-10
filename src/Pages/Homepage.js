@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { homepage } from '../Utils/data';
-import heroBg from '../Assets/Images/heroBg.jpg';
 
 const Homepage = () => {
   const [data, setData] = useState([]);
@@ -15,7 +14,8 @@ const Homepage = () => {
   return (
     <>
       <section className='section home-sect'>
-        <h1>Hello</h1>
+        <h1>Tomas Padilla</h1>
+        <Link to='/'>Hello</Link>
       </section>
     </>
   );
