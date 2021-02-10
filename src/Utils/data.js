@@ -25,7 +25,7 @@ export const about = [
           Tools & Technologies:
           HTML, CSS, Javascript, jQuery, React, Gatsby, NextJS.
           SASS, Material UI, Styled Components, GSAP, BarbaJS.
-          I invite you to see my Previous Works.`,
+          I invite you to see my `,
   },
 ];
 

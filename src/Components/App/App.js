@@ -25,10 +25,9 @@ function App() {
           <Route path='/works'>
             <WorksPage></WorksPage>
           </Route>
-          <Route
-            path='/works/:id'
-            component={<WorkDetailsPage></WorkDetailsPage>}
-          ></Route>
+          <Route path='/works/:id'>
+            <WorkDetailsPage></WorkDetailsPage>
+          </Route>
           <Route path='/contact'>
             <ContactPage></ContactPage>
           </Route>

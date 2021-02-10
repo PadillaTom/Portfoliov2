@@ -8,7 +8,6 @@ const Homepage = () => {
 
   useEffect(() => {
     setData(homepage);
-    console.log(data);
   }, [data]);
 
   return (
