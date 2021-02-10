@@ -6,10 +6,13 @@ import aboutImg from '../Assets/Images/aboutImg.jpg';
 
 const AboutPage = () => {
   const [data, setData] = useState([]);
+
   useEffect(() => {
-    setData(about);
-    console.log(data);
-  }, [data]);
+    async function fetchData() {
+      await setData(about);
+    }
+    fetchData();
+  }, []);
 
   const { subtitle, text, title } = data[0];
 
@@ -17,7 +20,7 @@ const AboutPage = () => {
     <>
       <section className='section about-sect'>
         {/* Title */}
-        <div className='section-center'>
+        <div className='about-title'>
           <h6>{title}</h6>
           <h2>{subtitle}</h2>
         </div>

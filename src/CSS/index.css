@@ -64,7 +64,12 @@ a:hover {
 /* --------------------------------------------------- */
 /*  ::::: Loading Page :::::  */
 /*  ::::: Home Page :::::  */
-/*  ::::: Loading Page :::::  */
+/*  ::::: About Page :::::  */
+.about-title {
+  text-align: center; }
+  .about-title subtitle {
+    font-family: "Cinzel", serif; }
+
 /*  ::::: Loading Page :::::  */
 /*  ::::: Loading Page :::::  */
 /*  ::::: Loading Page :::::  */
