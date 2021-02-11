@@ -14,6 +14,11 @@
 /* Fluid paddings & margins (max values) */
 /* Container & page gutters */
 /* preloader circle */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -62,8 +67,45 @@ a:hover {
 /* --------------------------------------------------- */
 /* --------------------- MAIN APP -------------------- */
 /* --------------------------------------------------- */
-/*  ::::: Loading Page :::::  */
+/*  ::::: Welcome Page :::::  */
+/*  ::::: Error Page :::::  */
+/*  ::::: Navbar Component :::::  */
+.navbar-container {
+  width: 100%;
+  background: red;
+  margin: 0 auto; }
+  .navbar-container .navbar-center {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navbar-container .navbar-center .nav-left a {
+      color: #fff;
+      font-family: "Cinzel", serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1.3; }
+    .navbar-container .navbar-center .nav-right {
+      display: inline-block;
+      position: relative;
+      width: 35px;
+      height: 38px;
+      vertical-align: middle;
+      cursor: pointer;
+      pointer-events: initial;
+      z-index: 500; }
+      .navbar-container .navbar-center .nav-right:hover .burger-line:nth-of-type(1) {
+        transform: scaleX(1); }
+      .navbar-container .navbar-center .nav-right:hover .burger-line:nth-of-type(2) {
+        transform: scaleX(0.75); }
+      .navbar-container .navbar-center .nav-right:hover .burger-line:nth-of-type(3) {
+        transform: scaleX(1); }
+
 /*  ::::: Home Page :::::  */
+.home-sect {
+  text-align: center; }
+
 /*  ::::: About Page :::::  */
 .about-title {
   text-align: center; }

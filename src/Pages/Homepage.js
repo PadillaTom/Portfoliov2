@@ -12,9 +12,16 @@ const Homepage = () => {
 
   return (
     <>
-      <section className='section home-sect'>
-        <h1>Tomas Padilla</h1>
-        <Link to='/'>Hello</Link>
+      <section className='home-sect'>
+        <div className='homepage-container'>
+          <h6>Tomas Padilla</h6>
+          <h1>Web Developer</h1>
+          <Link to='/works'>
+            <button type='button' className='homeCTA'>
+              Works
+            </button>
+          </Link>
+        </div>
       </section>
     </>
   );
