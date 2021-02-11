@@ -175,6 +175,7 @@ a:hover
   width: 100%
   background: red
   margin: 0 auto
+  padding: 0.5rem  0rem
   .navbar-center
     width: 90%
     margin: 0 auto
@@ -202,21 +203,12 @@ a:hover
       &:hover .burger-line:nth-of-type(2)
         transform: scaleX(0.75)        
       &:hover .burger-line:nth-of-type(3)
-        transform: scaleX(1)
-    // .nav-right-isOpen .burger-line:nth-of-type(1)
-    //   &:hover .burger-line:nth-of-type(1)
-    //   transform: scaleX(1) rotate(45deg) translate(13px,20px)
-    // .nav-right-isOpen .burger-line:nth-of-type(2)
-    //   &:hover .burger-line:nth-of-type(2)
-    //   transform: scale(0)
-    // .nav-right-isOpen .burger-line:nth-of-type(3)
-    //   &:hover .burger-line:nth-of-type(3)
-    //   transform: scaleX(1) rotate(-45deg) translate(14px,-21px)
+        transform: scaleX(1)    
       .burger-line
         position: absolute
         width: 100%
         height: 2px
-        background-color: $color-dark-2
+        background-color: #fff
         transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
       .burger-line:nth-of-type(1)
         top: 10px
