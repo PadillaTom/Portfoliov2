@@ -24,10 +24,7 @@ const Homepage = () => {
           <h2>Web Developer</h2>
         </div>
         <Link to='/works' className='homeCTA'>
-          <button type='button'>
-            <span className='span1'>Works</span>
-            <span className='span2'>Explore</span>
-          </button>
+          <button type='button'>Works</button>
         </Link>
       </section>
     </>
