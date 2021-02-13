@@ -74,7 +74,9 @@ a:hover {
   width: 100%;
   background: red;
   margin: 0 auto;
-  padding: 0.5rem 0rem; }
+  height: 4rem;
+  display: grid;
+  place-items: center; }
   .navbar-container .navbar-center {
     width: 90%;
     margin: 0 auto;
