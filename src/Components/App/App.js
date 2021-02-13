@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components:
+import { WelcomeScreen } from '../WelcomeScreen';
 import { CursorFollower } from '../CursorFollower';
 import { Navbar } from '../Navigation';
+
 // Pages:
 import {
   ErrorPage,
@@ -17,6 +19,7 @@ function App() {
   return (
     <>
       <CursorFollower></CursorFollower>
+      <WelcomeScreen></WelcomeScreen>
       <Router>
         <Navbar></Navbar>
         <Switch>
