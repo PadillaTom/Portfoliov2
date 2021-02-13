@@ -121,8 +121,7 @@ $main-trans: 0.3s linear all
   padding: 0
   box-sizing: border-box
 
-// #root
-//   overflow: hidden !important
+
   
 html 
   font-size: 18px
@@ -130,6 +129,7 @@ html
   text-rendering: optimizeLegibility
   -webkit-text-rendering: optimizeLegibility
   -moz-osx-font-smoothing: grayscale
+  
   
 
 body 
@@ -175,10 +175,24 @@ a:hover
 /* --------------------- MAIN APP -------------------- */
 /* --------------------------------------------------- */
 
-/*  ::::: Welcome Page :::::  */
-/*  ::::: Error Page :::::  */
+/* ======================================================================== */
+/* Cursor */
+/* ======================================================================== */
+/* YT Video */
+.cursor
+  z-index: 1000
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  border: 1px solid $color-gray-1
+  pointer-events: none
+  overflow: hidden
+  transform: translate3d(0,0,0)
+  position: fixed
 
-/*  ::::: Navbar Component :::::  */
+/* ======================================================================== */
+/* Navbar Component */
+/* ======================================================================== */
 .navbar-container
   width: 100%
   background: transparent
@@ -215,7 +229,9 @@ a:hover
         font-size: 1.9rem
       
             
-/*  ::::: Home Page :::::  */
+/* ======================================================================== */
+/* Homepage */
+/* ======================================================================== */
 .home-sect
   text-align: center
   width: 100vw
@@ -301,42 +317,30 @@ a:hover
       .span1
         transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86)
 
-
- 
-
-        
-    // .homeCTA button
-    //   &[data-hover]::before
-    //     content: attr(data-hover)
-    //     display: block
-    //     position: absolute
-    //     top: 50%
-    //     left: 0
-    //     width: 100%
-    //     transform: translateY(100%)
-    //     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
-    //     opacity: 0
-    //     visibility: hidden
-    //     &:hover .homeCTA__label-hover
-    //       transform: translateY(-100%)
-    //       opacity: 0
-    //       visibility: hidden
-    // .homeCTA__label-hover
-    //   display: block
-    //   transform: translateY(0%)
-    //   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
-    //   opacity: 1
-    //   visibility: visible
-          
-
-/*  ::::: About Page :::::  */
+/* ======================================================================== */
+/* About Page */
+/* ======================================================================== */
 .about-title
   text-align: center
   subtitle
     font-family: $font-secondary
-/*  ::::: Loading Page :::::  */
-/*  ::::: Loading Page :::::  */
-/*  ::::: Loading Page :::::  */
-/*  ::::: Loading Page :::::  */
-/*  ::::: Loading Page :::::  */
-/*  ::::: Loading Page :::::  */
+
+/* ======================================================================== */
+/* Cursor */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* Cursor */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* Cursor */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* Cursor */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* Cursor */
+/* ======================================================================== */

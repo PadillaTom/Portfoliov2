@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components:
+import { CursorFollower } from '../CursorFollower';
 import { Navbar } from '../Navigation';
 // Pages:
 import {
@@ -15,6 +16,7 @@ import {
 function App() {
   return (
     <>
+      <CursorFollower></CursorFollower>
       <Router>
         <Navbar></Navbar>
         <Switch>
