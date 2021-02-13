@@ -112,17 +112,25 @@ $gutter-vertical: 80px
 /* preloader circle */
 $preloader-circle-max-size: 960
 $preloader-circle-min-size: 280
+/* Transitions */
+$main-trans: 0.3s linear all
+
+
 *
   margin: 0
   padding: 0
   box-sizing: border-box
 
+// #root
+//   overflow: hidden !important
+  
 html 
   font-size: 18px
   -webkit-font-smoothing: antialiased
   text-rendering: optimizeLegibility
   -webkit-text-rendering: optimizeLegibility
   -moz-osx-font-smoothing: grayscale
+  
 
 body 
   position: relative
@@ -173,17 +181,21 @@ a:hover
 /*  ::::: Navbar Component :::::  */
 .navbar-container
   width: 100%
-  background: red
+  background: transparent
   margin: 0 auto
-  height: 4rem
+  height: 4.5rem
   display: grid
   place-items: center
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 500
   .navbar-center
     width: 90%
     margin: 0 auto
     display: flex
     justify-content: space-between    
-    align-items: center
+    align-items: center    
     .nav-left
       a
         color: #fff 
@@ -193,46 +205,135 @@ a:hover
         line-height: 1.3  
         letter-spacing: 1px      
     .nav-right
-      display: inline-block
-      position: relative
-      width: 35px
-      height: 38px
-      vertical-align: middle
       cursor: pointer
-      pointer-events: initial
-      z-index: 500
-      &:hover .burger-line:nth-of-type(1)
-        transform: scaleX(1)
-      &:hover .burger-line:nth-of-type(2)
-        transform: scaleX(0.75)        
-      &:hover .burger-line:nth-of-type(3)
-        transform: scaleX(1)    
-      .burger-line
-        position: absolute
-        width: 100%
-        height: 2px
-        background-color: #fff
-        transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
-      .burger-line:nth-of-type(1)
-        top: 10px
-        left: 0
-        transform-origin: right center
-        transform: scale(0.75)
-      .burger-line:nth-of-type(2)
-        top: 0
-        left: 0 
-        bottom: 0         
-        margin: auto
-        transform-origin: left center
-      .burger-line:nth-of-type(3)
-        bottom: 10px
-        left: 0
-        transform-origin: right center
-        transform: scale(0.75)
+      transition: $main-trans
+      color: #fff 
+      margin-top: 0.5rem     
+      .fa-bars
+        font-size: 1.7rem
+      .fa-times
+        font-size: 1.9rem
+      
             
 /*  ::::: Home Page :::::  */
 .home-sect
   text-align: center
+  width: 100vw
+  height: 100vh
+  position: relative
+  overflow: hidden !important
+  .home-bg
+    position: absolute
+    top: 0
+    left: 0
+    margin: auto    
+    height: 100%  
+    img
+      width: 100%
+      height: 100%      
+      object-fit: cover   
+      object-position: center center
+  .home-bg-overlay
+    z-index: 1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%   
+    background-color: rgba(0, 0, 0, 0.6)
+  .home-bg-circle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)    
+    width: calc(100vw + 2.3rem)
+    height: calc(100vw + 2.3rem)
+    border: 1px solid rgba(128, 128, 128, 0.3)
+    border-radius: 100%
+    z-index: 2
+  .homepage-container
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 5
+    color: #fff
+    margin-left: calc($gutter-horizontal * 2)
+    margin-right: calc($gutter-horizontal * 2)
+    h6
+      font-size: 0.6rem
+      font-weight: 700
+      letter-spacing: 1.2px
+      line-height: 1.3
+      text-transform: uppercase
+      color: $color-gray-1
+    h2
+      font-size: 2.2rem
+      font-weight: normal
+      line-height: $h1-line-height
+      color: $h1-color-light
+      font-family: $font-secondary
+      margin-top: 0.5rem
+  .homeCTA
+    position: absolute    
+    bottom: 4%
+    transform: translateY(-4%)
+    width: auto
+    padding-left: 0
+    padding-right: 0
+    left: $gutter-horizontal
+    right: $gutter-horizontal
+    z-index: 5   
+    button      
+      font-size: 0.6rem
+      font-weight: 700
+      letter-spacing: 1.2px      
+      text-transform: uppercase      
+      text-align: center
+      transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+      cursor: pointer
+      outline: none
+      border: 2px solid #fff      
+      padding: 0.8rem 1.7rem
+      border-radius: 64px
+      background: transparent
+      color: #fff  
+      .span2
+        display: none
+        transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+      .span1
+        display: block
+        transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+      &:hover .span1
+        opacity: 0
+        
+        
+ 
+
+        
+    // .homeCTA button
+    //   &[data-hover]::before
+    //     content: attr(data-hover)
+    //     display: block
+    //     position: absolute
+    //     top: 50%
+    //     left: 0
+    //     width: 100%
+    //     transform: translateY(100%)
+    //     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    //     opacity: 0
+    //     visibility: hidden
+    //     &:hover .homeCTA__label-hover
+    //       transform: translateY(-100%)
+    //       opacity: 0
+    //       visibility: hidden
+    // .homeCTA__label-hover
+    //   display: block
+    //   transform: translateY(0%)
+    //   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    //   opacity: 1
+    //   visibility: visible
+          
 
 /*  ::::: About Page :::::  */
 .about-title
