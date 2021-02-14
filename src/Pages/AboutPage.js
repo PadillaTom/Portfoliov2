@@ -3,18 +3,21 @@ import { Link } from 'react-router-dom';
 
 import { about } from '../Utils/data';
 import aboutImg from '../Assets/Images/aboutImg.jpg';
+import { useNavigationContext } from '../Context/navigation_context';
 
 const AboutPage = () => {
   const [data, setData] = useState([]);
+  const { setColorLight } = useNavigationContext();
 
   useEffect(() => {
     async function fetchData() {
       await setData(about);
     }
     fetchData();
+    setColorLight();
   }, []);
 
-  const { subtitle, text, title } = data[0];
+  const { subtitle, text, title } = data;
 
   return (
     <>

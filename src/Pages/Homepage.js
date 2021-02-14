@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 
 import { homepage } from '../Utils/data';
 import heroBg from '../Assets/Images/heroBg.jpg';
+import { useNavigationContext } from '../Context/navigation_context';
 
 const Homepage = () => {
   const [data, setData] = useState([]);
+  const { setColorDark } = useNavigationContext();
 
   useEffect(() => {
     setData(homepage);
+    setColorDark();
   }, [data]);
 
   return (
