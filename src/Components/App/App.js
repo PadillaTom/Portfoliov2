@@ -18,8 +18,8 @@ import {
 function App() {
   return (
     <>
-      <CursorFollower></CursorFollower>
       {/* <WelcomeScreen></WelcomeScreen> */}
+      <CursorFollower></CursorFollower>
       <Router>
         <ScrollToTop></ScrollToTop>
         <Navbar></Navbar>

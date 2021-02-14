@@ -4,59 +4,6 @@
 :::::::::::::::::::
 */
 
-export const homepage = [
-  {
-    id: 1,
-    title: 'Tomas Padilla',
-    subtitle: 'Web Developer',
-    CTA: 'Works',
-    CTA2: 'Explore',
-    bgImg: '',
-  },
-];
-
-export const about = [
-  {
-    id: 1,
-    title: 'About Me',
-    subtitle: 'Tomas Padilla',
-    text: `With an artistic background, I have started my
-          studies as a Web Developer to find a real passion.
-          Tools & Technologies:
-          HTML, CSS, Javascript, jQuery, React, Gatsby, NextJS.
-          SASS, Material UI, Styled Components, GSAP, BarbaJS.
-          I invite you to see my `,
-  },
-];
-
-export const contact = [
-  {
-    id: 1,
-    title: 'Get in Touch',
-    email: 'Padillatomasagustin@gmail.com',
-    phone: '+41 79 400 26 93',
-    linkedin: 'https://www.linkedin.com/in/padillatom/',
-    github: 'https://github.com/PadillaTom',
-  },
-];
-
-export const works = [
-  {
-    id: 1,
-    title: 'Kampai Boutique',
-    CTA: 'Work',
-    CTA2: 'Details',
-    workUrl: ``,
-  },
-  {
-    id: 2,
-    title: 'Fincas Manolo',
-    CTA: 'Work',
-    CTA2: 'Details',
-    workUrl: ``,
-  },
-];
-
 export const workDetails = [
   {
     id: 1,

@@ -204,7 +204,7 @@ ul {
 /* Sidebar Component */
 /* ======================================================================== */
 .sidebar {
-  z-index: 1000;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -381,13 +381,38 @@ ul {
 /* ======================================================================== */
 .about-sect {
   padding-top: 5rem;
-  position: relative; }
-
-.about-title {
-  text-align: center;
-  margin: 1rem 0rem; }
-  .about-title .subtitle {
-    font-family: "Cinzel", serif; }
+  width: 100%;
+  min-height: 100vh;
+  background-color: #EEECE6; }
+  .about-sect .about-title {
+    text-align: center;
+    margin: 0.7rem 0rem; }
+    .about-sect .about-title h6 {
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #888888;
+      font-family: "Raleway", sans-serif; }
+    .about-sect .about-title h2 {
+      margin-top: -0.5rem;
+      font-family: "Cinzel", serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #333333;
+      letter-spacing: 0.5px; }
+  .about-sect .aboutImg-container {
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .about-sect .aboutImg-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center; }
 
 /* ======================================================================== */
 /* Cursor */

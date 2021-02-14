@@ -1,35 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import { about } from '../Utils/data';
 import aboutImg from '../Assets/Images/aboutImg.jpg';
 import { useNavigationContext } from '../Context/navigation_context';
 
 const AboutPage = () => {
-  const [data, setData] = useState([]);
   const { setColorLight } = useNavigationContext();
 
   useEffect(() => {
-    async function fetchData() {
-      await setData(about);
-    }
-    fetchData();
     setColorLight();
   }, []);
-
-  if (data.length === 0) {
-    console.log('Loading');
-  }
-  console.log(data);
-  const { subtitle, text, title } = data[0];
 
   return (
     <>
       <section className='section about-sect'>
         {/* Title */}
         <div className='about-title'>
-          <h6>{title}</h6>
-          <h2>{subtitle}</h2>
+          <h6>About Me</h6>
+          <h2>Tomas Padilla</h2>
         </div>
         {/* Image */}
         <div className='aboutImg-container'>
@@ -38,7 +26,10 @@ const AboutPage = () => {
         {/* Text */}
         <div className='division-line'></div>
         <div className='about-text'>
-          {text}
+          With an artistic background, I have started my studies as a Web
+          Developer to find a real passion. Tools & Technologies: HTML, CSS,
+          Javascript, jQuery, React, Gatsby, NextJS. SASS, Material UI, Styled
+          Components, GSAP, BarbaJS. I invite you to see my{' '}
           <Link to='/works' className='aboutCTA'>
             Previous Works
           </Link>
