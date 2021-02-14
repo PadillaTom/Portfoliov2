@@ -19,6 +19,7 @@ const CursorFollower = () => {
       // Main Cursor:
       const mouseX = clientX;
       const mouseY = clientY;
+
       mainCursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 
       // PositionRef
@@ -27,6 +28,7 @@ const CursorFollower = () => {
       positionRef.current.mouseY =
         mouseY - mainCursorRef.current.clientHeight / 2;
     });
+
     const followMouse = () => {
       positionRef.current.key = requestAnimationFrame(followMouse);
       const {

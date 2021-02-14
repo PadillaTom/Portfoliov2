@@ -17,7 +17,11 @@ const AboutPage = () => {
     setColorLight();
   }, []);
 
-  const { subtitle, text, title } = data;
+  if (data.length === 0) {
+    console.log('Loading');
+  }
+  console.log(data);
+  const { subtitle, text, title } = data[0];
 
   return (
     <>

@@ -179,7 +179,7 @@ ul
   pointer-events: none
   overflow: hidden
   transform: translate3d(0,0,0)
-  position: fixed
+  position: fixed 
 
 /* ======================================================================== */
 /* Welcome Screen */
@@ -283,7 +283,8 @@ ul
         font-size: 1.7rem
       .fa-times
         font-size: 1.9rem
-// COLOR = False
+
+// Light
 .nav-left-light
       a
         color: #000
@@ -296,7 +297,11 @@ ul
   cursor: pointer
   transition: $main-trans
   color: #000
-  margin-top: 0.5rem        
+  margin-top: 0.5rem  
+  .fa-bars
+    font-size: 1.7rem
+  .fa-times
+    font-size: 1.9rem      
 
 /* ======================================================================== */
 /* Sidebar Component */
@@ -343,7 +348,7 @@ ul
           text-transform: uppercase          
           color: $h3-color-dark
 
-// COLOR = False
+// Light
 .sidebar-light
   z-index: 1000
   position: fixed
@@ -372,6 +377,7 @@ ul
           font-size: 2rem
           letter-spacing: 1px
           line-height: 1.7
+          color: $color-dark-4
           &:hover
             color: #000
     .side-widgets
@@ -388,11 +394,6 @@ ul
         a
           &:hover
             color: $color-dark-2
-        
-
-
-
-
 
 /* ======================================================================== */
 /* Homepage */
@@ -485,9 +486,13 @@ ul
 /* ======================================================================== */
 /* About Page */
 /* ======================================================================== */
+.about-sect
+  padding-top: 5rem
+  position: relative
 .about-title
   text-align: center
-  subtitle
+  margin: 1rem 0rem
+  .subtitle
     font-family: $font-secondary
 
 /* ======================================================================== */

@@ -195,6 +195,10 @@ ul {
   transition: 0.3s linear all;
   color: #000;
   margin-top: 0.5rem; }
+  .nav-right-light .fa-bars {
+    font-size: 1.7rem; }
+  .nav-right-light .fa-times {
+    font-size: 1.9rem; }
 
 /* ======================================================================== */
 /* Sidebar Component */
@@ -266,7 +270,8 @@ ul {
         font-family: "Cinzel", serif;
         font-size: 2rem;
         letter-spacing: 1px;
-        line-height: 1.7; }
+        line-height: 1.7;
+        color: #555555; }
         .sidebar-light .sidebar-container .side-links ul li:hover {
           color: #000; }
     .sidebar-light .sidebar-container .side-widgets {
@@ -374,9 +379,14 @@ ul {
 /* ======================================================================== */
 /* About Page */
 /* ======================================================================== */
+.about-sect {
+  padding-top: 5rem;
+  position: relative; }
+
 .about-title {
-  text-align: center; }
-  .about-title subtitle {
+  text-align: center;
+  margin: 1rem 0rem; }
+  .about-title .subtitle {
     font-family: "Cinzel", serif; }
 
 /* ======================================================================== */
