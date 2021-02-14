@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import aboutImg from '../Assets/Images/aboutImg.jpg';
 import { useNavigationContext } from '../Context/navigation_context';
+import { Reviews } from '../Components/Reviews';
 
 const AboutPage = () => {
   const { setColorLight } = useNavigationContext();
@@ -27,14 +28,21 @@ const AboutPage = () => {
         <div className='division-line'></div>
         <div className='about-text'>
           With an artistic background, I have started my studies as a Web
-          Developer to find a real passion. Tools & Technologies: HTML, CSS,
-          Javascript, jQuery, React, Gatsby, NextJS. SASS, Material UI, Styled
-          Components, GSAP, BarbaJS. I invite you to see my{' '}
+          Developer to find a real passion.
+          <br />
+          <br />
+          <span>Tools & Technologies:</span>
+          <br />
+          HTML, CSS, Javascript, jQuery, React, Gatsby, NextJS. SASS, Material
+          UI, Styled Components, GSAP, Framer Motion.
+          <br />
+          <br />I invite you to see my{' '}
           <Link to='/works' className='aboutCTA'>
             Previous Works
           </Link>
           .
         </div>
+        <Reviews></Reviews>
       </section>
     </>
   );

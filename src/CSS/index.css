@@ -413,10 +413,37 @@ ul {
       height: 100%;
       object-fit: cover;
       object-position: center center; }
+  .about-sect .division-line {
+    width: 20%;
+    height: 1px;
+    margin: 3rem auto;
+    background: #555555; }
+  .about-sect .about-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 1.45rem;
+    line-height: 1.5;
+    color: #555555;
+    padding-bottom: 4rem; }
+    .about-sect .about-text span {
+      font-weight: 700; }
+    .about-sect .about-text a {
+      color: #c20000;
+      letter-spacing: 1.7px; }
 
 /* ======================================================================== */
-/* Cursor */
+/* Reviews Component */
 /* ======================================================================== */
+.reviews-sect {
+  background: #fff;
+  text-align: center;
+  height: 25vh;
+  width: 100%;
+  display: grid;
+  place-items: center; }
+
 /* ======================================================================== */
 /* Cursor */
 /* ======================================================================== */

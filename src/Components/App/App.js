@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Components:
 // import { WelcomeScreen } from '../WelcomeScreen';
 import { CursorFollower } from '../CursorFollower';
-import { Navbar, ScrollToTop } from '../Navigation';
+import { Navbar, Footer, ScrollToTop } from '../Navigation';
 
 // Pages:
 import {
@@ -43,6 +43,7 @@ function App() {
             <ErrorPage></ErrorPage>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </>
   );
