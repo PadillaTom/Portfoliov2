@@ -6,6 +6,8 @@ import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from './actions';
 
 const initialState = {
   isSidebarOpen: false,
+  color: true,
+  // True = Dark || False = Light
 };
 
 const NavigationContext = React.createContext();

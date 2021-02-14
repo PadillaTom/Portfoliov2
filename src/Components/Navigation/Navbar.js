@@ -6,16 +6,21 @@ import { Sidebar } from '../Navigation';
 import { useNavigationContext } from '../../Context/navigation_context';
 
 const Navbar = () => {
-  const { isSidebarOpen, openSidebar, closeSidebar } = useNavigationContext();
+  const {
+    isSidebarOpen,
+    openSidebar,
+    closeSidebar,
+    color,
+  } = useNavigationContext();
 
   return (
     <>
       <nav className='navbar-container'>
         <div className='navbar-center'>
-          <div className='nav-left'>
+          <div className={color ? 'nav-left' : 'nav-left-light'}>
             <Link to='/'>Tomas Padilla</Link>
           </div>
-          <div className='nav-right'>
+          <div className={color ? 'nav-right' : 'nav-right-light'}>
             {/* CAMBIAR POR SVG EN UN FUTURO */}
             {isSidebarOpen ? (
               <AiOutlineClose

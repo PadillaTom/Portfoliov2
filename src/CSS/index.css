@@ -182,6 +182,20 @@ ul {
       .navbar-container .navbar-center .nav-right .fa-times {
         font-size: 1.9rem; }
 
+.nav-left-light a {
+  color: #000;
+  font-family: "Cinzel", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: 1px; }
+
+.nav-right-light {
+  cursor: pointer;
+  transition: 0.3s linear all;
+  color: #000;
+  margin-top: 0.5rem; }
+
 /* ======================================================================== */
 /* Sidebar Component */
 /* ======================================================================== */
@@ -225,6 +239,49 @@ ul {
           font-size: 0.7rem;
           text-transform: uppercase;
           color: #333333; }
+
+.sidebar-light {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 1.2rem; }
+  .sidebar-light .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .sidebar-light .sidebar-container .side-links {
+      width: 90%;
+      margin: 3rem auto; }
+      .sidebar-light .sidebar-container .side-links ul li {
+        font-family: "Cinzel", serif;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        line-height: 1.7; }
+        .sidebar-light .sidebar-container .side-links ul li:hover {
+          color: #000; }
+    .sidebar-light .sidebar-container .side-widgets {
+      letter-spacing: 0.6px;
+      font-size: 0.8rem;
+      padding-bottom: 3rem;
+      font-family: "Raleway", sans-serif; }
+      .sidebar-light .sidebar-container .side-widgets .single-widget {
+        margin: 1.5rem auto; }
+        .sidebar-light .sidebar-container .side-widgets .single-widget .widget-title {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          color: #555555; }
+        .sidebar-light .sidebar-container .side-widgets .single-widget a:hover {
+          color: #262626; }
 
 /* ======================================================================== */
 /* Homepage */

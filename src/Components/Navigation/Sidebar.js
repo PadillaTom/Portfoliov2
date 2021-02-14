@@ -7,7 +7,7 @@ import { useNavigationContext } from '../../Context/navigation_context';
 import { links } from '../../Utils/data';
 
 const Sidebar = () => {
-  const { closeSidebar } = useNavigationContext();
+  const { color, closeSidebar } = useNavigationContext();
 
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -18,7 +18,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className='sidebar'>
+    <aside className={color ? 'sidebar' : 'sidebar-light'}>
       <div className='sidebar-container'>
         {/* Links */}
         <div className='side-links'>
