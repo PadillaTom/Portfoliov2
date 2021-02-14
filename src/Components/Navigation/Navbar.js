@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai';
 import { Sidebar } from '../Navigation';
+import { useNavigationContext } from '../../Context/navigation_context';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isSidebarOpen, openSidebar, closeSidebar } = useNavigationContext();
 
   return (
     <>
@@ -14,18 +15,24 @@ const Navbar = () => {
           <div className='nav-left'>
             <Link to='/'>Tomas Padilla</Link>
           </div>
-          <div className='nav-right' onClick={() => setIsOpen(!isOpen)}>
+          <div className='nav-right'>
             {/* CAMBIAR POR SVG EN UN FUTURO */}
-            {isOpen ? (
-              <AiOutlineClose className='fa-times'></AiOutlineClose>
+            {isSidebarOpen ? (
+              <AiOutlineClose
+                className='fa-times'
+                onClick={() => closeSidebar()}
+              ></AiOutlineClose>
             ) : (
-              <AiOutlineBars className='fa-bars'></AiOutlineBars>
+              <AiOutlineBars
+                className='fa-bars'
+                onClick={() => openSidebar()}
+              ></AiOutlineBars>
             )}
             {/* END CAMBIAR POR SVG EN UN FUTURO */}
           </div>
         </div>
       </nav>
-      {isOpen && <Sidebar></Sidebar>}
+      {isSidebarOpen && <Sidebar></Sidebar>}
     </>
   );
 };

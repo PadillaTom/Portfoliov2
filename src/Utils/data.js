@@ -104,17 +104,17 @@ export const links = [
     url: '/',
   },
   {
-    id: 1,
+    id: 2,
     title: 'About',
     url: '/about',
   },
   {
-    id: 1,
+    id: 3,
     title: 'Works',
     url: '/works',
   },
   {
-    id: 1,
+    id: 4,
     title: 'Contact',
     url: '/contact',
   },

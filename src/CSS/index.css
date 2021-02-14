@@ -60,20 +60,17 @@ a:hover {
   color: #cccccc;
   text-decoration: none; }
 
-.page-wrapper__content {
-  position: relative;
-  overflow: hidden;
-  z-index: 50; }
+ul {
+  list-style: none; }
 
 /* --------------------------------------------------- */
 /* --------------------- MAIN APP -------------------- */
 /* --------------------------------------------------- */
 /* ======================================================================== */
-/* Cursor */
+/* Cursor Follower */
 /* ======================================================================== */
-/* YT Video */
 .cursor {
-  z-index: 1000;
+  z-index: 10000;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -84,7 +81,7 @@ a:hover {
   position: fixed; }
 
 /* ======================================================================== */
-/* 54. preloader */
+/* Welcome Screen */
 /* ======================================================================== */
 .preloader {
   display: flex;
@@ -161,7 +158,7 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 500; }
+  z-index: 1001; }
   .navbar-container .navbar-center {
     width: 90%;
     margin: 0 auto;
@@ -184,6 +181,50 @@ a:hover {
         font-size: 1.7rem; }
       .navbar-container .navbar-center .nav-right .fa-times {
         font-size: 1.9rem; }
+
+/* ======================================================================== */
+/* Sidebar Component */
+/* ======================================================================== */
+.sidebar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111111;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 1.2rem; }
+  .sidebar .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .sidebar .sidebar-container .side-links {
+      width: 90%;
+      margin: 3rem auto; }
+      .sidebar .sidebar-container .side-links ul li {
+        font-family: "Cinzel", serif;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        line-height: 1.7; }
+        .sidebar .sidebar-container .side-links ul li:hover {
+          color: #fff; }
+    .sidebar .sidebar-container .side-widgets {
+      letter-spacing: 0.6px;
+      font-size: 0.8rem;
+      padding-bottom: 3rem;
+      font-family: "Raleway", sans-serif; }
+      .sidebar .sidebar-container .side-widgets .single-widget {
+        margin: 1.5rem auto; }
+        .sidebar .sidebar-container .side-widgets .single-widget .widget-title {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          color: #333333; }
 
 /* ======================================================================== */
 /* Homepage */
