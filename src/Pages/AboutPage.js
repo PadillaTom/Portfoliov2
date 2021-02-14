@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import aboutImg from '../Assets/Images/aboutImg.jpg';
 import { useNavigationContext } from '../Context/navigation_context';
 import { Reviews } from '../Components/Reviews';
+import { Footer } from '../Components/Navigation';
 
 const AboutPage = () => {
   const { setColorLight } = useNavigationContext();
-
   useEffect(() => {
     setColorLight();
   }, []);
@@ -43,6 +43,7 @@ const AboutPage = () => {
           .
         </div>
         <Reviews></Reviews>
+        <Footer></Footer>
       </section>
     </>
   );
