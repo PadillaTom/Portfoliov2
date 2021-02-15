@@ -445,7 +445,7 @@ ul {
   place-items: center; }
 
 /* ======================================================================== */
-/* Cursor */
+/*  */
 /* ======================================================================== */
 /* ======================================================================== */
 /* Cursor */
@@ -454,7 +454,72 @@ ul {
 /* Cursor */
 /* ======================================================================== */
 /* ======================================================================== */
-/* Cursor */
+/* Footer Component */
 /* ======================================================================== */
+.footer-sect {
+  text-align: center; }
+  .footer-sect .footer-cta {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1.2rem;
+    margin-bottom: 2rem; }
+    .footer-sect .footer-cta h2 {
+      font-family: "Cinzel", serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.7px;
+      margin-bottom: 0.7rem;
+      color: #333333;
+      font-weight: 500; }
+    .footer-sect .footer-cta button {
+      font-size: 0.6rem;
+      border: none;
+      outline: none;
+      border-radius: 2rem;
+      background: #000;
+      height: 2.2rem;
+      width: 8rem;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      cursor: pointer; }
+  .footer-sect .footer-sitemap {
+    padding-bottom: 1.5rem;
+    letter-spacing: 0.6px;
+    display: inline-block;
+    font-family: "Raleway", sans-serif; }
+    .footer-sect .footer-sitemap .sitemap-title {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 300; }
+    .footer-sect .footer-sitemap .sitemap-list ul a {
+      font-weight: lighter; }
+      .footer-sect .footer-sitemap .sitemap-list ul a:hover {
+        color: #333333; }
+  .footer-sect .footer-division {
+    height: 1px;
+    width: 90%;
+    background: #cccccc;
+    margin: 0 auto; }
+  .footer-sect .footer-copy {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem; }
+    .footer-sect .footer-copy h2 {
+      font-family: "Cinzel", serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.7px;
+      font-weight: bolder;
+      color: #111111; }
+    .footer-sect .footer-copy .copy-social {
+      padding: 0.5rem 0rem;
+      font-size: 2.2rem; }
+      .footer-sect .footer-copy .copy-social a {
+        margin: 0rem 0.5rem; }
+        .footer-sect .footer-copy .copy-social a:hover {
+          color: #262626; }
+    .footer-sect .footer-copy .copy {
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+      color: #888888; }
 
 /*# sourceMappingURL=index.css.map */

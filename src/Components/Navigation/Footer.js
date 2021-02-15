@@ -18,7 +18,9 @@ const Footer = () => {
       {/* Header */}
       <div className='footer-cta'>
         <h2>Want to work with me?</h2>
-        <Link to='/contact'>Get in Touch</Link>
+        <Link to='/contact'>
+          <button type='button'>Get in Touch</button>
+        </Link>
       </div>
       {/* Sitemap */}
       <div className='footer-sitemap'>
