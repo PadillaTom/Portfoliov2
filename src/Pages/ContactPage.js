@@ -17,14 +17,15 @@ const ContactPage = () => {
       </div>
       <div className='contact-data-container'>
         <div className='contact-data'>
-          <h2>Get in Touch!</h2>
+          <h4>Get in Touch</h4>
           <a href='mailto:padillatomasagustin@gmail.com'>
             padillatomasagustin@gmail.com
           </a>
+          <br />
           <a href='tel:+41794002693'>+41 79 400 26 93</a>
         </div>
         <div className='contact-social'>
-          <h2>Social Media</h2>
+          <h4>Social Media</h4>
           <a
             href='https://github.com/PadillaTom'
             target='_blank'

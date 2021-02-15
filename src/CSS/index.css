@@ -456,6 +456,23 @@ ul {
     height: 100%;
     object-fit: cover;
     object-position: center center; }
+.contact-sect .contact-data-container {
+  text-align: left;
+  background-color: #eeece6;
+  padding-top: 1.3rem; }
+  .contact-sect .contact-data-container .contact-data {
+    width: 90%;
+    margin: 0 auto; }
+    .contact-sect .contact-data-container .contact-data h4 {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #555555; }
+    .contact-sect .contact-data-container .contact-data a {
+      font-size: 0.9rem;
+      letter-spacing: 0.8px; }
+      .contact-sect .contact-data-container .contact-data a:hover {
+        color: #262626; }
 
 /* ======================================================================== */
 /* Cursor */
