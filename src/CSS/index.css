@@ -459,7 +459,7 @@ ul {
 .contact-sect .contact-data-container {
   text-align: left;
   background-color: #eeece6;
-  height: 15rem;
+  height: 18rem;
   display: grid;
   place-items: center; }
   .contact-sect .contact-data-container .contact-data {
@@ -491,7 +491,7 @@ ul {
     margin-bottom: 1.8rem; }
   .contact-sect .contact-form-container .single-control {
     position: relative;
-    margin: 0.5rem 0rem; }
+    margin: 1.5rem 0rem; }
     .contact-sect .contact-form-container .single-control label {
       color: #888888;
       font-size: 0.9rem;
@@ -507,7 +507,8 @@ ul {
       width: 100%;
       background: transparent;
       z-index: 2;
-      height: 2rem; }
+      height: 2.3rem;
+      font-size: 1rem; }
     .contact-sect .contact-form-container .single-control .textarea-label {
       position: absolute;
       top: 0;
@@ -523,6 +524,20 @@ ul {
       background: transparent;
       z-index: 2;
       resize: none; }
+  .contact-sect .contact-form-container button {
+    border: none;
+    background: #111111;
+    color: white;
+    width: 100%;
+    border-radius: 2rem;
+    height: 2.3rem;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: 0.6rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem; }
 
 /* ======================================================================== */
 /* Cursor */
