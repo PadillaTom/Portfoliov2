@@ -24,7 +24,7 @@ const ContactPage = () => {
           <br />
           <a href='tel:+41794002693'>+41 79 400 26 93</a>
         </div>
-        <div className='contact-social'>
+        <div className='contact-data cont-social'>
           <h4>Social Media</h4>
           <a
             href='https://github.com/PadillaTom'
@@ -54,7 +54,9 @@ const ContactPage = () => {
             <input type='email' />
           </div>
           <div className='single-control'>
-            <label htmlFor='message'>Your Message</label>
+            <label htmlFor='message' className='textarea-label'>
+              Your Message
+            </label>
             <textarea name='message' id='' cols='30' rows='10'></textarea>
           </div>
           <button type='submit'>Send Message</button>
