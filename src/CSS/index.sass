@@ -110,9 +110,6 @@ $distance-max-xlarge: 400
 /* Container & page gutters */
 $gutter-horizontal: 120px
 $gutter-vertical: 80px
-/* preloader circle */
-$preloader-circle-max-size: 960
-$preloader-circle-min-size: 280
 /* Transitions */
 $main-trans: 0.3s linear all
 
@@ -211,9 +208,7 @@ ul
     justify-content: center
     flex-wrap: wrap
     padding: 30px
-    width: calc(1 * ($preloader-circle-min-size * 1px))
-    height: calc(1 * ($preloader-circle-min-size * 1px))
-    max-height: calc(100vh - $gutter-vertical * 3)
+    
     .preloader-texts
       letter-spacing: 1px
       h2
@@ -238,11 +233,7 @@ ul
       top: 50%
       left: 50%
       right: 0
-      transform: translate(-50%, -50%)
-      width: calc(1 * ($preloader-circle-min-size * 1px))
-      height: calc(1 * ($preloader-circle-min-size * 1px))
-      max-width: calc(100vh - $gutter-vertical * 3)
-      max-height: calc(100vh - $gutter-vertical * 3)
+      transform: translate(-50%, -50%)     
       border-radius: 100%
       z-index: 1
       pointer-events: none
