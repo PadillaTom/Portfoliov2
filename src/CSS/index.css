@@ -12,7 +12,6 @@
 /* Dropcap */
 /* Fluid paddings & margins (min values) */
 /* Fluid paddings & margins (max values) */
-/* Container & page gutters */
 /* Transitions */
 * {
   margin: 0;
@@ -324,9 +323,7 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    color: #fff;
-    margin-left: calc($gutter-horizontal * 2);
-    margin-right: calc($gutter-horizontal * 2); }
+    color: #fff; }
     .home-sect .homepage-container h6 {
       font-size: 0.6rem;
       font-weight: 700;
@@ -344,12 +341,11 @@ ul {
   .home-sect .homeCTA {
     position: absolute;
     bottom: 4%;
-    transform: translateY(-4%);
+    left: 50%;
+    transform: translate(-50%, -4%);
     width: auto;
     padding-left: 0;
     padding-right: 0;
-    left: 120px;
-    right: 120px;
     z-index: 5; }
     .home-sect .homeCTA button {
       font-size: 0.6rem;

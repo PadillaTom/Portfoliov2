@@ -107,9 +107,6 @@ $distance-max-small: 120
 $distance-max-normal: 240
 $distance-max-large: 360
 $distance-max-xlarge: 400
-/* Container & page gutters */
-$gutter-horizontal: 120px
-$gutter-vertical: 80px
 /* Transitions */
 $main-trans: 0.3s linear all
 
@@ -431,9 +428,7 @@ ul
     left: 50%
     transform: translate(-50%, -50%)
     z-index: 5
-    color: #fff
-    margin-left: calc($gutter-horizontal * 2)
-    margin-right: calc($gutter-horizontal * 2)
+    color: #fff    
     h6
       font-size: 0.6rem
       font-weight: 700
@@ -451,12 +446,11 @@ ul
   .homeCTA
     position: absolute    
     bottom: 4%
-    transform: translateY(-4%)
+    left: 50%    
+    transform: translate(-50%, -4%)
     width: auto
     padding-left: 0
     padding-right: 0
-    left: $gutter-horizontal
-    right: $gutter-horizontal
     z-index: 5   
     button      
       font-size: 0.6rem
