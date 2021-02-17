@@ -23,15 +23,28 @@ const Navbar = () => {
           <div className={color ? 'nav-right' : 'nav-right-light'}>
             {/* CAMBIAR POR SVG EN UN FUTURO */}
             {isSidebarOpen ? (
-              <AiOutlineClose
-                className='fa-times'
+              // <AiOutlineClose
+              //   className='fa-times'
+              //   onClick={() => closeSidebar()}
+              // ></AiOutlineClose>
+              <div
+                className='burger-menu burger-open'
                 onClick={() => closeSidebar()}
-              ></AiOutlineClose>
+              >
+                <div className='b-line'></div>
+                <div className='b-line'></div>
+                <div className='b-line'></div>
+              </div>
             ) : (
-              <AiOutlineBars
-                className='fa-bars'
-                onClick={() => openSidebar()}
-              ></AiOutlineBars>
+              // <AiOutlineBars
+              //   className='fa-bars'
+              //   onClick={() => openSidebar()}
+              // ></AiOutlineBars>
+              <div className='burger-menu' onClick={() => openSidebar()}>
+                <div className='b-line'></div>
+                <div className='b-line'></div>
+                <div className='b-line'></div>
+              </div>
             )}
             {/* END CAMBIAR POR SVG EN UN FUTURO */}
           </div>
