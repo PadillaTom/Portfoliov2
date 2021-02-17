@@ -533,8 +533,82 @@ ul {
     margin-bottom: 1rem; }
 
 /* ======================================================================== */
-/* Cursor */
+/* Works */
 /* ======================================================================== */
+.works-sect {
+  background: #F7F6F3; }
+  .works-sect .works-title {
+    width: 92%;
+    margin: 0 auto;
+    padding-top: 6rem;
+    margin-bottom: 3rem; }
+    .works-sect .works-title h1 {
+      padding-bottom: 0.7rem;
+      font-size: 2rem;
+      font-family: "Cinzel", serif;
+      font-weight: normal;
+      color: #333333;
+      letter-spacing: 1.3px; }
+    .works-sect .works-title .works-underline {
+      height: 1px;
+      background: #888888;
+      width: 3.5rem; }
+  .works-sect .single-works-container {
+    width: 92%;
+    margin: 0 auto;
+    padding: 2rem 0rem; }
+    .works-sect .single-works-container .single-work-1 {
+      cursor: pointer;
+      transition: 0.3s linear all;
+      margin-bottom: 4rem; }
+      .works-sect .single-works-container .single-work-1 .work-img-container {
+        width: 100%;
+        height: 14rem; }
+        .works-sect .single-works-container .single-work-1 .work-img-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .works-sect .single-works-container .single-work-1 .single-work-title {
+        text-align: right;
+        margin-top: 0.5rem; }
+        .works-sect .single-works-container .single-work-1 .single-work-title h4 {
+          font-family: "Cinzel", serif;
+          font-weight: normal;
+          font-size: 1.8rem; }
+        .works-sect .single-works-container .single-work-1 .single-work-title .single-work-cta {
+          font-family: "Raleway", sans-serif;
+          color: #888888;
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          font-weight: 700;
+          margin-top: -2%;
+          letter-spacing: 0.5px; }
+    .works-sect .single-works-container .single-work-2 {
+      cursor: pointer;
+      transition: 0.3s linear all;
+      margin-bottom: 4rem; }
+      .works-sect .single-works-container .single-work-2 .work-img-container {
+        width: 100%;
+        height: 20rem; }
+        .works-sect .single-works-container .single-work-2 .work-img-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .works-sect .single-works-container .single-work-2 .single-work-title {
+        margin-top: 0rem; }
+        .works-sect .single-works-container .single-work-2 .single-work-title h4 {
+          font-family: "Cinzel", serif;
+          font-weight: normal;
+          font-size: 1.8rem; }
+        .works-sect .single-works-container .single-work-2 .single-work-title .single-work-cta {
+          font-family: "Raleway", sans-serif;
+          color: #888888;
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          font-weight: 700;
+          margin-top: -2%;
+          letter-spacing: 0.5px; }
+
 /* ======================================================================== */
 /* Cursor */
 /* ======================================================================== */
