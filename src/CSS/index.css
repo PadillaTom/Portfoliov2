@@ -217,23 +217,24 @@ ul {
     height: 100%; }
     .sidebar .sidebar-container .side-links {
       width: 90%;
-      margin: 3rem auto; }
+      margin-top: 4rem;
+      margin-bottom: 1rem; }
       .sidebar .sidebar-container .side-links ul li {
         font-family: "Cinzel", serif;
-        font-size: 2rem;
+        font-size: 2.1rem;
         letter-spacing: 1px;
         line-height: 1.7; }
         .sidebar .sidebar-container .side-links ul li:hover {
           color: #fff; }
     .sidebar .sidebar-container .side-widgets {
       letter-spacing: 0.6px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       padding-bottom: 3rem;
       font-family: "Raleway", sans-serif; }
       .sidebar .sidebar-container .side-widgets .single-widget {
         margin: 1.5rem auto; }
         .sidebar .sidebar-container .side-widgets .single-widget .widget-title {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
           text-transform: uppercase;
           color: #333333; }
 
@@ -258,10 +259,11 @@ ul {
     height: 100%; }
     .sidebar-light .sidebar-container .side-links {
       width: 90%;
-      margin: 3rem auto; }
+      margin-top: 4rem;
+      margin-bottom: 1rem; }
       .sidebar-light .sidebar-container .side-links ul li {
         font-family: "Cinzel", serif;
-        font-size: 2rem;
+        font-size: 2.1rem;
         letter-spacing: 1px;
         line-height: 1.7;
         color: #555555; }
@@ -269,13 +271,13 @@ ul {
           color: #000; }
     .sidebar-light .sidebar-container .side-widgets {
       letter-spacing: 0.6px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       padding-bottom: 3rem;
       font-family: "Raleway", sans-serif; }
       .sidebar-light .sidebar-container .side-widgets .single-widget {
         margin: 1.5rem auto; }
         .sidebar-light .sidebar-container .side-widgets .single-widget .widget-title {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
           text-transform: uppercase;
           color: #555555; }
         .sidebar-light .sidebar-container .side-widgets .single-widget a:hover {
@@ -456,18 +458,18 @@ ul {
     width: 90%;
     margin: 0 auto; }
     .contact-sect .contact-data-container .contact-data h4 {
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
       font-weight: 900;
       color: #555555; }
     .contact-sect .contact-data-container .contact-data a {
-      font-size: 0.9rem;
+      font-size: 1rem;
       letter-spacing: 0.8px;
       transition: 0.3s linear all; }
       .contact-sect .contact-data-container .contact-data a:hover {
         color: #262626; }
   .contact-sect .contact-data-container .cont-social a {
-    font-size: 2rem;
+    font-size: 2.3rem;
     transition: 0.3s linear all;
     margin-right: 1rem; }
 .contact-sect .contact-form-container {
@@ -478,7 +480,8 @@ ul {
     font-family: "Cinzel", serif;
     color: #555555;
     font-weight: 400;
-    margin-bottom: 1.8rem; }
+    margin-bottom: 1.8rem;
+    font-size: 1.7rem; }
   .contact-sect .contact-form-container .single-control {
     position: relative;
     margin: 1.5rem 0rem; }
@@ -524,7 +527,7 @@ ul {
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     cursor: pointer;
     margin-top: 0.7rem;
     margin-bottom: 1rem; }
