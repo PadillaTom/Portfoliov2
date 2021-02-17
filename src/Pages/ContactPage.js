@@ -22,7 +22,7 @@ const ContactPage = () => {
           <div className='contact-data'>
             <h4>Get in Touch</h4>
             <a href='mailto:padillatomasagustin@gmail.com'>
-              padillatomasagustin@gmail.com
+              PadillaTomasAgustin@gmail.com
             </a>
             <br />
             <a href='tel:+41794002693'>+41 79 400 26 93</a>

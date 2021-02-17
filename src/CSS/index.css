@@ -79,6 +79,9 @@ ul {
   transform: translate3d(0, 0, 0);
   position: fixed;
   display: none; }
+  @media (min-width: 992px) {
+    .cursor {
+      display: block; } }
 
 /* ======================================================================== */
 /* 2.Welcome Screen */
@@ -738,20 +741,24 @@ ul {
   @media (min-width: 992px) {
     .contact-sect .contact-data-container {
       height: 100%;
-      width: 45%; } }
-  @media (min-width: 1250px) {
-    .contact-sect .contact-data-container {
-      width: 35%; }
+      width: 45%; }
       .contact-sect .contact-data-container .screen-data-center {
         text-align: right;
         position: relative;
         top: 25%; } }
+  @media (min-width: 1250px) {
+    .contact-sect .contact-data-container {
+      width: 35%; } }
+  @media (min-width: 1700px) {
+    .contact-sect .contact-data-container {
+      width: 25%; } }
   .contact-sect .contact-data-container .contact-data {
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 992px) {
       .contact-sect .contact-data-container .contact-data {
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 2rem; } }
     .contact-sect .contact-data-container .contact-data h4 {
       font-size: 0.7rem;
       text-transform: uppercase;
@@ -803,7 +810,11 @@ ul {
       height: 100%;
       width: 45%;
       margin: 0 auto;
-      position: relative; }
+      position: relative; } }
+  @media (min-width: 992px) and (min-width: 1700px) {
+    .contact-sect .contact-form-container {
+      width: 25%; } }
+  @media (min-width: 992px) {
       .contact-sect .contact-form-container .screen-form-center {
         position: absolute;
         top: 50%;

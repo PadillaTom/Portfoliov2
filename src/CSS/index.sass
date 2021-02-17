@@ -176,6 +176,8 @@ ul
   transform: translate3d(0,0,0)
   position: fixed 
   display: none
+  @include media (">=laptop")
+    display: block
 
 /* ======================================================================== */
 /* 2.Welcome Screen */
@@ -819,17 +821,21 @@ ul
     @include media (">=laptop")
       height: 100%
       width: 45%
-    @include media (">=desktop")
-      width: 35%
       .screen-data-center        
         text-align: right
         position: relative
         top: 25%
+    @include media (">=desktop")
+      width: 35%
+    @include media (">=LGdesktop")
+      width: 25%
+
     .contact-data
       width: 90%
       margin: 0 auto 
       @include media (">=laptop")          
         width: 100%
+        margin-bottom: 2rem
       h4
         font-size: 0.7rem
         text-transform: uppercase
@@ -868,6 +874,7 @@ ul
         object-position: center center
         object-fit: cover
   // End IMG Screens  
+
   // Form
   .contact-form-container
     padding: 2rem 0rem
@@ -880,6 +887,8 @@ ul
       width: 45%
       margin: 0 auto
       position: relative
+      @include media(">=LGdesktop")
+        width: 25%
       .screen-form-center 
         position: absolute
         top: 50%
