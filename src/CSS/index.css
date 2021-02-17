@@ -643,27 +643,28 @@ ul {
       object-fit: cover;
       object-position: center center; }
   .wd-sect .wd-specs {
-    width: 90%;
-    margin: 0 auto;
     text-align: left;
     padding: 2rem 0rem;
     background: #fff; }
-    .wd-sect .wd-specs .single-spec {
-      margin-bottom: 1rem; }
-      .wd-sect .wd-specs .single-spec h4 {
-        font-family: "Raleway", sans-serif;
-        font-size: 0.65rem;
-        text-transform: uppercase;
-        color: #888888; }
-      .wd-sect .wd-specs .single-spec p {
-        font-size: 1rem;
-        margin-top: -0.4rem; }
-      .wd-sect .wd-specs .single-spec a {
-        color: #333333;
-        transition: 0.3s linear all;
-        font-size: 1.5rem; }
-        .wd-sect .wd-specs .single-spec a:hover {
-          color: #000; }
+    .wd-sect .wd-specs .wd-specs-center {
+      width: 90%;
+      margin: 0 auto; }
+      .wd-sect .wd-specs .wd-specs-center .single-spec {
+        margin-bottom: 1rem; }
+        .wd-sect .wd-specs .wd-specs-center .single-spec h4 {
+          font-family: "Raleway", sans-serif;
+          font-size: 0.65rem;
+          text-transform: uppercase;
+          color: #888888; }
+        .wd-sect .wd-specs .wd-specs-center .single-spec p {
+          font-size: 1rem;
+          margin-top: -0.4rem; }
+        .wd-sect .wd-specs .wd-specs-center .single-spec a {
+          color: #333333;
+          transition: 0.3s linear all;
+          font-size: 1.3rem; }
+          .wd-sect .wd-specs .wd-specs-center .single-spec a:hover {
+            color: #000; }
   .wd-sect .wd-desc {
     width: 90%;
     margin: 0 auto;
@@ -678,11 +679,14 @@ ul {
     .wd-sect .wd-desc h2 {
       font-family: "Cinzel", serif;
       font-weight: 300;
-      font-size: 1.8rem;
-      color: #333333; }
+      font-size: 2rem;
+      color: #333333;
+      margin-bottom: 0.5rem; }
+    .wd-sect .wd-desc p {
+      font-size: 1rem; }
     .wd-sect .wd-desc span {
       color: crimson;
-      font-size: 0.9rem;
+      font-size: 1rem;
       text-align: center; }
   .wd-sect .wd-nextWork {
     min-height: 100vh;

@@ -34,28 +34,31 @@ const WorkDetails = () => {
         </div>
         {/* Specs */}
         <div className='wd-specs'>
-          <div className='single-spec'>
-            <h4>Client</h4>
-            <p>{client}</p>
-          </div>
-          <div className='single-spec'>
-            <h4>Location</h4>
-            <p>{location}</p>
-          </div>
-          <div className='single-spec'>
-            <h4>Launch</h4>
-            <p>{launch}</p>
-          </div>
-          <div className='single-spec'>
-            <h4>Website</h4>
-            <a href={live} target='_blank' rel='noreferrer'>
-              View Live
-            </a>
-            {code != null && (
-              <a href={code} target='_blank' rel='noreferrer'>
-                View Code
+          <div className='wd-specs-center'>
+            <div className='single-spec'>
+              <h4>Client</h4>
+              <p>{client}</p>
+            </div>
+            <div className='single-spec'>
+              <h4>Location</h4>
+              <p>{location}</p>
+            </div>
+            <div className='single-spec'>
+              <h4>Launch</h4>
+              <p>{launch}</p>
+            </div>
+            <div className='single-spec'>
+              <h4>Website</h4>
+              <a href={live} target='_blank' rel='noreferrer'>
+                View Live
               </a>
-            )}
+              <br />
+              {code != null && (
+                <a href={code} target='_blank' rel='noreferrer'>
+                  View Code
+                </a>
+              )}
+            </div>
           </div>
         </div>
         {/* Desc */}
@@ -63,6 +66,7 @@ const WorkDetails = () => {
           <div className='wd-division'></div>
           <h2>About</h2>
           <p>{desc}</p>
+          <br />
           <span>{stack}</span>
         </div>
         {/* Next Project  */}
