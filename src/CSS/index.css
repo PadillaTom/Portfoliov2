@@ -903,7 +903,7 @@ ul {
   .works-sect .works-title {
     width: 92%;
     margin: 0 auto;
-    padding-top: 6rem;
+    padding-top: 14%;
     margin-bottom: 3rem; }
     .works-sect .works-title h1 {
       padding-bottom: 0.7rem;
@@ -912,6 +912,9 @@ ul {
       font-weight: normal;
       color: #333333;
       letter-spacing: 1.3px; }
+      @media (min-width: 1250px) {
+        .works-sect .works-title h1 {
+          font-size: 3rem; } }
     .works-sect .works-title .works-underline {
       height: 1px;
       background: #888888;
@@ -920,26 +923,59 @@ ul {
     width: 92%;
     margin: 0 auto;
     padding: 2rem 0rem; }
+    @media (min-width: 992px) {
+      .works-sect .single-works-container {
+        width: 88%;
+        margin-left: 8%; } }
     .works-sect .single-works-container .single-work-1 {
       cursor: pointer;
       transition: 0.3s linear all;
-      margin-bottom: 4rem; }
+      margin-bottom: 20%; }
+      @media (min-width: 992px) {
+        .works-sect .single-works-container .single-work-1 a {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center; } }
       .works-sect .single-works-container .single-work-1 a:hover {
         color: initial; }
       .works-sect .single-works-container .single-work-1 .work-img-container {
         width: 100%;
         height: 14rem; }
+        @media (min-width: 768px) {
+          .works-sect .single-works-container .single-work-1 .work-img-container {
+            height: 50vh; } }
+        @media (min-width: 992px) {
+          .works-sect .single-works-container .single-work-1 .work-img-container {
+            width: 70%;
+            height: 45vh; } }
+        @media (min-width: 1250px) {
+          .works-sect .single-works-container .single-work-1 .work-img-container {
+            height: 50vh; } }
+        @media (min-width: 1700px) {
+          .works-sect .single-works-container .single-work-1 .work-img-container {
+            height: 65vh; } }
         .works-sect .single-works-container .single-work-1 .work-img-container img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
       .works-sect .single-works-container .single-work-1 .single-work-title {
         text-align: right;
-        margin-top: 0.5rem; }
+        margin-top: 0.5rem;
+        color: #333333; }
+        @media (min-width: 992px) {
+          .works-sect .single-works-container .single-work-1 .single-work-title {
+            margin-right: 2rem; } }
         .works-sect .single-works-container .single-work-1 .single-work-title h4 {
           font-family: "Cinzel", serif;
           font-weight: normal;
           font-size: 1.8rem; }
+          @media (min-width: 768px) {
+            .works-sect .single-works-container .single-work-1 .single-work-title h4 {
+              font-size: 2rem; } }
+          @media (min-width: 992px) {
+            .works-sect .single-works-container .single-work-1 .single-work-title h4 {
+              font-size: 2.5rem;
+              line-height: 1.3; } }
         .works-sect .single-works-container .single-work-1 .single-work-title .single-work-cta {
           font-family: "Raleway", sans-serif;
           color: #888888;
@@ -948,25 +984,61 @@ ul {
           font-weight: 700;
           margin-top: -2%;
           letter-spacing: 0.5px; }
+          @media (min-width: 768px) {
+            .works-sect .single-works-container .single-work-1 .single-work-title .single-work-cta {
+              margin-top: -1%;
+              font-size: 0.75rem; } }
     .works-sect .single-works-container .single-work-2 {
       cursor: pointer;
       transition: 0.3s linear all;
-      margin-bottom: 4rem; }
+      margin-bottom: 20%; }
+      @media (min-width: 992px) {
+        .works-sect .single-works-container .single-work-2 {
+          margin-left: 12%; } }
+      @media (min-width: 992px) {
+        .works-sect .single-works-container .single-work-2 a {
+          display: flex;
+          align-items: center; } }
       .works-sect .single-works-container .single-work-2 a:hover {
         color: initial; }
       .works-sect .single-works-container .single-work-2 .work-img-container {
         width: 100%;
         height: 20rem; }
+        @media (min-width: 768px) {
+          .works-sect .single-works-container .single-work-2 .work-img-container {
+            height: 70vh; } }
+        @media (min-width: 992px) {
+          .works-sect .single-works-container .single-work-2 .work-img-container {
+            height: 40vh;
+            width: 55%; } }
+        @media (min-width: 1250px) {
+          .works-sect .single-works-container .single-work-2 .work-img-container {
+            height: 50vh; } }
+        @media (min-width: 1700px) {
+          .works-sect .single-works-container .single-work-2 .work-img-container {
+            height: 70vh;
+            width: 50%; } }
         .works-sect .single-works-container .single-work-2 .work-img-container img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
       .works-sect .single-works-container .single-work-2 .single-work-title {
         margin-top: 0rem; }
+        @media (min-width: 992px) {
+          .works-sect .single-works-container .single-work-2 .single-work-title {
+            margin-left: 2rem; } }
         .works-sect .single-works-container .single-work-2 .single-work-title h4 {
           font-family: "Cinzel", serif;
           font-weight: normal;
-          font-size: 1.8rem; }
+          font-size: 1.8rem;
+          color: #333333; }
+          @media (min-width: 768px) {
+            .works-sect .single-works-container .single-work-2 .single-work-title h4 {
+              font-size: 2rem; } }
+          @media (min-width: 992px) {
+            .works-sect .single-works-container .single-work-2 .single-work-title h4 {
+              font-size: 2.5rem;
+              line-height: 1.3; } }
         .works-sect .single-works-container .single-work-2 .single-work-title .single-work-cta {
           font-family: "Raleway", sans-serif;
           color: #888888;
@@ -975,6 +1047,10 @@ ul {
           font-weight: 700;
           margin-top: -2%;
           letter-spacing: 0.5px; }
+          @media (min-width: 768px) {
+            .works-sect .single-works-container .single-work-2 .single-work-title .single-work-cta {
+              font-size: 0.75rem;
+              margin-top: -1%; } }
 
 /* ======================================================================== */
 /* Work Details */
@@ -986,6 +1062,9 @@ ul {
     text-align: center;
     padding-top: 6rem;
     padding-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .wd-sect .wd-title {
+        padding-top: 20%; } }
     .wd-sect .wd-title .wd-underline {
       height: 1px;
       background: #888888;
@@ -996,6 +1075,9 @@ ul {
       font-weight: normal;
       font-size: 1.9rem;
       margin-bottom: 1.5rem; }
+      @media (min-width: 768px) {
+        .wd-sect .wd-title h2 {
+          font-size: 2.3rem; } }
   .wd-sect .wd-img-container {
     width: 100%;
     height: 70vh; }
@@ -1008,23 +1090,43 @@ ul {
     text-align: left;
     padding: 2rem 0rem;
     background: #fff; }
+    @media (min-width: 992px) {
+      .wd-sect .wd-specs {
+        padding: 6rem 0rem; } }
     .wd-sect .wd-specs .wd-specs-center {
       width: 90%;
       margin: 0 auto; }
+      @media (min-width: 768px) {
+        .wd-sect .wd-specs .wd-specs-center {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          align-items: center; } }
+      @media (min-width: 992px) {
+        .wd-sect .wd-specs .wd-specs-center {
+          display: flex;
+          justify-content: space-around; } }
       .wd-sect .wd-specs .wd-specs-center .single-spec {
-        margin-bottom: 1rem; }
-        .wd-sect .wd-specs .wd-specs-center .single-spec h4 {
-          font-family: "Raleway", sans-serif;
-          font-size: 0.65rem;
-          text-transform: uppercase;
-          color: #888888; }
+        margin-bottom: 1rem;
+        font-family: "Raleway", sans-serif;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        color: #888888; }
+        @media (min-width: 992px) {
+          .wd-sect .wd-specs .wd-specs-center .single-spec {
+            font-size: 1rem; } }
         .wd-sect .wd-specs .wd-specs-center .single-spec p {
           font-size: 1rem;
-          margin-top: -0.4rem; }
+          margin-top: -0.4rem;
+          text-transform: capitalize; }
+          @media (min-width: 992px) {
+            .wd-sect .wd-specs .wd-specs-center .single-spec p {
+              font-size: 1.2rem; } }
         .wd-sect .wd-specs .wd-specs-center .single-spec a {
           color: #333333;
           transition: 0.3s linear all;
-          font-size: 1.3rem; }
+          font-size: 1.3rem;
+          text-transform: capitalize; }
           .wd-sect .wd-specs .wd-specs-center .single-spec a:hover {
             color: #000; }
   .wd-sect .wd-desc {
@@ -1032,24 +1134,48 @@ ul {
     margin: 0 auto;
     padding-top: 3.2rem;
     text-align: center; }
+    @media (min-width: 768px) {
+      .wd-sect .wd-desc {
+        padding-top: 7%;
+        width: 85%; } }
+    @media (min-width: 992px) {
+      .wd-sect .wd-desc {
+        width: 75%; } }
     .wd-sect .wd-desc .wd-division {
       height: 1px;
-      background: #888888;
+      background: #cccccc;
       width: 3.5rem;
       margin: 0 auto;
-      margin-bottom: 1.2rem; }
+      margin-bottom: 5%; }
     .wd-sect .wd-desc h2 {
       font-family: "Cinzel", serif;
       font-weight: 300;
       font-size: 2rem;
-      color: #333333;
-      margin-bottom: 0.5rem; }
+      color: #333333; }
+      @media (min-width: 768px) {
+        .wd-sect .wd-desc h2 {
+          font-size: 2.3rem; } }
+      @media (min-width: 992px) {
+        .wd-sect .wd-desc h2 {
+          font-size: 2.5rem; } }
     .wd-sect .wd-desc p {
       font-size: 1rem; }
+      @media (min-width: 768px) {
+        .wd-sect .wd-desc p {
+          font-size: 1.3rem; } }
+      @media (min-width: 992px) {
+        .wd-sect .wd-desc p {
+          font-size: 1.5rem; } }
     .wd-sect .wd-desc span {
       color: crimson;
-      font-size: 1rem;
-      text-align: center; }
+      text-align: center;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        .wd-sect .wd-desc span {
+          font-size: 1.3rem; } }
+      @media (min-width: 992px) {
+        .wd-sect .wd-desc span {
+          font-size: 1.5rem; } }
   .wd-sect .wd-nextWork {
     min-height: 100vh;
     display: grid;

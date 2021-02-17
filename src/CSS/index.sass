@@ -972,7 +972,7 @@ ul
   .works-title
     width: 92%
     margin: 0 auto
-    padding-top: 6rem
+    padding-top: 14%
     margin-bottom: 3rem
     h1
       padding-bottom: 0.7rem
@@ -981,6 +981,8 @@ ul
       font-weight: normal
       color: $h1-color-dark
       letter-spacing: 1.3px
+      @include media (">=desktop")
+        font-size: 3rem
     .works-underline
       height: 1px
       background: $color-gray-1
@@ -989,18 +991,34 @@ ul
     width: 92%
     margin: 0 auto
     padding: 2rem 0rem
-
+    @include media (">=laptop")
+      width: 88%
+      margin-left: 8%
+      
     // SINGLE WORK STYLE 1
     .single-work-1
       cursor: pointer
       transition: $main-trans
-      margin-bottom: 4rem
+      margin-bottom: 20%
       a
+        @include media (">=laptop")
+          display: flex
+          flex-direction: row-reverse
+          align-items: center
         &:hover
           color: initial
       .work-img-container
         width: 100%
-        height: 14rem              
+        height: 14rem    
+        @include media (">=tablet")          
+          height: 50vh
+        @include media (">=laptop")
+          width: 70%
+          height: 45vh
+        @include media (">=desktop")
+          height: 50vh
+        @include media (">=LGdesktop")
+          height: 65vh
         img
           width: 100%
           height: 100%
@@ -1008,10 +1026,18 @@ ul
       .single-work-title
         text-align: right
         margin-top: 0.5rem
+        color: $color-dark-3
+        @include media (">=laptop")
+          margin-right: 2rem
         h4
           font-family: $font-secondary
           font-weight: normal
-          font-size: 1.8rem          
+          font-size: 1.8rem   
+          @include media (">=tablet")       
+            font-size: 2rem
+          @include media (">=laptop")
+            font-size: 2.5rem
+            line-height: 1.3
         .single-work-cta
           font-family: $font-primary
           color: $color-gray-1
@@ -1020,28 +1046,54 @@ ul
           font-weight: 700
           margin-top: -2%
           letter-spacing: 0.5px
+          @include media (">=tablet")
+            margin-top: -1%
+            font-size: 0.75rem
 
     // SINGLE WORK STYLE 2
     .single-work-2
       cursor: pointer
       transition: $main-trans
-      margin-bottom: 4rem
+      margin-bottom: 20%
+      @include media(">=laptop")
+        margin-left: 12%
       a
+        @include media (">=laptop")
+          display: flex
+          align-items: center
         &:hover
           color: initial
       .work-img-container
         width: 100%
-        height: 20rem              
+        height: 20rem  
+        @include media (">=tablet")            
+          height: 70vh
+        @include media (">=laptop")
+          height: 40vh
+          width: 55%
+        @include media (">=desktop")
+          height: 50vh
+        @include media (">=LGdesktop")
+          height: 70vh
+          width: 50%
         img
           width: 100%
           height: 100%
           object-fit: cover
       .single-work-title        
         margin-top: 0rem
+        @include media (">=laptop")
+          margin-left: 2rem
         h4
           font-family: $font-secondary
           font-weight: normal
           font-size: 1.8rem
+          color: $color-dark-3
+          @include media (">=tablet")
+            font-size: 2rem
+          @include media (">=laptop")
+            font-size: 2.5rem
+            line-height: 1.3
         .single-work-cta
           font-family: $font-primary
           color: $color-gray-1
@@ -1049,7 +1101,10 @@ ul
           font-size: 0.7rem
           font-weight: 700
           margin-top: -2%
-          letter-spacing: 0.5px   
+          letter-spacing: 0.5px 
+          @include media (">=tablet")
+            font-size: 0.75rem
+            margin-top: -1%
 
 /* ======================================================================== */
 /* Work Details */
@@ -1061,6 +1116,8 @@ ul
     text-align: center
     padding-top: 6rem
     padding-bottom: 3rem
+    @include media (">=tablet")
+      padding-top: 20%
     .wd-underline
       height: 1px
       background: $color-gray-1
@@ -1071,6 +1128,8 @@ ul
       font-weight: normal
       font-size: 1.9rem
       margin-bottom: 1.5rem
+      @include media (">=tablet")
+        font-size: 2.3rem
   .wd-img-container
     width: 100%
     height: 70vh
@@ -1082,24 +1141,39 @@ ul
   .wd-specs
     text-align: left
     padding: 2rem 0rem   
-    background: #fff 
+    background: #fff
+    @include media (">=laptop")
+      padding: 6rem 0rem
     .wd-specs-center
       width: 90%
       margin: 0 auto
+      @include media (">=tablet")
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr 1fr
+        align-items: center
+      @include media (">=laptop")
+        display: flex
+        justify-content: space-around
       .single-spec
-        margin-bottom: 1rem    
-        h4
-          font-family: $font-primary
-          font-size: 0.65rem
-          text-transform: uppercase
-          color: $color-gray-1
+        margin-bottom: 1rem   
+        font-family: $font-primary
+        font-size: 0.65rem
+        text-transform: uppercase
+        color: $color-gray-1
+        @include media (">=laptop")
+          font-size: 1rem
         p
           font-size: 1rem
           margin-top: -0.4rem
+          text-transform: capitalize  
+          @include media (">=laptop")        
+            font-size: 1.2rem
         a
           color: $color-dark-3
           transition: $main-trans
           font-size: 1.3rem
+          text-transform: capitalize
           &:hover
             color: #000
   .wd-desc
@@ -1107,24 +1181,40 @@ ul
     margin: 0 auto
     padding-top: 3.2rem
     text-align: center
+    @include media (">=tablet")
+      padding-top: 7%
+      width: 85% 
+    @include media (">=laptop")
+      width: 75%
     .wd-division
       height: 1px
-      background: $color-gray-1
+      background: $color-gray-2
       width: 3.5rem
-      margin: 0 auto 
-      margin-bottom: 1.2rem       
+      margin: 0 auto      
+      margin-bottom: 5%
     h2
       font-family: $font-secondary
       font-weight: 300
       font-size: 2rem
-      color: $h2-color-dark
-      margin-bottom: 0.5rem
+      color: $h2-color-dark      
+      @include media (">=tablet")
+        font-size: 2.3rem
+      @include media (">=laptop")
+        font-size: 2.5rem
     p
       font-size: 1rem
+      @include media (">=tablet")
+        font-size: 1.3rem
+      @include media (">=laptop")
+        font-size: 1.5rem
     span
       color: crimson
-      font-size: 1rem
       text-align: center
+      font-size: 1rem
+      @include media (">=tablet")
+        font-size: 1.3rem
+      @include media (">=laptop")
+        font-size: 1.5rem
   .wd-nextWork
     min-height: 100vh
     display: grid
