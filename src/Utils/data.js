@@ -22,7 +22,7 @@ export const workDetails = [
             works and to dynamically change the Collections as needed.`,
     stack: `Wordpress | Avada Builder | Photoshop | Illustrator | InDesign`,
     nextWork: 'Fincas Manolo',
-    nextWorkUrl: ``,
+    nextWorkUrl: `/works/fincas-manolo`,
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ website with friends and family; spread the word. The project will
 finally evolve into an Online Store.`,
     stack: `React | Context API | SASS | GSAP | Photoshop`,
     nextWork: 'Kampai Boutique',
-    nextWorkUrl: ``,
+    nextWorkUrl: `/works/kampai-boutique`,
   },
 ];
 

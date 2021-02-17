@@ -152,12 +152,21 @@ ul {
   top: 0;
   left: 0;
   z-index: 1001; }
+  @media (min-width: 992px) {
+    .navbar-container {
+      height: 6.5rem; } }
+  @media (min-width: 1250px) {
+    .navbar-container {
+      height: 8rem; } }
   .navbar-container .navbar-center {
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (min-width: 992px) {
+      .navbar-container .navbar-center {
+        width: 88%; } }
     .navbar-container .navbar-center .nav-left a {
       color: #fff;
       font-family: "Cinzel", serif;
@@ -171,12 +180,19 @@ ul {
     position: relative;
     vertical-align: middle;
     cursor: pointer; }
+    @media (min-width: 992px) {
+      .navbar-container .burger-menu {
+        width: 45px;
+        height: 26px; } }
     .navbar-container .burger-menu .b-line {
       height: 2px;
       width: 100%;
       background: #fff;
       position: absolute;
       transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+      @media (min-width: 992px) {
+        .navbar-container .burger-menu .b-line {
+          height: 4px; } }
       .navbar-container .burger-menu .b-line:nth-of-type(1) {
         top: 0;
         left: 0;
@@ -187,17 +203,20 @@ ul {
         right: 0;
         transform-origin: left center;
         margin: auto; }
+        @media (min-width: 992px) {
+          .navbar-container .burger-menu .b-line:nth-of-type(2) {
+            top: 11.33px; } }
       .navbar-container .burger-menu .b-line:nth-of-type(3) {
         bottom: 0;
         left: 0;
         transform-origin: right center;
         transform: scaleX(0.75); }
-  .navbar-container:hover .b-line:nth-of-type(1) {
-    transform: scaleX(1); }
-  .navbar-container:hover .b-line:nth-of-type(2) {
-    transform: scaleX(0.75); }
-  .navbar-container:hover .b-line:nth-of-type(3) {
-    transform: scaleX(1); }
+    .navbar-container .burger-menu:hover .b-line:nth-of-type(1) {
+      transform: scaleX(1); }
+    .navbar-container .burger-menu:hover .b-line:nth-of-type(2) {
+      transform: scaleX(0.75); }
+    .navbar-container .burger-menu:hover .b-line:nth-of-type(3) {
+      transform: scaleX(1); }
   .navbar-container .burger-open .b-line {
     background: #888888;
     width: 80%;
@@ -208,7 +227,12 @@ ul {
       transform: scaleX(0); }
     .navbar-container .burger-open .b-line:nth-of-type(3) {
       transform: scaleX(1) rotate(-55deg) translate(12px, -22px); }
-  .navbar-container:hover .b-line {
+    @media (min-width: 992px) {
+      .navbar-container .burger-open .b-line:nth-of-type(1) {
+        transform: scaleX(1) rotate(57deg) translate(16px, 19px); }
+      .navbar-container .burger-open .b-line:nth-of-type(3) {
+        transform: scaleX(1) rotate(-55deg) translate(19px, -22px); } }
+  .navbar-container .burger-open:hover .b-line {
     background: #fff; }
 
 .nav-left-light a {
@@ -228,12 +252,19 @@ ul {
     height: 18px;
     position: relative;
     vertical-align: middle; }
+    @media (min-width: 992px) {
+      .nav-right-light .burger-menu {
+        width: 45px;
+        height: 26px; } }
     .nav-right-light .burger-menu .b-line {
       height: 2px;
       width: 100%;
       background: #000;
       position: absolute;
       transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+      @media (min-width: 992px) {
+        .nav-right-light .burger-menu .b-line {
+          height: 4px; } }
       .nav-right-light .burger-menu .b-line:nth-of-type(1) {
         top: 0;
         left: 0;
@@ -244,17 +275,20 @@ ul {
         right: 0;
         transform-origin: left center;
         margin: auto; }
+        @media (min-width: 992px) {
+          .nav-right-light .burger-menu .b-line:nth-of-type(2) {
+            top: 11.33px; } }
       .nav-right-light .burger-menu .b-line:nth-of-type(3) {
         bottom: 0;
         left: 0;
         transform-origin: right center;
         transform: scaleX(0.75); }
-  .nav-right-light:hover .b-line:nth-of-type(1) {
-    transform: scaleX(1); }
-  .nav-right-light:hover .b-line:nth-of-type(2) {
-    transform: scaleX(0.75); }
-  .nav-right-light:hover .b-line:nth-of-type(3) {
-    transform: scaleX(1); }
+    .nav-right-light .burger-menu:hover .b-line:nth-of-type(1) {
+      transform: scaleX(1); }
+    .nav-right-light .burger-menu:hover .b-line:nth-of-type(2) {
+      transform: scaleX(0.75); }
+    .nav-right-light .burger-menu:hover .b-line:nth-of-type(3) {
+      transform: scaleX(1); }
   .nav-right-light .burger-open .b-line {
     background: #888888;
     width: 80%;
@@ -265,7 +299,12 @@ ul {
       transform: scaleX(0); }
     .nav-right-light .burger-open .b-line:nth-of-type(3) {
       transform: scaleX(1) rotate(-55deg) translate(12px, -22px); }
-  .nav-right-light:hover .b-line {
+    @media (min-width: 992px) {
+      .nav-right-light .burger-open .b-line:nth-of-type(1) {
+        transform: scaleX(1) rotate(57deg) translate(16px, 19px); }
+      .nav-right-light .burger-open .b-line:nth-of-type(3) {
+        transform: scaleX(1) rotate(-55deg) translate(19px, -22px); } }
+  .nav-right-light .burger-open:hover .b-line {
     background: #000; }
 
 /* ======================================================================== */
@@ -290,10 +329,20 @@ ul {
     align-items: center;
     width: 100%;
     height: 100%; }
+    @media (min-width: 1250px) {
+      .sidebar .sidebar-container {
+        flex-direction: row; } }
     .sidebar .sidebar-container .side-links {
       width: 90%;
       margin-top: 4rem;
       margin-bottom: 1rem; }
+      @media (min-width: 1250px) {
+        .sidebar .sidebar-container .side-links {
+          flex: 0;
+          text-align: left;
+          position: absolute;
+          left: 5%;
+          top: 18%; } }
       .sidebar .sidebar-container .side-links ul li {
         font-family: "Cinzel", serif;
         font-size: 2.1rem;
@@ -301,11 +350,23 @@ ul {
         line-height: 1.7; }
         .sidebar .sidebar-container .side-links ul li:hover {
           color: #fff; }
+        @media (min-width: 1250px) {
+          .sidebar .sidebar-container .side-links ul li {
+            font-size: 2.7rem; } }
     .sidebar .sidebar-container .side-widgets {
       letter-spacing: 0.6px;
       font-size: 0.9rem;
       padding-bottom: 3rem;
       font-family: "Raleway", sans-serif; }
+      @media (min-width: 1250px) {
+        .sidebar .sidebar-container .side-widgets {
+          width: 70%;
+          display: flex;
+          position: absolute;
+          bottom: 5%;
+          right: 0%;
+          justify-content: space-around;
+          align-items: right; } }
       .sidebar .sidebar-container .side-widgets .single-widget {
         margin: 1.5rem auto; }
         .sidebar .sidebar-container .side-widgets .single-widget .widget-title {
@@ -332,10 +393,20 @@ ul {
     align-items: center;
     width: 100%;
     height: 100%; }
+    @media (min-width: 1250px) {
+      .sidebar-light .sidebar-container {
+        flex-direction: row; } }
     .sidebar-light .sidebar-container .side-links {
       width: 90%;
       margin-top: 4rem;
       margin-bottom: 1rem; }
+      @media (min-width: 1250px) {
+        .sidebar-light .sidebar-container .side-links {
+          flex: 0;
+          text-align: left;
+          position: absolute;
+          left: 5%;
+          top: 18%; } }
       .sidebar-light .sidebar-container .side-links ul li {
         font-family: "Cinzel", serif;
         font-size: 2.1rem;
@@ -344,11 +415,23 @@ ul {
         color: #555555; }
         .sidebar-light .sidebar-container .side-links ul li:hover {
           color: #000; }
+        @media (min-width: 1250px) {
+          .sidebar-light .sidebar-container .side-links ul li {
+            font-size: 2.7rem; } }
     .sidebar-light .sidebar-container .side-widgets {
       letter-spacing: 0.6px;
       font-size: 0.9rem;
       padding-bottom: 3rem;
       font-family: "Raleway", sans-serif; }
+      @media (min-width: 1250px) {
+        .sidebar-light .sidebar-container .side-widgets {
+          width: 70%;
+          display: flex;
+          position: absolute;
+          bottom: 5%;
+          right: 0%;
+          justify-content: space-around;
+          align-items: right; } }
       .sidebar-light .sidebar-container .side-widgets .single-widget {
         margin: 1.5rem auto; }
         .sidebar-light .sidebar-container .side-widgets .single-widget .widget-title {
@@ -366,6 +449,7 @@ ul {
   width: 100vw;
   height: 100vh;
   position: relative;
+  top: 0;
   overflow: hidden !important; }
   .home-sect .home-bg {
     position: absolute;
@@ -396,6 +480,14 @@ ul {
     border: 1px solid rgba(128, 128, 128, 0.3);
     border-radius: 100%;
     z-index: 2; }
+    @media (min-width: 992px) {
+      .home-sect .home-bg-circle {
+        width: 75vw;
+        height: 75vw; } }
+    @media (min-width: 1250px) {
+      .home-sect .home-bg-circle {
+        width: 80vw;
+        height: 80vw; } }
   .home-sect .homepage-container {
     position: absolute;
     top: 50%;
@@ -410,6 +502,15 @@ ul {
       line-height: 1.3;
       text-transform: uppercase;
       color: #888888; }
+      @media (min-width: 768px) {
+        .home-sect .homepage-container h6 {
+          font-size: 0.8rem; } }
+      @media (min-width: 992px) {
+        .home-sect .homepage-container h6 {
+          font-size: 1rem; } }
+      @media (min-width: 1250px) {
+        .home-sect .homepage-container h6 {
+          font-size: 1rem; } }
     .home-sect .homepage-container h2 {
       font-size: 2.2rem;
       font-weight: normal;
@@ -417,6 +518,15 @@ ul {
       color: #eeece6;
       font-family: "Cinzel", serif;
       margin-top: 0.5rem; }
+      @media (min-width: 768px) {
+        .home-sect .homepage-container h2 {
+          font-size: 2.5rem; } }
+      @media (min-width: 992px) {
+        .home-sect .homepage-container h2 {
+          font-size: 2.8rem; } }
+      @media (min-width: 1250px) {
+        .home-sect .homepage-container h2 {
+          font-size: 3.5rem; } }
   .home-sect .homeCTA {
     position: absolute;
     bottom: 4%;
@@ -442,6 +552,9 @@ ul {
       color: #111111; }
       .home-sect .homeCTA button .span1 {
         transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+      @media (min-width: 1250px) {
+        .home-sect .homeCTA button {
+          font-size: 0.8rem; } }
 
 /* ======================================================================== */
 /* 6.About Page */

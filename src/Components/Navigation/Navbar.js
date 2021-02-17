@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai';
 import { Sidebar } from '../Navigation';
 import { useNavigationContext } from '../../Context/navigation_context';
 
@@ -21,12 +20,7 @@ const Navbar = () => {
             <Link to='/'>Tomas Padilla</Link>
           </div>
           <div className={color ? 'nav-right' : 'nav-right-light'}>
-            {/* CAMBIAR POR SVG EN UN FUTURO */}
             {isSidebarOpen ? (
-              // <AiOutlineClose
-              //   className='fa-times'
-              //   onClick={() => closeSidebar()}
-              // ></AiOutlineClose>
               <div
                 className='burger-menu burger-open'
                 onClick={() => closeSidebar()}
@@ -36,10 +30,6 @@ const Navbar = () => {
                 <div className='b-line'></div>
               </div>
             ) : (
-              // <AiOutlineBars
-              //   className='fa-bars'
-              //   onClick={() => openSidebar()}
-              // ></AiOutlineBars>
               <div className='burger-menu' onClick={() => openSidebar()}>
                 <div className='b-line'></div>
                 <div className='b-line'></div>
