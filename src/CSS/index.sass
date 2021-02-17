@@ -664,7 +664,9 @@ ul
       margin-bottom: -10%
       .about-title-w
         width: 45%
-        text-align: right   
+        height: 50vh
+        text-align: right 
+        position: relative
         h6
           text-transform: uppercase
           font-size: 1rem
@@ -679,6 +681,10 @@ ul
           font-weight: 300
           color: $h1-color-dark
           letter-spacing: 0.5px
+        .about-scroll-down
+          position: absolute
+          bottom: 0
+          right: 0
       .aboutImg-container-w
         width: 50%
         height: 105vh
@@ -694,6 +700,8 @@ ul
           height: 76%
           object-fit: cover
           object-position: center center
+          @include media (">=desktop")
+            width: 80%
       // END WIDESCREEN
   .about-title
     text-align: center
@@ -741,7 +749,7 @@ ul
     margin: 3rem auto
     background: $color-dark-4
     @include media (">=laptop")
-      margin-top: 10rem
+      margin-top: 6rem
       margin-bottom: 5rem
       width: 10%
   .about-text
@@ -1061,46 +1069,49 @@ ul
 /* ======================================================================== */
 .footer-sect
   text-align: center
-  .footer-cta
-    width: 90%
-    margin: 0 auto
-    padding-top: 1.2rem
-    margin-bottom: 2rem
-    h2
-      font-family: $font-secondary
-      font-size: 1.4rem
-      letter-spacing: 0.7px
-      margin-bottom: 0.7rem
-      color: $h2-color-dark
-      font-weight: 500
-    button
-        font-size: 0.6rem
-        border: none
-        outline: none
-        border-radius: 2rem
-        background: #000
-        height: 2.2rem
-        width: 8rem
-        color: white
-        font-weight: 700
+  .footer-header 
+    .footer-cta
+      margin: 0 auto
+      padding-top: 1.2rem
+      margin-bottom: 2rem
+      h2
+        font-family: $font-secondary
+        font-size: 1.4rem
         letter-spacing: 0.7px
+        margin-bottom: 0.7rem
+        color: $h2-color-dark
+        font-weight: 500
+      button
+          font-size: 0.6rem
+          border: none
+          outline: none
+          border-radius: 2rem
+          background: #000
+          height: 2.2rem
+          width: 8rem
+          color: white
+          font-weight: 700
+          letter-spacing: 0.7px
+          text-transform: uppercase
+          cursor: pointer
+    .footer-sitemap
+      padding-bottom: 1.5rem
+      letter-spacing: 0.6px
+      display: inline-block
+      font-family: $font-primary
+      .sitemap-title
         text-transform: uppercase
-        cursor: pointer
-  .footer-sitemap
-    padding-bottom: 1.5rem
-    letter-spacing: 0.6px
-    display: inline-block
-    font-family: $font-primary
-    .sitemap-title
-      text-transform: uppercase
-      font-size: 1rem
-      font-weight: 300
-    .sitemap-list
-      ul
-        a
-          font-weight: lighter
-          &:hover
-            color: $color-dark-3
+        font-size: 1rem
+        font-weight: 300
+        @include media (">=laptop")
+          font-size: 1.3rem
+          font-weight: 400
+      .sitemap-list
+        ul
+          a
+            font-weight: lighter            
+            &:hover
+              color: #000 
   .footer-division
     height: 1px
     width: 90%
@@ -1126,3 +1137,20 @@ ul
       font-size: 0.85rem
       letter-spacing: 0.5px
       color: $color-gray-1
+  @include media (">=laptop")
+    .footer-header
+      width: 80%
+      display: flex
+      align-items: center
+      justify-content: space-between 
+      padding: 1.5rem  
+      position: relative
+      margin: 0 auto
+      .footer-cta
+        width: 50%
+        margin: 0  
+        padding-top: 0      
+        h2  
+          font-size: 1.9rem
+
+

@@ -16,26 +16,28 @@ const Footer = () => {
   return (
     <footer className=' section footer-sect'>
       {/* Header */}
-      <div className='footer-cta'>
-        <h2>Want to work with me?</h2>
-        <Link to='/contact'>
-          <button type='button'>Get in Touch</button>
-        </Link>
-      </div>
-      {/* Sitemap */}
-      <div className='footer-sitemap'>
-        <div className='sitemap-title'>Sitemap</div>
-        <div className='sitemap-list'>
-          <ul>
-            {data.map((item) => {
-              const { id, title, url } = item;
-              return (
-                <Link to={url} key={id} className='footer-link'>
-                  <li>{title}</li>
-                </Link>
-              );
-            })}
-          </ul>
+      <div className='footer-header'>
+        <div className='footer-cta'>
+          <h2>Want to work with me?</h2>
+          <Link to='/contact'>
+            <button type='button'>Get in Touch</button>
+          </Link>
+        </div>
+        {/* Sitemap */}
+        <div className='footer-sitemap'>
+          <div className='sitemap-title'>Sitemap</div>
+          <div className='sitemap-list'>
+            <ul>
+              {data.map((item) => {
+                const { id, title, url } = item;
+                return (
+                  <Link to={url} key={id} className='footer-link'>
+                    <li>{title}</li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
       {/* Division */}

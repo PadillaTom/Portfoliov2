@@ -577,7 +577,9 @@ ul {
         margin-bottom: -10%; }
         .about-sect .about-widescreen-container .about-title-w {
           width: 45%;
-          text-align: right; }
+          height: 50vh;
+          text-align: right;
+          position: relative; }
           .about-sect .about-widescreen-container .about-title-w h6 {
             text-transform: uppercase;
             font-size: 1rem;
@@ -592,6 +594,10 @@ ul {
             font-weight: 300;
             color: #333333;
             letter-spacing: 0.5px; }
+          .about-sect .about-widescreen-container .about-title-w .about-scroll-down {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
         .about-sect .about-widescreen-container .aboutImg-container-w {
           width: 50%;
           height: 105vh;
@@ -607,6 +613,10 @@ ul {
             height: 76%;
             object-fit: cover;
             object-position: center center; } }
+      @media (min-width: 992px) and (min-width: 1250px) {
+        .about-sect .about-widescreen-container .aboutImg-container-w img {
+          width: 80%; } }
+
   .about-sect .about-title {
     text-align: center;
     margin: 0.7rem 0rem; }
@@ -658,7 +668,7 @@ ul {
     background: #555555; }
     @media (min-width: 992px) {
       .about-sect .division-line {
-        margin-top: 10rem;
+        margin-top: 6rem;
         margin-bottom: 5rem;
         width: 10%; } }
   .about-sect .about-text {
@@ -972,19 +982,18 @@ ul {
 /* ======================================================================== */
 .footer-sect {
   text-align: center; }
-  .footer-sect .footer-cta {
-    width: 90%;
+  .footer-sect .footer-header .footer-cta {
     margin: 0 auto;
     padding-top: 1.2rem;
     margin-bottom: 2rem; }
-    .footer-sect .footer-cta h2 {
+    .footer-sect .footer-header .footer-cta h2 {
       font-family: "Cinzel", serif;
       font-size: 1.4rem;
       letter-spacing: 0.7px;
       margin-bottom: 0.7rem;
       color: #333333;
       font-weight: 500; }
-    .footer-sect .footer-cta button {
+    .footer-sect .footer-header .footer-cta button {
       font-size: 0.6rem;
       border: none;
       outline: none;
@@ -997,19 +1006,23 @@ ul {
       letter-spacing: 0.7px;
       text-transform: uppercase;
       cursor: pointer; }
-  .footer-sect .footer-sitemap {
+  .footer-sect .footer-header .footer-sitemap {
     padding-bottom: 1.5rem;
     letter-spacing: 0.6px;
     display: inline-block;
     font-family: "Raleway", sans-serif; }
-    .footer-sect .footer-sitemap .sitemap-title {
+    .footer-sect .footer-header .footer-sitemap .sitemap-title {
       text-transform: uppercase;
       font-size: 1rem;
       font-weight: 300; }
-    .footer-sect .footer-sitemap .sitemap-list ul a {
+      @media (min-width: 992px) {
+        .footer-sect .footer-header .footer-sitemap .sitemap-title {
+          font-size: 1.3rem;
+          font-weight: 400; } }
+    .footer-sect .footer-header .footer-sitemap .sitemap-list ul a {
       font-weight: lighter; }
-      .footer-sect .footer-sitemap .sitemap-list ul a:hover {
-        color: #333333; }
+      .footer-sect .footer-header .footer-sitemap .sitemap-list ul a:hover {
+        color: #000; }
   .footer-sect .footer-division {
     height: 1px;
     width: 90%;
@@ -1035,5 +1048,20 @@ ul {
       font-size: 0.85rem;
       letter-spacing: 0.5px;
       color: #888888; }
+  @media (min-width: 992px) {
+    .footer-sect .footer-header {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem;
+      position: relative;
+      margin: 0 auto; }
+      .footer-sect .footer-header .footer-cta {
+        width: 50%;
+        margin: 0;
+        padding-top: 0; }
+        .footer-sect .footer-header .footer-cta h2 {
+          font-size: 1.9rem; } }
 
 /*# sourceMappingURL=index.css.map */

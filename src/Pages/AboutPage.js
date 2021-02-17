@@ -31,6 +31,7 @@ const AboutPage = () => {
           <div className='about-title-w'>
             <h6>About Me</h6>
             <h2>Tomas Padilla</h2>
+            <div className='about-scroll-down'>Scroll Down</div>
           </div>
           {/* Image */}
           <div className='aboutImg-container-w'>
