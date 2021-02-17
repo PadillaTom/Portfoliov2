@@ -24,6 +24,23 @@ const AboutPage = () => {
         <div className='aboutImg-container'>
           <img src={aboutImg} alt='About Tomas Padilla' />
         </div>
+
+        {/* WideScreen */}
+        <div className='about-widescreen-container'>
+          {/* Title */}
+          <div className='about-title-w'>
+            <h6>About Me</h6>
+            <h2>Tomas Padilla</h2>
+          </div>
+          {/* Image */}
+          <div className='aboutImg-container-w'>
+            <div className='about-img-center'>
+              <img src={aboutImg} alt='About Tomas Padilla' />
+            </div>
+          </div>
+        </div>
+        {/* End Widescreen */}
+
         {/* Text */}
         <div className='division-line'></div>
         <div className='about-text'>

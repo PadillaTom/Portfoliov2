@@ -277,7 +277,7 @@ ul
     cursor: pointer
     @include media (">=laptop")
       width: 45px
-      height: 26px
+      height: 22px
     .b-line
       height: 2px
       width: 100%
@@ -285,7 +285,7 @@ ul
       position: absolute
       transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
       @include media (">=laptop")
-        height: 4px
+        height: 3px
       &:nth-of-type(1)
         top: 0
         left: 0
@@ -297,7 +297,7 @@ ul
         transform-origin: left center    
         margin: auto   
         @include media (">=laptop")
-          top: 11.33px
+          top: 9.5px
       &:nth-of-type(3)
         bottom: 0
         left: 0
@@ -353,7 +353,7 @@ ul
     vertical-align: middle 
     @include media (">=laptop")
       width: 45px
-      height: 26px   
+      height: 22px   
     .b-line
       height: 2px
       width: 100%
@@ -361,7 +361,7 @@ ul
       position: absolute
       transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
       @include media (">=laptop")
-        height: 4px
+        height: 3px
       &:nth-of-type(1)
         top: 0
         left: 0
@@ -373,7 +373,7 @@ ul
         transform-origin: left center    
         margin: auto
         @include media (">=laptop")
-          top: 11.33px  
+          top: 9.5px  
       &:nth-of-type(3)
         bottom: 0
         left: 0
@@ -652,16 +652,65 @@ ul
   width: 100%
   min-height: 100vh
   background-color: #EEECE6
+  @include media (">=tablet")
+    padding-top: 6.5rem
+    // WIDE SCREEn
+  .about-widescreen-container
+    display: none
+    @include media (">=laptop")
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: -10%
+      .about-title-w
+        width: 45%
+        text-align: right   
+        h6
+          text-transform: uppercase
+          font-size: 1rem
+          font-weight: 700   
+          letter-spacing: 1px   
+          color: $color-gray-1
+          font-family: $font-primary
+        h2
+          margin-top: -0.5rem
+          font-family: $font-secondary
+          font-size: 3rem
+          font-weight: 300
+          color: $h1-color-dark
+          letter-spacing: 0.5px
+      .aboutImg-container-w
+        width: 50%
+        height: 105vh
+        position: relative
+        top: -9rem
+        background: white
+        img
+          position: absolute
+          top: 56%
+          left: 50%
+          transform: translate(-50%,-50%)
+          width: 90%
+          height: 76%
+          object-fit: cover
+          object-position: center center
+      // END WIDESCREEN
   .about-title
     text-align: center
     margin: 0.7rem 0rem
+    @include media (">=tablet")
+      margin: 1rem 0rem
+    @include media (">=laptop")
+      display: none
     h6
       text-transform: uppercase
       font-size: 0.6rem
       font-weight: 700   
       letter-spacing: 1px   
       color: $color-gray-1
-      font-family: $font-primary      
+      font-family: $font-primary 
+      @include media (">=tablet")
+        font-size: 0.8rem   
     h2
       margin-top: -0.5rem
       font-family: $font-secondary
@@ -669,10 +718,14 @@ ul
       font-weight: 500
       color: $h1-color-dark
       letter-spacing: 0.5px
+      @include media (">=tablet")
+        font-size: 2.5rem
   .aboutImg-container
     width: 100%
     height: 100vh
     position: relative
+    @include media (">=laptop")
+      display: none
     img
       position: absolute
       top: 0
@@ -681,11 +734,16 @@ ul
       height: 100%
       object-fit: cover
       object-position: center center
+  // ABOUT TEXT
   .division-line
     width: 20%
     height: 1px     
     margin: 3rem auto
     background: $color-dark-4
+    @include media (">=laptop")
+      margin-top: 10rem
+      margin-bottom: 5rem
+      width: 10%
   .about-text
     width: 90%
     margin: 0 auto
@@ -693,8 +751,14 @@ ul
     font-family: $font-secondary
     font-size: 1.45rem
     line-height: 1.5
-    color: $color-dark-4
+    color: $color-dark-3
     padding-bottom: 4rem
+    font-weight: 200
+    @include media (">=tablet")
+      font-size: 1.6rem
+    @include media (">=laptop")
+      width: 65%
+      font-size: 1.8rem
     span
       font-weight: 700
     a
