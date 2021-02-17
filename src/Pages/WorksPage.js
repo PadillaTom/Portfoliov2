@@ -11,7 +11,7 @@ const WorksPage = () => {
 
   return (
     <div>
-      Works Page
+      My works: Page
       <Footer></Footer>
     </div>
   );
