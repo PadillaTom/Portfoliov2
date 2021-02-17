@@ -708,10 +708,18 @@ ul {
 /* ======================================================================== */
 /* 8.Contact Page */
 /* ======================================================================== */
+@media (min-width: 992px) {
+  .contact-sect {
+    display: flex;
+    height: 100vh;
+    width: 100%; } }
 .contact-sect .contact-img-container {
   width: 100%;
   height: 100vh;
   position: relative; }
+  @media (min-width: 992px) {
+    .contact-sect .contact-img-container {
+      display: none; } }
   .contact-sect .contact-img-container img {
     width: 100%;
     height: 100%;
@@ -723,34 +731,94 @@ ul {
   height: 18rem;
   display: grid;
   place-items: center; }
+  @media (min-width: 768px) {
+    .contact-sect .contact-data-container {
+      height: 24rem; } }
+  @media (min-width: 992px) {
+    .contact-sect .contact-data-container {
+      height: 100%;
+      width: 45%; } }
+  @media (min-width: 1250px) {
+    .contact-sect .contact-data-container {
+      width: 35%; }
+      .contact-sect .contact-data-container .screen-data-center {
+        text-align: right;
+        position: relative;
+        top: 25%; } }
   .contact-sect .contact-data-container .contact-data {
     width: 90%;
     margin: 0 auto; }
+    @media (min-width: 992px) {
+      .contact-sect .contact-data-container .contact-data {
+        width: 100%; } }
     .contact-sect .contact-data-container .contact-data h4 {
       font-size: 0.7rem;
       text-transform: uppercase;
       font-weight: 900;
       color: #555555; }
+      @media (min-width: 768px) {
+        .contact-sect .contact-data-container .contact-data h4 {
+          font-size: 1rem; } }
     .contact-sect .contact-data-container .contact-data a {
       font-size: 1rem;
       letter-spacing: 0.8px;
       transition: 0.3s linear all; }
+      @media (min-width: 768px) {
+        .contact-sect .contact-data-container .contact-data a {
+          font-size: 1.3rem; } }
+      @media (min-width: 992px) {
+        .contact-sect .contact-data-container .contact-data a {
+          font-size: 1rem; } }
       .contact-sect .contact-data-container .contact-data a:hover {
         color: #262626; }
   .contact-sect .contact-data-container .cont-social a {
     font-size: 2.3rem;
     transition: 0.3s linear all;
     margin-right: 1rem; }
+    @media (min-width: 768px) {
+      .contact-sect .contact-data-container .cont-social a {
+        font-size: 2.5rem; } }
+.contact-sect .contact-img-container-screens {
+  display: none; }
+  @media (min-width: 992px) {
+    .contact-sect .contact-img-container-screens {
+      display: block;
+      width: 45%;
+      height: 100%; }
+      .contact-sect .contact-img-container-screens img {
+        height: 100%;
+        width: 100%;
+        object-position: center center;
+        object-fit: cover; } }
 .contact-sect .contact-form-container {
   padding: 2rem 0rem;
   width: 90%;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .contact-sect .contact-form-container {
+      padding: 3rem 0rem; } }
+  @media (min-width: 992px) {
+    .contact-sect .contact-form-container {
+      height: 100%;
+      width: 45%;
+      margin: 0 auto;
+      position: relative; }
+      .contact-sect .contact-form-container .screen-form-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0 auto; } }
   .contact-sect .contact-form-container h2 {
     font-family: "Cinzel", serif;
     color: #555555;
     font-weight: 400;
     margin-bottom: 1.8rem;
     font-size: 1.7rem; }
+    @media (min-width: 768px) {
+      .contact-sect .contact-form-container h2 {
+        font-size: 2rem; } }
   .contact-sect .contact-form-container .single-control {
     position: relative;
     margin: 1.5rem 0rem; }
@@ -762,6 +830,9 @@ ul {
       left: 0;
       bottom: 0.8rem;
       pointer-events: none; }
+      @media (min-width: 768px) {
+        .contact-sect .contact-form-container .single-control label {
+          font-size: 1.1rem; } }
     .contact-sect .contact-form-container .single-control input {
       border: none;
       outline: none;
@@ -771,6 +842,9 @@ ul {
       z-index: 2;
       height: 2.3rem;
       font-size: 1rem; }
+      @media (min-width: 768px) {
+        .contact-sect .contact-form-container .single-control input {
+          font-size: 1.1rem; } }
     .contact-sect .contact-form-container .single-control .textarea-label {
       position: absolute;
       top: 0;
@@ -778,6 +852,9 @@ ul {
       font-size: 0.9rem;
       font-family: "Raleway", sans-serif;
       pointer-events: none; }
+      @media (min-width: 768px) {
+        .contact-sect .contact-form-container .single-control .textarea-label {
+          font-size: 1.1rem; } }
     .contact-sect .contact-form-container .single-control textarea {
       border: none;
       outline: none;
@@ -800,6 +877,10 @@ ul {
     cursor: pointer;
     margin-top: 0.7rem;
     margin-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .contact-sect .contact-form-container button {
+        font-size: 1rem;
+        height: 2.6rem; } }
 
 /* ======================================================================== */
 /* Works */
