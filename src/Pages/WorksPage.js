@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 import { useNavigationContext } from '../Context/navigation_context';
 import { Footer } from '../Components/Navigation';
-import project1 from '../Assets/Images/project1.jpg';
-import project2 from '../Assets/Images/project2.jpg';
+import kb from '../Assets/Images/KampaiBoutique.jpg';
+import fm from '../Assets/Images/FincasManolo.jpg';
 
 const WorksPage = () => {
   const { setColorLight } = useNavigationContext();
@@ -23,7 +23,7 @@ const WorksPage = () => {
         {/* Kampai Boutique */}
         <div className='single-work-1'>
           <div className='work-img-container'>
-            <img src={project1} alt='Kampai Boutique Tomas Padilla' />
+            <img src={kb} alt='Kampai Boutique Tomas Padilla' />
           </div>
           <div className='single-work-title'>
             <h4>Kampai Boutique</h4>
@@ -34,7 +34,7 @@ const WorksPage = () => {
         {/* Fincas Manolo */}
         <div className='single-work-2'>
           <div className='work-img-container'>
-            <img src={project2} alt='Fincas Manolo Tomas Padilla' />
+            <img src={fm} alt='Fincas Manolo Tomas Padilla' />
           </div>
           <div className='single-work-title'>
             <h4>Fincas Manolo</h4>
