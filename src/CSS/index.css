@@ -151,7 +151,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1001; }
+  z-index: 1001;
+  padding-top: 1rem; }
   @media (min-width: 992px) {
     .navbar-container {
       height: 6.5rem; } }
@@ -229,7 +230,7 @@ ul {
       transform: scaleX(1) rotate(-55deg) translate(12px, -22px); }
     @media (min-width: 992px) {
       .navbar-container .burger-open .b-line:nth-of-type(1) {
-        transform: scaleX(1) rotate(57deg) translate(16px, 19px); }
+        transform: scaleX(1) rotate(57deg) translate(16px, 17px); }
       .navbar-container .burger-open .b-line:nth-of-type(3) {
         transform: scaleX(1) rotate(-55deg) translate(19px, -22px); } }
   .navbar-container .burger-open:hover .b-line {
@@ -301,7 +302,7 @@ ul {
       transform: scaleX(1) rotate(-55deg) translate(12px, -22px); }
     @media (min-width: 992px) {
       .nav-right-light .burger-open .b-line:nth-of-type(1) {
-        transform: scaleX(1) rotate(57deg) translate(16px, 19px); }
+        transform: scaleX(1) rotate(57deg) translate(16px, 17px); }
       .nav-right-light .burger-open .b-line:nth-of-type(3) {
         transform: scaleX(1) rotate(-55deg) translate(19px, -22px); } }
   .nav-right-light .burger-open:hover .b-line {
