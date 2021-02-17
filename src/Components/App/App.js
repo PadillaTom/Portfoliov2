@@ -11,8 +11,8 @@ import {
   Homepage,
   AboutPage,
   WorksPage,
-  WorkDetailsPage,
   ContactPage,
+  WorkDetails,
 } from '../../Pages';
 
 function App() {
@@ -30,12 +30,15 @@ function App() {
           <Route path='/about'>
             <AboutPage></AboutPage>
           </Route>
-          <Route path='/works'>
+          <Route path='/works' exact>
             <WorksPage></WorksPage>
           </Route>
-          <Route path='/works/:id'>
-            <WorkDetailsPage></WorkDetailsPage>
-          </Route>
+          {/* Work Details */}
+          <Route
+            path='/works/:slug'
+            children={<WorkDetails></WorkDetails>}
+          ></Route>
+          {/* End Work Details */}
           <Route path='/contact'>
             <ContactPage></ContactPage>
           </Route>
