@@ -651,25 +651,31 @@ ul
 /* 6.About Page */
 /* ======================================================================== */
 .about-sect
-  padding-top: 5rem
+  padding-top: 25%
   width: 100%
   min-height: 100vh
   background-color: #EEECE6
   @include media (">=tablet")
-    padding-top: 6.5rem
-    // WIDE SCREEn
+    padding-top: 20%
+  @include media (">=laptop")
+    padding-top: 0
+
+    // Bigger Size Screens
   .about-widescreen-container
-    display: none
+    display: none    
     @include media (">=laptop")
       display: flex
       align-items: center
-      justify-content: space-between
-      margin-bottom: -10%
+      justify-content: space-between      
       .about-title-w
-        width: 45%
-        height: 50vh
-        text-align: right 
-        position: relative
+        width: 50% 
+        height: 100vh       
+        text-align: right
+        display: grid
+        place-items: center 
+        position: relative 
+        @include media (">=desktop")      
+          right: -5%
         h6
           text-transform: uppercase
           font-size: 1rem
@@ -686,26 +692,28 @@ ul
           letter-spacing: 0.5px
         .about-scroll-down
           position: absolute
-          bottom: 0
-          right: 0
+          bottom: 15%
+          right: 10%
+          @include media (">=desktop")
+            right: 20%
       .aboutImg-container-w
         width: 50%
         height: 105vh
-        position: relative
-        top: -9rem
+        position: relative        
         background: white
         img
           position: absolute
-          top: 56%
+          top: 55%
           left: 50%
-          transform: translate(-50%,-50%)
+          transform: translate(-50%,-57%)
           width: 90%
           height: 76%
           object-fit: cover
           object-position: center center
           @include media (">=desktop")
             width: 80%
-      // END WIDESCREEN
+      // END Bigger Size Screens
+
   .about-title
     text-align: center
     margin: 0.7rem 0rem
@@ -735,6 +743,7 @@ ul
     width: 100%
     height: 100vh
     position: relative
+    margin-bottom: 5rem
     @include media (">=laptop")
       display: none
     img
@@ -745,15 +754,17 @@ ul
       height: 100%
       object-fit: cover
       object-position: center center
-  // ABOUT TEXT
+
+  // About Info
   .division-line
     width: 20%
     height: 1px     
-    margin: 3rem auto
+    margin: 0 auto   
+    margin-bottom: 5rem
     background: $color-dark-4
     @include media (">=laptop")
-      margin-top: 6rem
-      margin-bottom: 5rem
+      margin-top: 15%
+      margin-bottom: 10%
       width: 10%
   .about-text
     width: 90%
@@ -763,10 +774,11 @@ ul
     font-size: 1.45rem
     line-height: 1.5
     color: $color-dark-3
-    padding-bottom: 4rem
+    padding-bottom: 5rem
     font-weight: 200
     @include media (">=tablet")
       font-size: 1.6rem
+      padding-bottom: 7rem
     @include media (">=laptop")
       width: 65%
       font-size: 1.8rem
@@ -799,25 +811,25 @@ ul
   .contact-img-container
     width: 100%
     height: 100vh
-    position: relative
-    @include media (">=laptop")
-      display: none
+    position: relative    
     img
       width: 100%
       height: 100%
       object-fit: cover
       object-position: center center
+    @include media (">=laptop")
+      display: none
   // End IMG Mobile
 
   // Contact Data
   .contact-data-container
     text-align: left
     background-color: $color-light-1
-    height: 18rem
+    padding: 2rem 0rem
     display: grid
     place-items: center
     @include media (">=tablet")
-      height: 24rem
+      padding: 3rem 0rem
     @include media (">=laptop")
       height: 100%
       width: 45%
@@ -829,10 +841,10 @@ ul
       width: 35%
     @include media (">=LGdesktop")
       width: 25%
-
     .contact-data
-      width: 90%
+      width: 100%
       margin: 0 auto 
+      margin-bottom: 1rem
       @include media (">=laptop")          
         width: 100%
         margin-bottom: 2rem
@@ -847,6 +859,7 @@ ul
         font-size: 1rem  
         letter-spacing: 0.8px  
         transition: $main-trans
+        white-space: nowrap
         @include media (">=tablet")
           font-size: 1.3rem
         @include media (">=laptop")
@@ -859,7 +872,7 @@ ul
         transition: $main-trans
         margin-right: 1rem
         @include media (">=tablet")
-          font-size: 2.5rem
+          font-size: 3rem
 
   // Img Screens
   .contact-img-container-screens
@@ -972,8 +985,10 @@ ul
   .works-title
     width: 92%
     margin: 0 auto
-    padding-top: 14%
+    padding-top: 25%
     margin-bottom: 3rem
+    @include media (">=tablet")
+      padding-top: 20%
     h1
       padding-bottom: 0.7rem
       font-size: 2rem
@@ -981,6 +996,8 @@ ul
       font-weight: normal
       color: $h1-color-dark
       letter-spacing: 1.3px
+      @include media (">=tablet")
+        font-size: 2.5rem      
       @include media (">=desktop")
         font-size: 3rem
     .works-underline
@@ -994,7 +1011,7 @@ ul
     @include media (">=laptop")
       width: 88%
       margin-left: 8%
-      
+
     // SINGLE WORK STYLE 1
     .single-work-1
       cursor: pointer
@@ -1016,7 +1033,7 @@ ul
           width: 70%
           height: 45vh
         @include media (">=desktop")
-          height: 50vh
+          height: 55vh
         @include media (">=LGdesktop")
           height: 65vh
         img
@@ -1026,7 +1043,7 @@ ul
       .single-work-title
         text-align: right
         margin-top: 0.5rem
-        color: $color-dark-3
+        color: $color-dark-3        
         @include media (">=laptop")
           margin-right: 2rem
         h4
@@ -1034,10 +1051,10 @@ ul
           font-weight: normal
           font-size: 1.8rem   
           @include media (">=tablet")       
-            font-size: 2rem
+            font-size: 2.2rem
           @include media (">=laptop")
             font-size: 2.5rem
-            line-height: 1.3
+            line-height: 1.3            
         .single-work-cta
           font-family: $font-primary
           color: $color-gray-1
@@ -1072,9 +1089,9 @@ ul
           height: 40vh
           width: 55%
         @include media (">=desktop")
-          height: 50vh
+          height: 65vh
         @include media (">=LGdesktop")
-          height: 70vh
+          height: 75vh
           width: 50%
         img
           width: 100%
@@ -1090,7 +1107,7 @@ ul
           font-size: 1.8rem
           color: $color-dark-3
           @include media (">=tablet")
-            font-size: 2rem
+            font-size: 2.2rem
           @include media (">=laptop")
             font-size: 2.5rem
             line-height: 1.3
@@ -1240,7 +1257,7 @@ ul
 /* ======================================================================== */
 .footer-sect
   text-align: center
-  .footer-header 
+  .footer-header
     .footer-cta
       margin: 0 auto
       padding-top: 1.2rem
@@ -1270,6 +1287,8 @@ ul
       letter-spacing: 0.6px
       display: inline-block
       font-family: $font-primary
+      @include media (">=laptop")
+        padding-bottom: 0
       .sitemap-title
         text-transform: uppercase
         font-size: 1rem
@@ -1280,9 +1299,11 @@ ul
       .sitemap-list
         ul
           a
-            font-weight: lighter            
+            font-weight: normal
+            color: $color-gray-1            
             &:hover
-              color: #000 
+              color: #000
+
   .footer-division
     height: 1px
     width: 90%
@@ -1314,9 +1335,11 @@ ul
       display: flex
       align-items: center
       justify-content: space-between 
-      padding: 1.5rem  
+      padding: 3rem 0rem 
       position: relative
       margin: 0 auto
+      @include media (">=desktop")
+        width: 67%
       .footer-cta
         width: 50%
         margin: 0  

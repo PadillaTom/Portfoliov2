@@ -29,8 +29,10 @@ const AboutPage = () => {
         <div className='about-widescreen-container'>
           {/* Title */}
           <div className='about-title-w'>
-            <h6>About Me</h6>
-            <h2>Tomas Padilla</h2>
+            <div className='aboutscreens-title'>
+              <h6>About Me</h6>
+              <h2>Tomas Padilla</h2>
+            </div>
             <div className='about-scroll-down'>Scroll Down</div>
           </div>
           {/* Image */}
