@@ -1,10 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components:
-// import { WelcomeScreen } from '../WelcomeScreen';
 import { CursorFollower } from '../CursorFollower';
 import { Navbar, ScrollToTop } from '../Navigation';
-
 // Pages:
 import {
   ErrorPage,
@@ -18,7 +16,6 @@ import {
 function App() {
   return (
     <>
-      {/* <WelcomeScreen></WelcomeScreen> */}
       <CursorFollower></CursorFollower>
       <Router>
         <ScrollToTop></ScrollToTop>

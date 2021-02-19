@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Sidebar } from '../Navigation';
 import { useNavigationContext } from '../../Context/navigation_context';
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const {
     isSidebarOpen,
     openSidebar,
@@ -12,9 +13,24 @@ const Navbar = () => {
     color,
   } = useNavigationContext();
 
+  // Scrolled Navbar
+  const handleScrolled = () => {
+    if (window.scrollY >= 350) {
+      setIsScrolled(true);
+    }
+    if (window.scrollY < 350) {
+      setIsScrolled(false);
+    }
+  };
+  window.addEventListener('scroll', handleScrolled);
+
   return (
     <>
-      <nav className='navbar-container'>
+      <nav
+        className={
+          !isScrolled ? `navbar-container` : `navbar-container scrolled`
+        }
+      >
         <div className='navbar-center'>
           <div className={color ? 'nav-left' : 'nav-left-light'}>
             <Link to='/'>Tomas Padilla</Link>
@@ -23,14 +39,23 @@ const Navbar = () => {
             {isSidebarOpen ? (
               <div
                 className='burger-menu burger-open'
-                onClick={() => closeSidebar()}
+                onClick={() => {
+                  closeSidebar();
+                  setIsScrolled(true);
+                }}
               >
                 <div className='b-line'></div>
                 <div className='b-line'></div>
                 <div className='b-line'></div>
               </div>
             ) : (
-              <div className='burger-menu' onClick={() => openSidebar()}>
+              <div
+                className='burger-menu'
+                onClick={() => {
+                  openSidebar();
+                  setIsScrolled(false);
+                }}
+              >
                 <div className='b-line'></div>
                 <div className='b-line'></div>
                 <div className='b-line'></div>
