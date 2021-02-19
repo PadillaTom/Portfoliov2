@@ -23,6 +23,7 @@ export const workDetails = [
     stack: `Wordpress | Avada Builder | Photoshop | Illustrator | InDesign`,
     nextWork: 'Fincas Manolo',
     nextWorkUrl: `/works/fincas-manolo`,
+    nextWorkImg: fm,
   },
   {
     id: 2,
@@ -42,6 +43,7 @@ finally evolve into an Online Store.`,
     stack: `React | Context API | SASS | GSAP | Photoshop`,
     nextWork: 'Kampai Boutique',
     nextWorkUrl: `/works/kampai-boutique`,
+    nextWorkImg: kb,
   },
 ];
 

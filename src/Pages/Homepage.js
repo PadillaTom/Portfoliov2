@@ -24,6 +24,7 @@ const Homepage = () => {
         exit='out'
         variants={varsHome}
         transition={transHome}
+        key='Home'
       >
         <div className='home-bg'>
           <motion.img
@@ -33,13 +34,14 @@ const Homepage = () => {
             animate='to'
             variants={varsHomeBg}
             transition={{ duration: 0.7, ease: 'easeIn' }}
+            key='HomeBG'
           />
           <div className='home-bg-overlay'></div>
           <div className='home-bg-circle'></div>
         </div>
         <div className='homepage-container'>
-          <motion.h6>Tomas Padilla</motion.h6>
-          <motion.h2>Web Developer</motion.h2>
+          <h6>Tomas Padilla</h6>
+          <h2>Web Developer</h2>
         </div>
         <Link to='/works' className='homeCTA'>
           <motion.button
@@ -48,6 +50,7 @@ const Homepage = () => {
             animate='to'
             variants={varsHomeCta}
             transition={{ duration: 1.2, ease: 'easeIn' }}
+            key='HomeCTA'
           >
             Works
           </motion.button>

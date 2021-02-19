@@ -7,10 +7,10 @@ import { NavigationProvider } from './Context/navigation_context';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <Router>
-    <NavigationProvider>
+  <NavigationProvider>
+    <Router>
       <App />
-    </NavigationProvider>
-  </Router>,
+    </Router>
+  </NavigationProvider>,
   document.getElementById('root')
 );

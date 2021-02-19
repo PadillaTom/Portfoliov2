@@ -18,6 +18,7 @@ const ErrorPage = () => {
       exit='out'
       variants={pageVars}
       transition={pageTrans}
+      key='Error'
     >
       <h1>404</h1>
     </motion.div>

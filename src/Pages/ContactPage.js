@@ -22,6 +22,7 @@ const ContactPage = () => {
       exit='out'
       variants={pageVars}
       transition={pageTrans}
+      key='Contact'
     >
       {/* IMG Mobile */}
       <div className='contact-img-container'>

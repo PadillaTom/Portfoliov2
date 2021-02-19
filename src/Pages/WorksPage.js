@@ -29,6 +29,7 @@ const WorksPage = () => {
         exit='out'
         variants={pageVars}
         transition={pageTrans}
+        key='WP'
       >
         <div className='works-title'>
           <h1>Works</h1>

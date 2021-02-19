@@ -1199,14 +1199,11 @@ ul {
         .wd-sect .wd-desc span {
           font-size: 1.5rem; } }
   .wd-sect .wd-nextWork {
-    min-height: 100vh;
+    height: 65vh;
     display: grid;
     place-items: center;
-    text-align: center; }
-    .wd-sect .wd-nextWork a {
-      color: #cccccc; }
-      .wd-sect .wd-nextWork a:hover {
-        color: #262626; }
+    text-align: center;
+    color: #cccccc; }
     .wd-sect .wd-nextWork p {
       font-family: "Raleway", sans-serif;
       text-transform: uppercase;
@@ -1217,6 +1214,18 @@ ul {
       font-family: "Cinzel", serif;
       font-size: 2rem;
       letter-spacing: 1.3px; }
+
+.nextWork-empty {
+  height: 100vh;
+  width: 25%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center; }
+  .nextWork-empty img {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    object-fit: cover; }
 
 /* ======================================================================== */
 /* 11.Footer Component */

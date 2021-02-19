@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { workDetails } from '../Utils/data';
 
@@ -23,7 +23,12 @@ const WorkDetails = () => {
     stack,
     nextWork,
     nextWorkUrl,
+    nextWorkImg,
+    id,
   } = myWork;
+
+  // Routing to Next Work
+
   return (
     <>
       <motion.div
@@ -33,6 +38,7 @@ const WorkDetails = () => {
         exit='out'
         variants={pageVars}
         transition={pageTrans}
+        key={id}
       >
         {/* Title */}
         <div className='wd-title'>
@@ -82,10 +88,13 @@ const WorkDetails = () => {
         </div>
         {/* Next Project  */}
         <div className='wd-nextWork'>
-          <Link to={nextWorkUrl}>
+          <div className='wd-nextWork-text'>
             <p>Next Work</p>
             <span>{nextWork}</span>
-          </Link>
+          </div>
+        </div>
+        <div className='nextWork-empty'>
+          <img src={nextWorkImg} alt='Next Project' />
         </div>
       </motion.div>
     </>

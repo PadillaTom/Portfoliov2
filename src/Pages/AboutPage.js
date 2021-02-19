@@ -25,6 +25,7 @@ const AboutPage = () => {
         exit='out'
         variants={pageVars}
         transition={pageTrans}
+        key='About'
       >
         {/* Title */}
         <div className='about-title'>

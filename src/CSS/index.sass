@@ -114,7 +114,7 @@ html
   text-rendering: optimizeLegibility
   -webkit-text-rendering: optimizeLegibility
   -moz-osx-font-smoothing: grayscale
-  overflow-x: hidden
+  overflow-x: hidden  
   
 body 
   position: relative
@@ -1225,14 +1225,11 @@ ul
       @include media (">=laptop")
         font-size: 1.5rem
   .wd-nextWork
-    min-height: 100vh
+    height: 65vh
     display: grid
     place-items: center
-    text-align: center
-    a
-      color: $paragraph-color-light
-      &:hover
-        color: $color-dark-2
+    text-align: center    
+    color: $paragraph-color-light
     p
       font-family: $font-primary
       text-transform: uppercase
@@ -1243,6 +1240,20 @@ ul
       font-family: $font-secondary
       font-size: 2rem
       letter-spacing: 1.3px
+// Next Work Image
+.nextWork-empty
+  height: 100vh  
+  width: 25%
+  margin: 0 auto    
+  display: grid
+  place-items: center  
+  img 
+    width: 100%
+    height: 400px
+    margin: 0 auto
+    object-fit: cover
+        
+      
 
 /* ======================================================================== */
 /* 11.Footer Component */

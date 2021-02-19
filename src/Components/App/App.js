@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <CursorFollower></CursorFollower>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false} key='AP'>
         <ScrollToTop></ScrollToTop>
         <Navbar></Navbar>
         <Switch location={location} key={location.pathname}>
