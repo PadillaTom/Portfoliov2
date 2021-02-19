@@ -19,13 +19,23 @@ export const pageTrans = {
 /* ======================================================================== */
 /* 1.Homepage */
 /* ======================================================================== */
+// Route
 export const varsHome = {
-  in: {},
-  out: {},
+  in: { opacity: 1 },
+  out: { opacity: 0 },
 };
 export const transHome = {
-  in: {},
-  out: {},
+  duration: 0,
+};
+// Bg
+export const varsHomeBg = {
+  from: { scale: 1.05, opacity: 0 },
+  to: { scale: 1, opacity: 1 },
+};
+// CTA
+export const varsHomeCta = {
+  from: { y: '3rem', opacity: -5 },
+  to: { y: 0, opacity: 1 },
 };
 
 /* ======================================================================== */
