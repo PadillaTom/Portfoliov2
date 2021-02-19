@@ -23,6 +23,7 @@ const Navbar = () => {
     }
   };
   window.addEventListener('scroll', handleScrolled);
+  //
 
   return (
     <>
@@ -41,7 +42,7 @@ const Navbar = () => {
                 className='burger-menu burger-open'
                 onClick={() => {
                   closeSidebar();
-                  setIsScrolled(true);
+                  handleScrolled();
                 }}
               >
                 <div className='b-line'></div>
