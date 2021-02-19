@@ -38,8 +38,8 @@ const Homepage = () => {
           <div className='home-bg-circle'></div>
         </div>
         <div className='homepage-container'>
-          <h6>Tomas Padilla</h6>
-          <h2>Web Developer</h2>
+          <motion.h6>Tomas Padilla</motion.h6>
+          <motion.h2>Web Developer</motion.h2>
         </div>
         <Link to='/works' className='homeCTA'>
           <motion.button
@@ -47,7 +47,7 @@ const Homepage = () => {
             initial='from'
             animate='to'
             variants={varsHomeCta}
-            transition={{ delay: 1, duration: 1, ease: 'easeIn' }}
+            transition={{ duration: 1.2, ease: 'easeIn' }}
           >
             Works
           </motion.button>

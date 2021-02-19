@@ -34,7 +34,7 @@ export const varsHomeBg = {
 };
 // CTA
 export const varsHomeCta = {
-  from: { y: '3rem', opacity: -5 },
+  from: { y: '1rem', opacity: -10 },
   to: { y: 0, opacity: 1 },
 };
 
