@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  // BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from 'react-router-dom';
 
 // Components:
 import { CursorFollower } from '../CursorFollower';
@@ -12,15 +17,18 @@ import {
   ContactPage,
   WorkDetails,
 } from '../../Pages';
+// Animations:
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
   return (
     <>
       <CursorFollower></CursorFollower>
-      <Router>
+      <AnimatePresence exitBeforeEnter>
         <ScrollToTop></ScrollToTop>
         <Navbar></Navbar>
-        <Switch>
+        <Switch location={location} key={location.pathname}>
           <Route path='/' exact>
             <Homepage></Homepage>
           </Route>
@@ -30,12 +38,12 @@ function App() {
           <Route path='/works' exact>
             <WorksPage></WorksPage>
           </Route>
-          {/* Work Details */}
+
           <Route
             path='/works/:slug'
             children={<WorkDetails></WorkDetails>}
           ></Route>
-          {/* End Work Details */}
+
           <Route path='/contact'>
             <ContactPage></ContactPage>
           </Route>
@@ -43,7 +51,7 @@ function App() {
             <ErrorPage></ErrorPage>
           </Route>
         </Switch>
-      </Router>
+      </AnimatePresence>
     </>
   );
 }

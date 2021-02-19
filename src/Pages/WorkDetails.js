@@ -3,6 +3,10 @@ import { useParams, Link } from 'react-router-dom';
 
 import { workDetails } from '../Utils/data';
 
+// Animations:
+import { motion } from 'framer-motion';
+import { pageTrans, pageVars } from '../Utils/helpers';
+
 const WorkDetails = () => {
   // Find Work
   const { slug } = useParams();
@@ -22,7 +26,14 @@ const WorkDetails = () => {
   } = myWork;
   return (
     <>
-      <div className='section wd-sect'>
+      <motion.div
+        className='section wd-sect'
+        initial='out'
+        animate='in'
+        exit='out'
+        variants={pageVars}
+        transition={pageTrans}
+      >
         {/* Title */}
         <div className='wd-title'>
           <h2>{title}</h2>
@@ -76,7 +87,7 @@ const WorkDetails = () => {
             <span>{nextWork}</span>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

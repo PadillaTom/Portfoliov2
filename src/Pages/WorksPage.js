@@ -5,6 +5,10 @@ import { useNavigationContext } from '../Context/navigation_context';
 import { Footer } from '../Components/Navigation';
 import { workDetails } from '../Utils/data';
 
+// Animations:
+import { motion } from 'framer-motion';
+import { pageTrans, pageVars } from '../Utils/helpers';
+
 const WorksPage = () => {
   const { setColorLight } = useNavigationContext();
   const [data, setData] = useState([]);
@@ -18,7 +22,14 @@ const WorksPage = () => {
 
   return (
     <>
-      <section className='section works-sect'>
+      <motion.section
+        className='section works-sect'
+        initial='out'
+        animate='in'
+        exit='out'
+        variants={pageVars}
+        transition={pageTrans}
+      >
         <div className='works-title'>
           <h1>Works</h1>
           <div className='works-underline'></div>
@@ -62,7 +73,7 @@ const WorksPage = () => {
           })}
         </div>
         <Footer></Footer>
-      </section>
+      </motion.section>
     </>
   );
 };

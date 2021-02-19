@@ -6,6 +6,10 @@ import { useNavigationContext } from '../Context/navigation_context';
 import { Reviews } from '../Components/Reviews';
 import { Footer } from '../Components/Navigation';
 
+// Animations:
+import { motion } from 'framer-motion';
+import { pageTrans, pageVars } from '../Utils/helpers';
+
 const AboutPage = () => {
   const { setColorLight } = useNavigationContext();
   useEffect(() => {
@@ -14,7 +18,14 @@ const AboutPage = () => {
 
   return (
     <>
-      <section className='section about-sect'>
+      <motion.section
+        className='section about-sect'
+        initial='out'
+        animate='in'
+        exit='out'
+        variants={pageVars}
+        transition={pageTrans}
+      >
         {/* Title */}
         <div className='about-title'>
           <h6>About Me</h6>
@@ -64,7 +75,7 @@ const AboutPage = () => {
         </div>
         <Reviews></Reviews>
         <Footer></Footer>
-      </section>
+      </motion.section>
     </>
   );
 };

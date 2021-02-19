@@ -4,6 +4,10 @@ import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { useNavigationContext } from '../Context/navigation_context';
 import contactImg from '../Assets/Images/contactImg.jpg';
 
+// Animations:
+import { motion } from 'framer-motion';
+import { pageTrans, pageVars } from '../Utils/helpers';
+
 const ContactPage = () => {
   const { setColorLight } = useNavigationContext();
   useEffect(() => {
@@ -11,7 +15,14 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <section className='section contact-sect'>
+    <motion.section
+      className='section contact-sect'
+      initial='out'
+      animate='in'
+      exit='out'
+      variants={pageVars}
+      transition={pageTrans}
+    >
       {/* IMG Mobile */}
       <div className='contact-img-container'>
         <img src={contactImg} alt='Contact Tomas Padilla' />
@@ -71,7 +82,7 @@ const ContactPage = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

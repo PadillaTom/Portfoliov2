@@ -24,7 +24,8 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; }
 
 body {
   position: relative;
@@ -909,7 +910,7 @@ ul {
         height: 2.6rem; } }
 
 /* ======================================================================== */
-/* Works */
+/* 9.Works */
 /* ======================================================================== */
 .works-sect {
   background: #F7F6F3;
@@ -1073,7 +1074,7 @@ ul {
               margin-top: -1%; } }
 
 /* ======================================================================== */
-/* Work Details */
+/* 10.Work Details */
 /* ======================================================================== */
 .wd-sect {
   width: 100%;
@@ -1217,7 +1218,7 @@ ul {
       letter-spacing: 1.3px; }
 
 /* ======================================================================== */
-/* Footer Component */
+/* 11.Footer Component */
 /* ======================================================================== */
 .footer-sect {
   text-align: center; }
