@@ -85,6 +85,28 @@ export const transWDetails = {
   in: {},
   out: {},
 };
+export const wdImage = {
+  from: {
+    width: '600px',
+    height: '400px',
+    y: '-65%',
+  },
+  to: {
+    y: '0%',
+    width: '100%',
+    height: '70vh',
+  },
+};
+export const wdTitle = {
+  from: {
+    opacity: 0,
+    y: 400,
+  },
+  to: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 /* ======================================================================== */
 /* 6.Error Page */

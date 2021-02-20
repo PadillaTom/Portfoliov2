@@ -1139,9 +1139,12 @@ ul
       margin-bottom: 1.5rem
       @include media (">=tablet")
         font-size: 2.3rem
+      @include media (">=desktop")
+        font-size: 3.2rem
   .wd-img-container
     width: 100%
-    height: 70vh
+    height: 75vh
+    margin: 0 auto
     img
       width: 100%
       height: 100%
@@ -1225,7 +1228,7 @@ ul
       @include media (">=laptop")
         font-size: 1.5rem
   .wd-nextWork
-    height: 65vh
+    height: 112vh
     display: grid
     place-items: center
     text-align: center    
@@ -1242,16 +1245,15 @@ ul
       letter-spacing: 1.3px
 // Next Work Image
 .nextWork-empty
-  height: 100vh  
-  width: 25%
-  margin: 0 auto    
-  display: grid
-  place-items: center  
+  height: 70vh  
+  width: 600px
+  margin: 0 auto 
   img 
     width: 100%
     height: 400px
     margin: 0 auto
     object-fit: cover
+    object-position: center center
         
       
 

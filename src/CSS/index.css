@@ -1100,9 +1100,13 @@ ul {
       @media (min-width: 768px) {
         .wd-sect .wd-title h2 {
           font-size: 2.3rem; } }
+      @media (min-width: 1250px) {
+        .wd-sect .wd-title h2 {
+          font-size: 3.2rem; } }
   .wd-sect .wd-img-container {
     width: 100%;
-    height: 70vh; }
+    height: 75vh;
+    margin: 0 auto; }
     .wd-sect .wd-img-container img {
       width: 100%;
       height: 100%;
@@ -1199,7 +1203,7 @@ ul {
         .wd-sect .wd-desc span {
           font-size: 1.5rem; } }
   .wd-sect .wd-nextWork {
-    height: 65vh;
+    height: 112vh;
     display: grid;
     place-items: center;
     text-align: center;
@@ -1216,16 +1220,15 @@ ul {
       letter-spacing: 1.3px; }
 
 .nextWork-empty {
-  height: 100vh;
-  width: 25%;
-  margin: 0 auto;
-  display: grid;
-  place-items: center; }
+  height: 70vh;
+  width: 600px;
+  margin: 0 auto; }
   .nextWork-empty img {
     width: 100%;
     height: 400px;
     margin: 0 auto;
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: center center; }
 
 /* ======================================================================== */
 /* 11.Footer Component */
