@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 import { workDetails } from '../Utils/data';
 
@@ -23,47 +23,26 @@ const WorkDetails = () => {
     stack,
     nextWork,
     nextWorkUrl,
-    nextWorkImg,
     id,
   } = myWork;
-
-  // Routing to Next Work
-  const history = useHistory();
   return (
     <>
       <motion.div
         className='section wd-sect'
         initial='initial'
         animate='animate'
+        exit='exit'
         key={id}
       >
         {/* Title */}
-        <motion.div
-          initial='from'
-          animate='to'
-          variants={wdTitle}
-          transition={{ delay: 0.5, duration: 1.5, ease: 'easeIn' }}
-          key='WDTitle'
-          className='wd-title'
-        >
+        <div className='wd-title'>
           <h2>{title}</h2>
           <div className='wd-underline'></div>
-        </motion.div>
+        </div>
         {/* Image */}
-        <motion.div
-          initial='from'
-          animate='to'
-          variants={wdImage}
-          transition={{
-            duration: 1.4,
-            ease: [0.6, 0.01, -0.05, 0.9],
-            delay: 0.3,
-          }}
-          key='WDImg'
-          className='wd-img-container'
-        >
+        <div className='wd-img-container'>
           <img src={workImg} alt='Tomas Padilla Kampai Boutique' />
-        </motion.div>
+        </div>
         {/* Specs */}
         <div className='wd-specs'>
           <div className='wd-specs-center'>
@@ -103,19 +82,11 @@ const WorkDetails = () => {
         </div>
         {/* Next Project  */}
         <div className='wd-nextWork'>
-          <div className='wd-nextWork-text'>
+          <Link to={nextWorkUrl} className='wd-nextWork-text'>
             <p>Next Work</p>
             <span>{nextWork}</span>
-          </div>
+          </Link>
         </div>
-        <motion.div
-          exit={{ scale: 1.1 }}
-          transition={{ duration: 1 }}
-          onMouseOver={() => history.push(nextWorkUrl)}
-          className='nextWork-empty'
-        >
-          <img src={nextWorkImg} alt='Next Project' />
-        </motion.div>
       </motion.div>
     </>
   );
