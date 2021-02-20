@@ -8,7 +8,7 @@ import { Footer } from '../Components/Navigation';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { pageTrans, pageVars } from '../Utils/helpers';
+import { varsAbout, pageTrans } from '../Utils/helpers';
 
 const AboutPage = () => {
   const { setColorLight } = useNavigationContext();
@@ -18,16 +18,13 @@ const AboutPage = () => {
 
   return (
     <>
-      <motion.section className='section about-sect'>
-        <motion.div
-          initial='out'
-          animate='in'
-          exit='out'
-          variants={pageVars}
-          transition={pageTrans}
-          key='About'
-          className='page-screen'
-        ></motion.div>
+      <motion.section
+        initial='initial'
+        animate='animate'
+        exit='exit'
+        key='about'
+        className='section about-sect'
+      >
         {/* Title */}
         <div className='about-title'>
           <h6>About Me</h6>

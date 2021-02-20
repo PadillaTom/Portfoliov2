@@ -574,11 +574,6 @@ ul {
   @media (min-width: 992px) {
     .about-sect {
       padding-top: 0; } }
-  .about-sect .page-screen {
-    height: 100%;
-    width: 100%;
-    background: white;
-    z-index: 100; }
   .about-sect .about-widescreen-container {
     display: none; }
     @media (min-width: 992px) {
