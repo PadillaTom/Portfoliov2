@@ -42,8 +42,10 @@ export const varsHomeCta = {
 /* 2.About Page */
 /* ======================================================================== */
 export const varsAbout = {
-  in: {},
-  out: {},
+  in: { opacity: 1 },
+  out: {
+    opacity: 0,
+  },
 };
 export const transAbout = {
   in: {},

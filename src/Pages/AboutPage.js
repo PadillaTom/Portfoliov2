@@ -18,15 +18,16 @@ const AboutPage = () => {
 
   return (
     <>
-      <motion.section
-        className='section about-sect'
-        initial='out'
-        animate='in'
-        exit='out'
-        variants={pageVars}
-        transition={pageTrans}
-        key='About'
-      >
+      <motion.section className='section about-sect'>
+        <motion.div
+          initial='out'
+          animate='in'
+          exit='out'
+          variants={pageVars}
+          transition={pageTrans}
+          key='About'
+          className='page-screen'
+        ></motion.div>
         {/* Title */}
         <div className='about-title'>
           <h6>About Me</h6>
