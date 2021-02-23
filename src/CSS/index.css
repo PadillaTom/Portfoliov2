@@ -667,7 +667,8 @@ ul {
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    overflow: hidden; }
     @media (min-width: 992px) {
       .about-sect .aboutImg-container {
         display: none; } }
@@ -736,7 +737,8 @@ ul {
 .contact-sect .contact-img-container {
   width: 100%;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .contact-sect .contact-img-container img {
     width: 100%;
     height: 100%;
@@ -869,7 +871,7 @@ ul {
     .contact-sect .contact-form-container .single-control input {
       border: none;
       outline: none;
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 0.5px solid #cccccc;
       width: 100%;
       background: transparent;
       transition: 0.3s linear all;
@@ -894,7 +896,7 @@ ul {
     .contact-sect .contact-form-container .single-control textarea {
       border: none;
       outline: none;
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 0.5px solid #cccccc;
       width: 100%;
       background: transparent;
       z-index: 2;
@@ -930,12 +932,16 @@ ul {
     left: 0;
     font-size: 0.75rem !important;
     font-weight: 400; }
+  .isClicked input:focus {
+    border-bottom: 1px solid #111111 !important; }
 
 .isClicked2 .textarea-label {
   position: absolute;
   top: -2.1rem !important;
   font-weight: 400 !important;
   font-size: 0.75rem !important; }
+.isClicked2 textarea:focus {
+  border-bottom: 1px solid #111111 !important; }
 
 /* ======================================================================== */
 /* 9.Works */

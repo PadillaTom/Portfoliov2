@@ -39,7 +39,15 @@ const ContactPage = () => {
     >
       {/* IMG Mobile */}
       <div className='contact-img-container'>
-        <img src={contactImg} alt='Contact Tomas Padilla' />
+        <motion.img
+          initial='from'
+          animate='to'
+          variants={varsContImg}
+          transition={{ duration: 1, ease: 'easeIn' }}
+          key='contactimgmobile'
+          src={contactImg}
+          alt='Contact Tomas Padilla'
+        />
       </div>
 
       <div className='contact-data-container'>

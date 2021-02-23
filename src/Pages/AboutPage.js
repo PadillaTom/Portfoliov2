@@ -3,12 +3,17 @@ import { Link } from 'react-router-dom';
 
 import aboutImg from '../Assets/Images/aboutImg.jpg';
 import { useNavigationContext } from '../Context/navigation_context';
-import { Reviews } from '../Components/Reviews';
+// import { Reviews } from '../Components/Reviews';
 import { Footer } from '../Components/Navigation';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { pageVars, pageTrans, varsAboutImgBg } from '../Utils/helpers';
+import {
+  pageVars,
+  pageTrans,
+  varsAboutImgBg,
+  varsContImg,
+} from '../Utils/helpers';
 
 const AboutPage = () => {
   const { setColorLight } = useNavigationContext();
@@ -34,7 +39,15 @@ const AboutPage = () => {
         </div>
         {/* Image */}
         <div className='aboutImg-container'>
-          <img src={aboutImg} alt='About Tomas Padilla' />
+          <motion.img
+            initial='from'
+            animate='to'
+            variants={varsContImg}
+            transition={{ duration: 0.7, ease: 'easeIn' }}
+            key='caboutimgmobile'
+            src={aboutImg}
+            alt='About Tomas Padilla'
+          />
         </div>
 
         {/* WideScreen */}
@@ -94,7 +107,7 @@ const AboutPage = () => {
           </Link>
           .
         </div>
-        <Reviews></Reviews>
+        {/* <Reviews></Reviews> */}
         <Footer></Footer>
       </motion.section>
     </>

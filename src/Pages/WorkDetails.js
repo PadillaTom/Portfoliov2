@@ -5,7 +5,7 @@ import { workDetails } from '../Utils/data';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { pageTrans, pageVars, wdImage, wdTitle } from '../Utils/helpers';
+import { pageTrans, pageVars } from '../Utils/helpers';
 
 const WorkDetails = () => {
   // Find Work
