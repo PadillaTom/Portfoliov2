@@ -6,13 +6,26 @@ import contactImg from '../Assets/Images/contactImg.jpg';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { pageTrans, pageVars } from '../Utils/helpers';
+import {
+  pageTrans,
+  pageVars,
+  varsContImg,
+  varsContStag,
+} from '../Utils/helpers';
 
 const ContactPage = () => {
   const { setColorLight } = useNavigationContext();
   useEffect(() => {
     setColorLight();
   }, []);
+
+  // Handle Focus
+  const handleFocus = (e) => {
+    e.currentTarget.classList.add('isClicked');
+  };
+  const handleFocus2 = (e) => {
+    e.currentTarget.classList.add('isClicked2');
+  };
 
   return (
     <motion.section
@@ -31,15 +44,36 @@ const ContactPage = () => {
 
       <div className='contact-data-container'>
         <div className='screen-data-center'>
-          <div className='contact-data'>
+          <motion.div
+            initial='from'
+            animate='to'
+            variants={varsContStag}
+            transition={{
+              duration: 0.5,
+              ease: 'easeIn',
+            }}
+            key='contdata1'
+            className='contact-data'
+          >
             <h4>Get in Touch</h4>
             <a href='mailto:padillatomasagustin@gmail.com'>
               PadillaTomasAgustin@gmail.com
             </a>
             <br />
             <a href='tel:+41794002693'>+41 79 400 26 93</a>
-          </div>
-          <div className='contact-data cont-social'>
+          </motion.div>
+          <motion.div
+            initial='from'
+            animate='to'
+            variants={varsContStag}
+            transition={{
+              duration: 0.5,
+              delay: 0.6,
+              ease: 'easeIn',
+            }}
+            key='contdata2'
+            className='contact-data cont-social'
+          >
             <h4>Social Media</h4>
             <a
               href='https://github.com/PadillaTom'
@@ -55,34 +89,55 @@ const ContactPage = () => {
             >
               <AiFillLinkedin></AiFillLinkedin>
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
+
+      {/* IMG Desktop */}
       <div className='contact-img-container-screens'>
-        <img src={contactImg} alt='Contact Tomas Padilla' />
+        <motion.img
+          initial='from'
+          animate='to'
+          variants={varsContImg}
+          transition={{ duration: 2, ease: 'easeIn' }}
+          key='contactimg'
+          src={contactImg}
+          alt='Contact Tomas Padilla'
+        />
       </div>
-      <div className='contact-form-container'>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.7,
+          ease: 'easeIn',
+          delay: 0.7,
+        }}
+        key='contform'
+        className='contact-form-container'
+      >
         <div className='screen-form-center'>
           <h2>Send Message</h2>
-          <form>
-            <div className='single-control'>
+          <form action='https://formspree.io/f/mleokyzn' method='POST'>
+            <div className='single-control' onClick={(e) => handleFocus(e)}>
               <label htmlFor='name'>Your Name</label>
-              <input type='text' />
+              <input type='text' name='Name' />
             </div>
-            <div className='single-control'>
+            <div className='single-control' onClick={(e) => handleFocus(e)}>
               <label htmlFor='email'>Your E-mail</label>
-              <input type='email' />
+              <input type='email' name='Email' />
             </div>
-            <div className='single-control'>
+            <div className='single-control' onClick={(e) => handleFocus2(e)}>
               <label htmlFor='message' className='textarea-label'>
                 Your Message
               </label>
-              <textarea name='message' id='' cols='30' rows='10'></textarea>
+              <textarea name='message' cols='30' rows='10'></textarea>
             </div>
             <button type='submit'>Send Message</button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

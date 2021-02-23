@@ -2,17 +2,15 @@
 export const pageVars = {
   in: {
     opacity: 1,
-    y: 0,
   },
   out: {
     opacity: 0,
-    y: '100vh',
   },
 };
 // Page Transitions General
 export const pageTrans = {
   transition: 'linear',
-  duration: 0.5,
+  duration: 0.7,
   ease: 'easeInOut',
 };
 
@@ -20,17 +18,18 @@ export const pageTrans = {
 /* 1.Homepage */
 /* ======================================================================== */
 // Route
-export const varsHome = {
-  in: { opacity: 1 },
-  out: { opacity: 0 },
-};
 export const transHome = {
-  duration: 0,
+  duration: 0.35,
 };
 // Bg
 export const varsHomeBg = {
   from: { scale: 1.05, opacity: 0 },
   to: { scale: 1, opacity: 1 },
+};
+// Name
+export const varsHomeName = {
+  from: { opacity: 0 },
+  to: { opacity: 1 },
 };
 // CTA
 export const varsHomeCta = {
@@ -41,37 +40,32 @@ export const varsHomeCta = {
 /* ======================================================================== */
 /* 2.About Page */
 /* ======================================================================== */
-export const varsAbout = {
-  to: { opacity: 1 },
-  from: { opacity: 0 },
+export const varsAboutImgBg = {
+  from: { y: '110vh' },
+  to: { y: 0 },
 };
-export const transAbout = {
-  in: {},
-  out: {},
-};
-
 /* ======================================================================== */
 /* 3.Contact Page*/
 /* ======================================================================== */
-export const varsContact = {
-  in: {},
-  out: {},
+export const varsContImg = {
+  from: { scale: 1.2 },
+  to: { scale: 1 },
 };
-export const transContact = {
-  in: {},
-  out: {},
+export const varsContStag = {
+  from: { y: '-2rem', opacity: 0 },
+  to: { y: 0, opacity: 1 },
 };
 
 /* ======================================================================== */
 /* 4.Works Page */
 /* ======================================================================== */
-export const varsWorks = {
-  in: {},
-  out: {},
+export const varsWp = {
+  in: { opacity: 1 },
+  out: { opacity: 0 },
 };
-export const transWorks = {
-  in: {},
-  out: {},
+export const varsWpWorks = {
+  from: { y: '100vh' },
+  to: { y: 0 },
 };
 
 /* ======================================================================== */

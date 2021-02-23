@@ -7,7 +7,7 @@ import { workDetails } from '../Utils/data';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { pageTrans, pageVars } from '../Utils/helpers';
+import { varsWp, varsWpWorks } from '../Utils/helpers';
 
 const WorksPage = () => {
   const { setColorLight } = useNavigationContext();
@@ -27,17 +27,37 @@ const WorksPage = () => {
         initial='out'
         animate='in'
         exit='out'
-        variants={pageVars}
-        transition={pageTrans}
+        variants={varsWp}
+        transition={{ duration: 0.4 }}
         key='WP'
       >
         <div className='works-title'>
-          <h1>Works</h1>
-          <div className='works-underline'></div>
+          <motion.h1
+            initial={{ opacity: 0, x: '-50vh' }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
+            key='workstitle'
+          >
+            Works
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            key='worksunderline'
+            className='works-underline'
+          ></motion.div>
         </div>
 
         {/* Pongo Filter? */}
-        <div className='single-works-container'>
+        <motion.div
+          initial='from'
+          animate='to'
+          variants={varsWpWorks}
+          transition={{ duration: 0.4, delay: 0.3, staggerDirection: 1 }}
+          key='wpContainer'
+          className='single-works-container'
+        >
           {/* Kampai Boutique */}
 
           {data.map((proj) => {
@@ -72,7 +92,7 @@ const WorksPage = () => {
               );
             }
           })}
-        </div>
+        </motion.div>
         <Footer></Footer>
       </motion.section>
     </>

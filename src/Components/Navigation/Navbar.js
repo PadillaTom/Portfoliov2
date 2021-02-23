@@ -15,10 +15,10 @@ const Navbar = () => {
 
   // Scrolled Navbar
   const handleScrolled = () => {
-    if (window.scrollY >= 350) {
+    if (window.scrollY >= 200) {
       setIsScrolled(true);
     }
-    if (window.scrollY < 350) {
+    if (window.scrollY < 200) {
       setIsScrolled(false);
     }
   };

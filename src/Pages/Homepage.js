@@ -6,7 +6,13 @@ import { useNavigationContext } from '../Context/navigation_context';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { varsHome, transHome, varsHomeBg, varsHomeCta } from '../Utils/helpers';
+import {
+  pageVars,
+  transHome,
+  varsHomeBg,
+  varsHomeName,
+  varsHomeCta,
+} from '../Utils/helpers';
 
 const Homepage = () => {
   const { setColorDark } = useNavigationContext();
@@ -22,7 +28,7 @@ const Homepage = () => {
         initial='out'
         animate='in'
         exit='out'
-        variants={varsHome}
+        variants={pageVars}
         transition={transHome}
         key='Home'
       >
@@ -39,17 +45,24 @@ const Homepage = () => {
           <div className='home-bg-overlay'></div>
           <div className='home-bg-circle'></div>
         </div>
-        <div className='homepage-container'>
+        <motion.div
+          initial='from'
+          animate='to'
+          variants={varsHomeName}
+          transition={{ duration: 0.5, ease: 'circIn', delay: 0.8 }}
+          key='homeName'
+          className='homepage-container'
+        >
           <h6>Tomas Padilla</h6>
           <h2>Web Developer</h2>
-        </div>
+        </motion.div>
         <Link to='/works' className='homeCTA'>
           <motion.button
             type='button'
             initial='from'
             animate='to'
             variants={varsHomeCta}
-            transition={{ duration: 1.2, ease: 'easeIn' }}
+            transition={{ duration: 1, delay: 0.8 }}
             key='HomeCTA'
           >
             Works

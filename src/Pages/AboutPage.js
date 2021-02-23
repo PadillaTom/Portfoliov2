@@ -8,7 +8,7 @@ import { Footer } from '../Components/Navigation';
 
 // Animations:
 import { motion } from 'framer-motion';
-import { varsAbout, pageTrans } from '../Utils/helpers';
+import { pageVars, pageTrans, varsAboutImgBg } from '../Utils/helpers';
 
 const AboutPage = () => {
   const { setColorLight } = useNavigationContext();
@@ -19,10 +19,12 @@ const AboutPage = () => {
   return (
     <>
       <motion.section
-        initial='initial'
-        animate='animate'
-        exit='exit'
-        key='about'
+        initial='out'
+        animate='in'
+        exit='out'
+        key='About'
+        variants={pageVars}
+        transition={pageTrans}
         className='section about-sect'
       >
         {/* Title */}
@@ -38,19 +40,39 @@ const AboutPage = () => {
         {/* WideScreen */}
         <div className='about-widescreen-container'>
           {/* Title */}
-          <div className='about-title-w'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.4, ease: 'easeIn' }}
+            key='aboutTitle'
+            className='about-title-w'
+          >
             <div className='aboutscreens-title'>
               <h6>About Me</h6>
               <h2>Tomas Padilla</h2>
             </div>
             <div className='about-scroll-down'>Scroll Down</div>
-          </div>
+          </motion.div>
           {/* Image */}
-          <div className='aboutImg-container-w'>
+          <motion.div
+            initial='from'
+            animate='to'
+            variants={varsAboutImgBg}
+            transition={{ ease: 'easeIn', duration: 0.6 }}
+            key='AboutimgContainer'
+            className='aboutImg-container-w'
+          >
             <div className='about-img-center'>
-              <img src={aboutImg} alt='About Tomas Padilla' />
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9, duration: 1, ease: 'easeIn' }}
+                key='aboutImgDelayed'
+                src={aboutImg}
+                alt='About Tomas Padilla'
+              />
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* End Widescreen */}
 

@@ -29,19 +29,35 @@ const WorkDetails = () => {
     <>
       <motion.div
         className='section wd-sect'
-        initial='initial'
-        animate='animate'
+        initial='out'
+        animate='in'
         exit='exit'
+        variants={pageVars}
+        transition={pageTrans}
         key={id}
       >
         {/* Title */}
         <div className='wd-title'>
-          <h2>{title}</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: '-2rem' }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: 'easeIn' }}
+            key='wdTitle'
+          >
+            {title}
+          </motion.h2>
           <div className='wd-underline'></div>
         </div>
         {/* Image */}
         <div className='wd-img-container'>
-          <img src={workImg} alt='Tomas Padilla Kampai Boutique' />
+          <motion.img
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5, ease: 'easeIn', delay: 0.5 }}
+            key='wdTmainImg'
+            src={workImg}
+            alt='Tomas Padilla Kampai Boutique'
+          />
         </div>
         {/* Specs */}
         <div className='wd-specs'>

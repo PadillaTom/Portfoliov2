@@ -619,18 +619,20 @@ ul {
           height: 105vh;
           position: relative;
           background: white; }
-          .about-sect .about-widescreen-container .aboutImg-container-w img {
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -57%);
-            width: 90%;
-            height: 76%;
-            object-fit: cover;
-            object-position: center center; } }
-      @media (min-width: 992px) and (min-width: 1250px) {
-        .about-sect .about-widescreen-container .aboutImg-container-w img {
-          width: 80%; } }
+          .about-sect .about-widescreen-container .aboutImg-container-w .about-img-center {
+            overflow: hidden; }
+            .about-sect .about-widescreen-container .aboutImg-container-w .about-img-center img {
+              position: absolute;
+              top: 55%;
+              left: 50%;
+              transform: translate(-50%, -57%);
+              width: 90%;
+              height: 76%;
+              object-fit: cover;
+              object-position: center center; } }
+        @media (min-width: 992px) and (min-width: 1250px) {
+          .about-sect .about-widescreen-container .aboutImg-container-w .about-img-center img {
+            width: 80%; } }
 
   .about-sect .about-title {
     text-align: center;
@@ -808,7 +810,8 @@ ul {
     .contact-sect .contact-img-container-screens {
       display: block;
       width: 45%;
-      height: 100%; }
+      height: 100%;
+      overflow: hidden; }
       .contact-sect .contact-img-container-screens img {
         height: 100%;
         width: 100%;
@@ -849,7 +852,8 @@ ul {
         font-size: 2rem; } }
   .contact-sect .contact-form-container .single-control {
     position: relative;
-    margin: 1.5rem 0rem; }
+    margin: 2rem 0rem;
+    transition: 0.3s linear all; }
     .contact-sect .contact-form-container .single-control label {
       color: #888888;
       font-size: 0.9rem;
@@ -857,7 +861,8 @@ ul {
       position: absolute;
       left: 0;
       bottom: 0.8rem;
-      pointer-events: none; }
+      pointer-events: none;
+      transition: 0.3s linear all; }
       @media (min-width: 768px) {
         .contact-sect .contact-form-container .single-control label {
           font-size: 1.1rem; } }
@@ -867,15 +872,18 @@ ul {
       border-bottom: 1px solid #cccccc;
       width: 100%;
       background: transparent;
+      transition: 0.3s linear all;
       z-index: 2;
       height: 2.3rem;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-weight: 200; }
       @media (min-width: 768px) {
         .contact-sect .contact-form-container .single-control input {
           font-size: 1.1rem; } }
     .contact-sect .contact-form-container .single-control .textarea-label {
+      margin-top: 0.8rem;
       position: absolute;
-      top: 0;
+      top: -1.3rem;
       color: #888888;
       font-size: 0.9rem;
       font-family: "Raleway", sans-serif;
@@ -890,7 +898,11 @@ ul {
       width: 100%;
       background: transparent;
       z-index: 2;
-      resize: none; }
+      resize: none;
+      font-size: 1rem; }
+      @media (min-width: 1250px) {
+        .contact-sect .contact-form-container .single-control textarea {
+          font-size: 1.1rem; } }
   .contact-sect .contact-form-container button {
     border: none;
     background: #111111;
@@ -910,6 +922,21 @@ ul {
         font-size: 1rem;
         height: 2.6rem; } }
 
+.isClicked {
+  transition: 0.3s linear all; }
+  .isClicked label {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    font-size: 0.75rem !important;
+    font-weight: 400; }
+
+.isClicked2 .textarea-label {
+  position: absolute;
+  top: -2.1rem !important;
+  font-weight: 400 !important;
+  font-size: 0.75rem !important; }
+
 /* ======================================================================== */
 /* 9.Works */
 /* ======================================================================== */
@@ -924,6 +951,9 @@ ul {
     @media (min-width: 768px) {
       .works-sect .works-title {
         padding-top: 20%; } }
+    @media (min-width: 1250px) {
+      .works-sect .works-title {
+        padding-top: 15%; } }
     .works-sect .works-title h1 {
       padding-bottom: 0.7rem;
       font-size: 2rem;
@@ -1087,6 +1117,9 @@ ul {
     @media (min-width: 768px) {
       .wd-sect .wd-title {
         padding-top: 20%; } }
+    @media (min-width: 1250px) {
+      .wd-sect .wd-title {
+        padding-top: 15%; } }
     .wd-sect .wd-title .wd-underline {
       height: 1px;
       background: #888888;
@@ -1106,7 +1139,8 @@ ul {
   .wd-sect .wd-img-container {
     width: 100%;
     height: 75vh;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
     .wd-sect .wd-img-container img {
       width: 100%;
       height: 100%;
