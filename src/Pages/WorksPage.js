@@ -12,6 +12,7 @@ import { varsWp, varsWpWorks } from '../Utils/helpers';
 const WorksPage = () => {
   const { setColorLight } = useNavigationContext();
   const [data, setData] = useState([]);
+
   useEffect(() => {
     setColorLight();
     const fetchData = async () => {
@@ -58,10 +59,9 @@ const WorksPage = () => {
           key='wpContainer'
           className='single-works-container'
         >
-          {/* Kampai Boutique */}
-
           {data.map((proj) => {
             const { id, title, right, slug, workImg } = proj;
+
             if (right === true) {
               return (
                 <div className='single-work-1' key={id}>
