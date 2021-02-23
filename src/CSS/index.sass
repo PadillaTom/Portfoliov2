@@ -762,6 +762,9 @@ ul
       margin-top: 15%
       margin-bottom: 10%
       width: 10%
+    @include media (">=desktop")
+      margin-top: 10%
+      margin-bottom: 8%
   .about-text
     width: 90%
     margin: 0 auto
@@ -1021,7 +1024,7 @@ ul
     @include media (">=tablet")
       padding-top: 20%
     @include media (">=desktop")
-      padding-top: 15%
+      padding-top: 12%
     h1
       padding-bottom: 0.7rem
       font-size: 2rem
@@ -1032,15 +1035,16 @@ ul
       @include media (">=tablet")
         font-size: 2.5rem      
       @include media (">=desktop")
-        font-size: 3rem
+        font-size: 3.5rem        
     .works-underline
       height: 1px
       background: $color-gray-1
       width: 3.5rem
+
   .single-works-container
     width: 92%
     margin: 0 auto
-    padding: 2rem 0rem
+    padding: 5rem 0rem
     @include media (">=laptop")
       width: 88%
       margin-left: 8%
@@ -1049,7 +1053,7 @@ ul
     .single-work-1
       cursor: pointer
       transition: $main-trans
-      margin-bottom: 15%
+      margin-bottom: 10%
       a
         @include media (">=laptop")
           display: flex
@@ -1092,7 +1096,9 @@ ul
             font-size: 2.2rem
           @include media (">=laptop")
             font-size: 2.5rem
-            line-height: 1.3            
+            line-height: 1.3    
+          @include media (">=desktop")        
+            font-size: 3rem
         .single-work-cta
           font-family: $font-primary
           color: $color-gray-1
@@ -1109,7 +1115,7 @@ ul
     .single-work-2
       cursor: pointer
       transition: $main-trans
-      margin-bottom: 20%
+      margin-bottom: 5%
       @include media(">=laptop")
         margin-left: 12%
       a
@@ -1148,12 +1154,16 @@ ul
           font-family: $font-secondary
           font-weight: normal
           font-size: 1.8rem
-          color: $color-dark-3
+          color: $color-dark-3          
           @include media (">=tablet")
             font-size: 2.2rem
           @include media (">=laptop")
             font-size: 2.5rem
             line-height: 1.3
+          @include media (">=desktop")        
+            font-size: 3rem
+            word-spacing: 6rem
+            word-wrap: anywhere
         .single-work-cta
           font-family: $font-primary
           color: $color-gray-1

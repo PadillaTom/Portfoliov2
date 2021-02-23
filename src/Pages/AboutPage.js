@@ -78,9 +78,9 @@ const AboutPage = () => {
           >
             <div className='about-img-center'>
               <motion.img
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.9, duration: 1, ease: 'easeIn' }}
+                initial={{ opacity: 0, y: '2rem' }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 0.5, ease: 'easeIn' }}
                 key='aboutImgDelayed'
                 src={aboutImg}
                 alt='About Tomas Padilla'
