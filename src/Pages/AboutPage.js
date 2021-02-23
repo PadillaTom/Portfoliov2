@@ -16,6 +16,7 @@ import {
 } from '../Utils/helpers';
 
 const AboutPage = () => {
+  // Context
   const { setColorLight } = useNavigationContext();
   useEffect(() => {
     setColorLight();
