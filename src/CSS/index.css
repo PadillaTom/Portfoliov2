@@ -148,8 +148,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1001;
-  padding-top: 1rem; }
+  z-index: 1001; }
   @media (min-width: 992px) {
     .navbar-container {
       height: 6.5rem; } }
