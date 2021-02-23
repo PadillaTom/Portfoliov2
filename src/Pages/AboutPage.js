@@ -14,6 +14,7 @@ import {
   varsAboutImgBg,
   varsContImg,
 } from '../Utils/helpers';
+import { Parallax } from 'react-parallax';
 
 const AboutPage = () => {
   // Context
