@@ -3,6 +3,6 @@
 ## Stack:
 
 React\
-Context API\
-Firebase\
-Gsap\
+Context API(with useReducer)\
+Framer-motion\
+Gsap
