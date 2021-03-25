@@ -961,6 +961,9 @@ ul {
   }
   .about-sect .about-widescreen-container .about-title-w .about-scroll-down {
     position: absolute;
+    font-size: 1.7rem;
+    color: crimson;
+    opacity: 0.15;
     bottom: 15%;
     right: 10%;
   }
@@ -1788,7 +1791,6 @@ ul {
 @media (min-width: 1250px) {
   .works-sect .single-works-container .single-work-2 .single-work-title h4 {
     font-size: 3rem;
-    word-spacing: 6rem;
     word-wrap: normal;
   }
 }

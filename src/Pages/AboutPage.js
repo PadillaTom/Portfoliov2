@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import {FaAngleDoubleDown} from "react-icons/fa";
 
 import aboutImg from '../Assets/Images/aboutImg.jpg';
 import { useNavigationContext } from '../Context/navigation_context';
@@ -19,7 +20,7 @@ const AboutPage = () => {
   // Context
   const { setColorLight } = useNavigationContext();
   useEffect(() => {
-    setColorLight();
+    setColorLight();    
   }, []);
 
   return (
@@ -65,7 +66,9 @@ const AboutPage = () => {
               <h6>About Me</h6>
               <h2>Tomas Padilla</h2>
             </div>
-            <div className='about-scroll-down'>Scroll Down</div>
+            <div className='about-scroll-down'>
+              <FaAngleDoubleDown></FaAngleDoubleDown>
+            </div>
           </motion.div>
           {/* Image */}
           <motion.div
