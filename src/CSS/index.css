@@ -1948,15 +1948,12 @@ ul {
 }
 
 .wd-sect .wd-specs .wd-specs-center .single-spec a {
-  color: #333333;
+  color: crimson;
   -webkit-transition: 0.3s linear all;
   transition: 0.3s linear all;
   font-size: 1.3rem;
   text-transform: capitalize;
-}
-
-.wd-sect .wd-specs .wd-specs-center .single-spec a:hover {
-  color: #000;
+  letter-spacing: 1.3px;
 }
 
 .wd-sect .wd-desc {

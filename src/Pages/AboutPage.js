@@ -104,8 +104,12 @@ const AboutPage = () => {
           <br />
           HTML, CSS, Javascript, jQuery, React, Gatsby, NextJS. SASS, Material
           UI, Styled Components, GSAP, Framer Motion.
+          <br/>
+          <span>Currently working on: </span>
+          <br/>
+          Java, Spring Boot, MySQL, MongoDB.
           <br />
-          <br />I invite you to see my{' '}
+          <br />I invite you to see my {" "}
           <Link to='/works' className='aboutCTA'>
             Previous Works
           </Link>
