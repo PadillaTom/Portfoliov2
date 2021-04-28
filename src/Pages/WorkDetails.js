@@ -7,6 +7,9 @@ import { workDetails } from '../Utils/data';
 import { motion } from 'framer-motion';
 import { pageTrans, pageVars } from '../Utils/helpers';
 
+// Icons:
+import {AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
+
 const WorkDetails = () => {
   // Find Work
   const { slug } = useParams();
@@ -18,6 +21,7 @@ const WorkDetails = () => {
     location,
     launch,
     live,
+    liveInsta,
     code,
     desc,
     stack,
@@ -80,11 +84,20 @@ const WorkDetails = () => {
                 View Live
               </a>
               <br />
+              {
+                liveInsta != null && (
+              <a href={liveInsta} target="_blank" rel="noreferrer" style={{fontSize:"1.7rem"}}>
+                <AiOutlineInstagram></AiOutlineInstagram>
+              </a>
+                )
+              }
+
               {code != null && (
-                <a href={code} target='_blank' rel='noreferrer'>
-                  View Code
+                <a href={code} target='_blank' rel='noreferrer' style={{fontSize:"1.7rem"}}>
+                  <AiOutlineGithub></AiOutlineGithub>
                 </a>
               )}
+
             </div>
           </div>
         </div>

@@ -16,11 +16,12 @@ export const workDetails = [
     location: 'Geneva, Switzerland',
     launch: '2021',
     live: 'https://kampaiboutique.ch/',
+    liveInsta: "https://www.instagram.com/kampaiboutique/",
     code: null,
     desc: `Website and Instagram Campaign for a well-kown Interior Designer and
             Architect. Located in Geneva the goal is to showcase previous
             works and to dynamically change the Collections as needed.`,
-    stack: `Wordpress | Avada Builder | Photoshop | Illustrator | InDesign`,
+    stack: `Wordpress | Avada Builder | Photoshop | Illustrator | InDesign | Facebook Business Manager`,
     nextWork: 'Fincas Manolo',
     nextWorkUrl: `/works/fincas-manolo`,
     nextWorkImg: fm,
