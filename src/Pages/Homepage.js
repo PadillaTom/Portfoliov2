@@ -62,7 +62,7 @@ const Homepage = () => {
             initial='from'
             animate='to'
             variants={varsHomeCta}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 1.2, delay: 0.5 , ease: "easeInOut"}}
             key='HomeCTA'
           >
             Works

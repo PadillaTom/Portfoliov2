@@ -33,7 +33,7 @@ export const varsHomeName = {
 };
 // CTA
 export const varsHomeCta = {
-  from: { y: '1rem', opacity: -10 },
+  from: { y: 0, opacity: -25 },
   to: { y: 0, opacity: 1 },
 };
 
@@ -42,6 +42,10 @@ export const varsHomeCta = {
 /* ======================================================================== */
 export const varsAboutImgBg = {
   from: { y: '110vh' },
+  to: { y: 0 },
+};
+export const varsAboutScroll = {
+  from: { y: "-2rem" },
   to: { y: 0 },
 };
 /* ======================================================================== */

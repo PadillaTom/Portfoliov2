@@ -14,6 +14,7 @@ import {
   pageTrans,
   varsAboutImgBg,
   varsContImg,
+  varsAboutScroll,
 } from '../Utils/helpers';
 
 const AboutPage = () => {
@@ -58,7 +59,7 @@ const AboutPage = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 0.4, ease: 'easeIn' }}
+            transition={{ delay: 0.8, duration: 0.4, ease: 'easeIn' }}
             key='aboutTitle'
             className='about-title-w'
           >
@@ -66,9 +67,14 @@ const AboutPage = () => {
               <h6>About Me</h6>
               <h2>Tomas Padilla</h2>
             </div>
-            <div className='about-scroll-down'>
+            <motion.div 
+              initial="from"
+              animate="to"
+              variants={varsAboutScroll}
+              transition={{ease: "easeIn", duration: 0.4}}
+              className='about-scroll-down'>              
               <FaAngleDoubleDown></FaAngleDoubleDown>
-            </div>
+            </motion.div>
           </motion.div>
           {/* Image */}
           <motion.div
@@ -83,7 +89,7 @@ const AboutPage = () => {
               <motion.img
                 initial={{ opacity: 0, y: '2rem' }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.9, duration: 0.5, ease: 'easeIn' }}
+                transition={{ delay: 1, duration: 0.9, ease: "easeInOut" }}
                 key='aboutImgDelayed'
                 src={aboutImg}
                 alt='About Tomas Padilla'
@@ -102,12 +108,11 @@ const AboutPage = () => {
           <br />
           <span>Tools & Technologies:</span>
           <br />
-          HTML, CSS, Javascript, jQuery, React, Gatsby, NextJS. SASS, Material
-          UI, Styled Components, GSAP, Framer Motion.
+          HTML, CSS, SASS, Javascript, React, Material UI, Styled Components, GSAP, Framer Motion.
           <br/>
           <span>Currently working on: </span>
           <br/>
-          Java, Spring Boot, MySQL, MongoDB.
+          React Native, Java, Spring Boot, MySQL, MongoDB.
           <br />
           <br />I invite you to see my {" "}
           <Link to='/works' className='aboutCTA'>

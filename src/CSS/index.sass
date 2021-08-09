@@ -8,7 +8,6 @@
 // 'desktop': 1250px,
 // 'LGdesktop': 1920px, 
 
-
 // ---> FONTS <---
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap')
 
@@ -107,16 +106,15 @@ $main-trans: 0.3s linear all
   padding: 0
   box-sizing: border-box
 
-  
-html 
+html
   font-size: 18px
   -webkit-font-smoothing: antialiased
   text-rendering: optimizeLegibility
   -webkit-text-rendering: optimizeLegibility
   -moz-osx-font-smoothing: grayscale
-  overflow-x: hidden  
-  
-body 
+  overflow-x: hidden
+
+body
   position: relative
   width: 100%
   min-width: 320px
@@ -126,7 +124,7 @@ body
   color: $paragraph-color-dark
   word-wrap: break-word
 
-.body_lock-scroll 
+.body_lock-scroll
   overflow: hidden
   position: fixed
   position: -webkit-sticky
@@ -136,15 +134,15 @@ body
   width: 100%
   height: 100%
 
-img, iframe 
+img, iframe
   max-width: 100%
   height: auto
 
-a 
+a
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
   text-decoration: none
   color: $color-gray-1
-a:hover 
+a:hover
   color: $color-gray-2
   text-decoration: none
 
@@ -167,7 +165,7 @@ ul
   pointer-events: none
   overflow: hidden
   transform: translate3d(0,0,0)
-  position: fixed 
+  position: fixed
   display: none
   @include media (">=laptop")
     display: block
@@ -175,10 +173,10 @@ ul
 /* ======================================================================== */
 /* 2.Welcome Screen */
 /* ======================================================================== */
-.preloader 
+.preloader
   display: flex
   align-items: center
-  justify-content: center  
+  justify-content: center
   position: fixed
   top: 0
   left: 0
@@ -188,7 +186,7 @@ ul
   background-color: $color-dark-2
   overflow: hidden
   text-align: center
-  .preloader__content 
+  .preloader__content
     position: fixed
     top: 51%
     left: 50%
@@ -200,24 +198,24 @@ ul
     align-items: center
     justify-content: center
     flex-wrap: wrap
-    padding: 30px    
+    padding: 30px
     .preloader-texts
       letter-spacing: 1px
       h2
         color: $color-light-2
         font-family: $font-secondary
         font-size: 1.8rem
-        font-weight: 400        
+        font-weight: 400
         line-height: 1.3
         margin-bottom: 0.5rem
         @include media (">=laptop")
-          font-size: 2.2rem        
+          font-size: 2.2rem
         @include media (">=desktop")
           font-size: 2.8rem
-        
+
       p
         font-size: 0.55rem
-        font-weight: 700               
+        font-weight: 700
         text-transform: uppercase
         color: $color-gray-1
         letter-spacing: 1.2px
@@ -235,6 +233,7 @@ ul
   top: 0
   left: 0
   z-index: 1001
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
   // padding-top: 1rem
   @include media (">=laptop")
     height: 6.5rem
@@ -244,24 +243,24 @@ ul
     width: 90%
     margin: 0 auto
     display: flex
-    justify-content: space-between    
-    align-items: center  
-    @include media (">=laptop")  
+    justify-content: space-between
+    align-items: center
+    @include media (">=laptop")
       width: 88%
-    .nav-left     
+    .nav-left
       a
-        color: #fff 
+        color: #fff
         font-family: $font-secondary
         font-size: 1.1rem
         font-weight: 700
-        line-height: 1.3  
-        letter-spacing: 0.7px 
-          
+        line-height: 1.3
+        letter-spacing: 0.7px
+
   .burger-menu
     width: 35px
     height: 18px
-    position: relative  
-    vertical-align: middle   
+    position: relative
+    vertical-align: middle
     cursor: pointer
     @include media (">=laptop")
       width: 45px
@@ -281,9 +280,9 @@ ul
         transform: scaleX(0.75)
       &:nth-of-type(2)
         top: 8.5px
-        right: 0          
-        transform-origin: left center    
-        margin: auto   
+        right: 0
+        transform-origin: left center
+        margin: auto
         @include media (">=laptop")
           top: 9.5px
       &:nth-of-type(3)
@@ -291,7 +290,7 @@ ul
         left: 0
         transform-origin: right center
         transform: scaleX(0.75)
-    &:hover 
+    &:hover
       .b-line
         &:nth-of-type(1)
           transform: scaleX(1)
@@ -299,7 +298,7 @@ ul
           transform: scaleX(0.75)
         &:nth-of-type(3)
           transform: scaleX(1)
-  .burger-open   
+  .burger-open
     .b-line
       background: $color-gray-1
       width: 80%
@@ -318,30 +317,28 @@ ul
     &:hover
       .b-line
         background: #fff
-          
-
 
 // Light
 .nav-left-light
-      a
-        color: #000
-        font-family: $font-secondary
-        font-size: 1.1rem
-        font-weight: 700
-        line-height: 1.3  
-        letter-spacing: 0.7px
+  a
+    color: #000
+    font-family: $font-secondary
+    font-size: 1.1rem
+    font-weight: 700
+    line-height: 1.3
+    letter-spacing: 0.7px
 .nav-right-light
   cursor: pointer
   transition: $main-trans
-  color: #000 
+  color: #000
   .burger-menu
     width: 35px
     height: 18px
-    position: relative  
-    vertical-align: middle 
+    position: relative
+    vertical-align: middle
     @include media (">=laptop")
       width: 45px
-      height: 22px   
+      height: 22px
     .b-line
       height: 2px
       width: 100%
@@ -357,17 +354,17 @@ ul
         transform: scaleX(0.75)
       &:nth-of-type(2)
         top: 8.5px
-        right: 0          
-        transform-origin: left center    
+        right: 0
+        transform-origin: left center
         margin: auto
         @include media (">=laptop")
-          top: 9.5px  
+          top: 9.5px
       &:nth-of-type(3)
         bottom: 0
         left: 0
         transform-origin: right center
         transform: scaleX(0.75)
-    &:hover 
+    &:hover
       .b-line
         &:nth-of-type(1)
           transform: scaleX(1)
@@ -375,7 +372,7 @@ ul
           transform: scaleX(0.75)
         &:nth-of-type(3)
           transform: scaleX(1)
-  .burger-open    
+  .burger-open
     .b-line
       background: $color-gray-1
       width: 80%
@@ -424,13 +421,13 @@ ul
     width: 100%
     height: 100%
     @include media (">=desktop")
-      flex-direction: row         
+      flex-direction: row
     .side-links
       width: 90%
       margin-top: 4rem
       margin-bottom: 1rem
-      @include media (">=desktop")        
-        flex: 0  
+      @include media (">=desktop")
+        flex: 0
         text-align: left
         position: absolute
         left: 5%
@@ -448,21 +445,21 @@ ul
     .side-widgets
       letter-spacing: 0.6px
       font-size: 0.9rem
-      padding-bottom: 3rem    
+      padding-bottom: 3rem
       font-family: $font-primary
-      @include media (">=desktop")        
+      @include media (">=desktop")
         width: 70%
         display: flex
         position: absolute
         bottom: 5%
         right: 0%
         justify-content: space-around
-        align-items: right  
+        align-items: right
       .single-widget
         margin: 1.5rem auto
         .widget-title
           font-size: 0.8rem
-          text-transform: uppercase          
+          text-transform: uppercase
           color: $h3-color-dark
 
 // Light
@@ -486,13 +483,13 @@ ul
     width: 100%
     height: 100%
     @include media (">=desktop")
-      flex-direction: row   
+      flex-direction: row
     .side-links
       width: 90%
       margin-top: 4rem
       margin-bottom: 1rem
-      @include media (">=desktop")        
-        flex: 0  
+      @include media (">=desktop")
+        flex: 0
         text-align: left
         position: absolute
         left: 5%
@@ -511,22 +508,22 @@ ul
     .side-widgets
       letter-spacing: 0.6px
       font-size: 0.9rem
-      padding-bottom: 3rem    
-      font-family: $font-primary 
-      @include media (">=desktop")        
+      padding-bottom: 3rem
+      font-family: $font-primary
+      @include media (">=desktop")
         width: 70%
         display: flex
         position: absolute
         bottom: 5%
         right: 0%
         justify-content: space-around
-        align-items: right  
+        align-items: right
       .single-widget
-        margin: 1.5rem auto        
+        margin: 1.5rem auto
         .widget-title
           font-size: 0.8rem
-          text-transform: uppercase          
-          color: $color-dark-4 
+          text-transform: uppercase
+          color: $color-dark-4
         a
           &:hover
             color: $color-dark-2
@@ -545,13 +542,14 @@ ul
     position: absolute
     top: 0
     left: 0
-    margin: auto    
-    height: 100%  
+    margin: auto
+    width: 100%
+    height: 100%
     background: $color-dark-1
     img
       width: 100%
-      height: 100%      
-      object-fit: cover   
+      height: 100%
+      object-fit: cover
       object-position: center center
   .home-bg-overlay
     z-index: 1
@@ -559,13 +557,13 @@ ul
     top: 0
     left: 0
     width: 100%
-    height: 100%   
+    height: 100%
     background-color: rgba(0, 0, 0, 0.6)
   .home-bg-circle
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%, -50%)    
+    transform: translate(-50%, -50%)
     width: calc(100vw + 2.3rem)
     height: calc(100vw + 2.3rem)
     border: 1px solid rgba(128, 128, 128, 0.3)
@@ -583,7 +581,7 @@ ul
     left: 50%
     transform: translate(-50%, -50%)
     z-index: 5
-    color: #fff    
+    color: #fff
     h6
       font-size: 0.6rem
       font-weight: 700
@@ -612,28 +610,32 @@ ul
         font-size: 3.5rem
 
   .homeCTA
-    position: absolute    
+    position: absolute
     bottom: 4%
-    left: 50%    
+    left: 50%
     transform: translate(-50%, -4%)
     width: auto
     padding-left: 0
     padding-right: 0
     z-index: 5
-    button      
+    button
       font-size: 0.6rem
       font-weight: 700
-      letter-spacing: 1.2px      
-      text-transform: uppercase      
+      letter-spacing: 1.2px
+      text-transform: uppercase
       text-align: center
-      transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+      transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86)
       cursor: pointer
       outline: none
-      border: 2px solid #fff      
+      border: 1px solid #fff
       padding: 0.8rem 1.7rem
       border-radius: 64px
-      background: white
-      color: $color-dark-1  
+      background: transparent
+      color: white
+      &:hover
+        background: white
+        color: $color-dark-1
+        border: 1px solid white
       .span1
         transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86)
       @include media (">=desktop")
@@ -654,25 +656,25 @@ ul
 
     // Bigger Size Screens
   .about-widescreen-container
-    display: none    
+    display: none
     @include media (">=laptop")
       display: flex
       align-items: center
-      justify-content: space-between      
+      justify-content: space-between
       .about-title-w
-        width: 50% 
-        height: 100vh       
+        width: 50%
+        height: 100vh
         text-align: right
         display: grid
-        place-items: center 
-        position: relative 
-        @include media (">=desktop")      
+        place-items: center
+        position: relative
+        @include media (">=desktop")
           right: -5%
         h6
           text-transform: uppercase
           font-size: 1rem
-          font-weight: 700   
-          letter-spacing: 1px   
+          font-weight: 700
+          letter-spacing: 1px
           color: $color-gray-1
           font-family: $font-primary
         h2
@@ -684,21 +686,24 @@ ul
           letter-spacing: 0.5px
         .about-scroll-down
           position: absolute
-          font-size: 1.7rem
+          font-size: 1.9rem
           color: crimson
-          opacity: 0.15
+          opacity: 0.3
           bottom: 15%
           right: 10%
+          transition: $main-trans
+          &:hover
+            bottom: 17.2%
           @include media (">=desktop")
             right: 20%
       .aboutImg-container-w
         width: 50%
         height: 105vh
-        position: relative        
+        position: relative
         background: white
-        .about-img-center          
-          overflow: hidden                    
-          img                          
+        .about-img-center
+          overflow: hidden
+          img
             position: absolute
             top: 13%
             left: 13%
@@ -706,7 +711,7 @@ ul
             width: 90%
             height: 76%
             object-fit: cover
-            object-position: center center            
+            object-position: center center
             @include media (">=desktop")
               width: 80%
         // END Bigger Size Screens
@@ -721,12 +726,12 @@ ul
     h6
       text-transform: uppercase
       font-size: 0.6rem
-      font-weight: 700   
-      letter-spacing: 1px   
+      font-weight: 700
+      letter-spacing: 1px
       color: $color-gray-1
-      font-family: $font-primary 
+      font-family: $font-primary
       @include media (">=tablet")
-        font-size: 0.8rem   
+        font-size: 0.8rem
     h2
       margin-top: -0.5rem
       font-family: $font-secondary
@@ -757,8 +762,8 @@ ul
   // About Info
   .division-line
     width: 20%
-    height: 1px     
-    margin: 0 auto   
+    height: 1px
+    margin: 0 auto
     margin-bottom: 5rem
     background: $color-dark-4
     @include media (">=laptop")
@@ -814,8 +819,8 @@ ul
   .contact-img-container
     width: 100%
     height: 100vh
-    position: relative 
-    overflow: hidden   
+    position: relative
+    overflow: hidden
     img
       width: 100%
       height: 100%
@@ -837,7 +842,7 @@ ul
     @include media (">=laptop")
       height: 100%
       width: 45%
-      .screen-data-center        
+      .screen-data-center
         text-align: right
         position: relative
         top: 25%
@@ -847,9 +852,9 @@ ul
       width: 25%
     .contact-data
       width: 100%
-      margin: 0 auto 
+      margin: 0 auto
       margin-bottom: 1rem
-      @include media (">=laptop")          
+      @include media (">=laptop")
         width: 100%
         margin-bottom: 2rem
       h4
@@ -860,8 +865,8 @@ ul
         @include media (">=tablet")
           font-size: 1rem
       a
-        font-size: 1rem  
-        letter-spacing: 0.8px  
+        font-size: 1rem
+        letter-spacing: 0.8px
         transition: $main-trans
         white-space: nowrap
         @include media (">=tablet")
@@ -870,7 +875,7 @@ ul
           font-size: 1rem
         &:hover
           color: $color-dark-2
-    .cont-social      
+    .cont-social
       a
         font-size: 2.3rem
         transition: $main-trans
@@ -907,7 +912,7 @@ ul
       position: relative
       @include media(">=LGdesktop")
         width: 25%
-      .screen-form-center 
+      .screen-form-center
         position: absolute
         top: 50%
         left: 50%
@@ -925,7 +930,7 @@ ul
     .single-control
       position: relative
       margin: 2rem 0rem
-      transition: $main-trans      
+      transition: $main-trans
       label
         color: $color-gray-1
         font-size: 0.9rem
@@ -945,11 +950,11 @@ ul
         background: transparent
         transition: $main-trans
         z-index: 2
-        height: 2.3rem 
+        height: 2.3rem
         font-size: 1rem
         font-weight: 200
-        @include media (">=tablet") 
-          font-size: 1.1rem       
+        @include media (">=tablet")
+          font-size: 1.1rem
       .textarea-label
         margin-top: 0.8rem
         position: absolute
@@ -998,20 +1003,18 @@ ul
     font-size: 0.75rem !important
     font-weight: 400
   input
-    &:focus      
+    &:focus
       border-bottom: 1px solid $color-dark-1 !important
 
 .isClicked2
   .textarea-label
     position: absolute
-    top: -2.1rem !important   
+    top: -2.1rem !important
     font-weight: 400 !important
-    font-size: 0.75rem !important  
+    font-size: 0.75rem !important
   textarea
-    &:focus      
+    &:focus
       border-bottom: 1px solid $color-dark-1 !important
-
-
 
 /* ======================================================================== */
 /* 9.Works */
@@ -1036,9 +1039,9 @@ ul
       color: $h1-color-dark
       letter-spacing: 1.3px
       @include media (">=tablet")
-        font-size: 2.5rem      
+        font-size: 2.5rem
       @include media (">=desktop")
-        font-size: 3.5rem        
+        font-size: 3.5rem
     .works-underline
       height: 1px
       background: $color-gray-1
@@ -1066,9 +1069,9 @@ ul
           color: initial
       .work-img-container
         width: 100%
-        height: 14rem 
-        overflow: hidden   
-        @include media (">=tablet")          
+        height: 14rem
+        overflow: hidden
+        @include media (">=tablet")
           height: 50vh
         @include media (">=laptop")
           width: 70%
@@ -1080,27 +1083,27 @@ ul
         img
           width: 100%
           height: 100%
-          object-fit: cover    
+          object-fit: cover
           transition: $main-trans
-          transform: scale(1.1) 
+          transform: scale(1.1)
           &:hover
-            transform: scale(1)  
+            transform: scale(1)
       .single-work-title
         text-align: right
         margin-top: 0.5rem
-        color: $color-dark-3        
+        color: $color-dark-3
         @include media (">=laptop")
           margin-right: 2rem
         h4
           font-family: $font-secondary
           font-weight: normal
-          font-size: 1.8rem   
-          @include media (">=tablet")       
+          font-size: 1.8rem
+          @include media (">=tablet")
             font-size: 2.2rem
           @include media (">=laptop")
             font-size: 2.5rem
-            line-height: 1.3    
-          @include media (">=desktop")        
+            line-height: 1.3
+          @include media (">=desktop")
             font-size: 3rem
         .single-work-cta
           font-family: $font-primary
@@ -1129,9 +1132,9 @@ ul
           color: initial
       .work-img-container
         width: 100%
-        height: 20rem  
+        height: 20rem
         overflow: hidden
-        @include media (">=tablet")            
+        @include media (">=tablet")
           height: 70vh
         @include media (">=laptop")
           height: 40vh
@@ -1146,10 +1149,10 @@ ul
           height: 100%
           object-fit: cover
           transition: $main-trans
-          transform: scale(1.1) 
+          transform: scale(1.1)
           &:hover
-            transform: scale(1)  
-      .single-work-title        
+            transform: scale(1)
+      .single-work-title
         margin-top: 0rem
         @include media (">=laptop")
           margin-left: 2rem
@@ -1157,14 +1160,14 @@ ul
           font-family: $font-secondary
           font-weight: normal
           font-size: 1.8rem
-          color: $color-dark-3          
+          color: $color-dark-3
           @include media (">=tablet")
             font-size: 2.2rem
           @include media (">=laptop")
             font-size: 2.5rem
             line-height: 1.3
-          @include media (">=desktop")        
-            font-size: 3rem            
+          @include media (">=desktop")
+            font-size: 3rem
             word-wrap: normal
         .single-work-cta
           font-family: $font-primary
@@ -1173,7 +1176,7 @@ ul
           font-size: 0.7rem
           font-weight: 700
           margin-top: -2%
-          letter-spacing: 0.5px 
+          letter-spacing: 0.5px
           @include media (">=tablet")
             font-size: 0.75rem
             margin-top: -1%
@@ -1182,7 +1185,7 @@ ul
 /* 10.Work Details */
 /* ======================================================================== */
 .wd-sect
-  width: 100%    
+  width: 100%
   background: #F7F6F3
   .wd-title
     text-align: center
@@ -1218,7 +1221,7 @@ ul
       object-position: center center
   .wd-specs
     text-align: left
-    padding: 2rem 0rem   
+    padding: 2rem 0rem
     background: #fff
     @include media (">=laptop")
       padding: 6rem 0rem
@@ -1234,7 +1237,7 @@ ul
         display: flex
         justify-content: space-around
       .single-spec
-        margin-bottom: 1rem   
+        margin-bottom: 1rem
         font-family: $font-primary
         font-size: 0.65rem
         text-transform: uppercase
@@ -1244,8 +1247,8 @@ ul
         p
           font-size: 1rem
           margin-top: -0.4rem
-          text-transform: capitalize  
-          @include media (">=laptop")        
+          text-transform: capitalize
+          @include media (">=laptop")
             font-size: 1.2rem
         a
           color: crimson
@@ -1253,7 +1256,7 @@ ul
           font-size: 1.3rem
           text-transform: capitalize
           letter-spacing: 1.3px
-            
+
   .wd-desc
     width: 90%
     margin: 0 auto
@@ -1261,20 +1264,20 @@ ul
     text-align: center
     @include media (">=tablet")
       padding-top: 7%
-      width: 85% 
+      width: 85%
     @include media (">=laptop")
       width: 75%
     .wd-division
       height: 1px
       background: $color-gray-2
       width: 3.5rem
-      margin: 0 auto      
+      margin: 0 auto
       margin-bottom: 5%
     h2
       font-family: $font-secondary
       font-weight: 300
       font-size: 2rem
-      color: $h2-color-dark      
+      color: $h2-color-dark
       @include media (">=tablet")
         font-size: 2.3rem
       @include media (">=laptop")
@@ -1297,7 +1300,7 @@ ul
     height: 70vh
     display: grid
     place-items: center
-    text-align: center    
+    text-align: center
     color: $paragraph-color-light
     a
       &:hover
@@ -1312,8 +1315,6 @@ ul
       font-family: $font-secondary
       font-size: 2rem
       letter-spacing: 1.3px
-
-
 
 /* ======================================================================== */
 /* 11.Footer Component */
@@ -1333,18 +1334,18 @@ ul
         color: $h2-color-dark
         font-weight: 500
       button
-          font-size: 0.6rem
-          border: none
-          outline: none
-          border-radius: 2rem
-          background: #000
-          height: 2.2rem
-          width: 8rem
-          color: white
-          font-weight: 700
-          letter-spacing: 0.7px
-          text-transform: uppercase
-          cursor: pointer
+        font-size: 0.6rem
+        border: none
+        outline: none
+        border-radius: 2rem
+        background: #000
+        height: 2.2rem
+        width: 8rem
+        color: white
+        font-weight: 700
+        letter-spacing: 0.7px
+        text-transform: uppercase
+        cursor: pointer
     .footer-sitemap
       padding-bottom: 1.5rem
       letter-spacing: 0.6px
@@ -1363,7 +1364,7 @@ ul
         ul
           a
             font-weight: normal
-            color: $color-gray-1            
+            color: $color-gray-1
             &:hover
               color: #000
 
@@ -1397,17 +1398,15 @@ ul
       width: 80%
       display: flex
       align-items: center
-      justify-content: space-between 
-      padding: 3rem 0rem 
+      justify-content: space-between
+      padding: 3rem 0rem
       position: relative
       margin: 0 auto
       @include media (">=desktop")
         width: 67%
       .footer-cta
         width: 50%
-        margin: 0  
-        padding-top: 0      
-        h2  
+        margin: 0
+        padding-top: 0
+        h2
           font-size: 1.9rem
-
-
