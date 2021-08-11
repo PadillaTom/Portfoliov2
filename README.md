@@ -4,5 +4,6 @@
 
 React\
 Context API(with useReducer)\
+SASS\
 Framer-motion\
 Gsap
