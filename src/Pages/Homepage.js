@@ -29,7 +29,7 @@ const Homepage = () => {
     <React.Fragment>
       <motion.section
         className="home-sect"
-        style={{ vh }}
+        style={{ height: vh }}
         initial="out"
         animate="in"
         exit="out"
