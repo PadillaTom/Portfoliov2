@@ -1,3 +1,11 @@
+/* ======================================================================== */
+/* Functions */
+/* ======================================================================== */
+export function getWindowDimensions() {
+  const { innerHeight: height } = window;
+  return { height };
+}
+
 // Page Variants General:
 export const pageVars = {
   in: {

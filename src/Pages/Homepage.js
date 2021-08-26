@@ -12,12 +12,8 @@ import {
   varsHomeBg,
   varsHomeName,
   varsHomeCta,
+  getWindowDimensions,
 } from "../Utils/helpers";
-
-function getWindowDimensions() {
-  const { innerHeight: height } = window;
-  return { height };
-}
 
 const Homepage = () => {
   const [windowDimensions, setWindowDimensions] = useState(
@@ -34,7 +30,6 @@ const Homepage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(windowDimensions.height);
   return (
     <React.Fragment>
       <motion.section

@@ -395,7 +395,6 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #111111;
   text-align: center;
   display: grid;
@@ -475,7 +474,6 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #fff;
   text-align: center;
   display: grid;
