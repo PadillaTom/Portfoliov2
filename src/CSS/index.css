@@ -1091,7 +1091,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 82%;
     margin: 0 auto;
   }
 }
@@ -1295,6 +1295,7 @@ ul {
   width: 100%;
   height: 14rem;
   overflow: hidden;
+  box-shadow: 0px 5px 11px #8d8d8d44;
 }
 @media (min-width: 768px) {
   .works-sect .single-works-container .single-work-1 .work-img-container {
@@ -1396,6 +1397,7 @@ ul {
   width: 100%;
   height: 20rem;
   overflow: hidden;
+  box-shadow: 0px 5px 11px #8d8d8d44;
 }
 @media (min-width: 768px) {
   .works-sect .single-works-container .single-work-2 .work-img-container {
@@ -1423,6 +1425,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   transition: 0.3s linear all;
   transform: scale(1.1);
 }
@@ -1473,6 +1476,7 @@ ul {
   .works-sect .single-works-container .single-work-2 .single-work-title .single-work-cta {
     font-size: 0.75rem;
     margin-top: -1%;
+    margin-left: 1.1%;
   }
 }
 
@@ -1657,8 +1661,56 @@ ul {
     font-size: 1.5rem;
   }
 }
+.wd-sect .wd-desc .moreLinks-container {
+  margin-top: 2.5rem;
+  margin-bottom: -5rem;
+}
+@media (min-width: 768px) {
+  .wd-sect .wd-desc .moreLinks-container {
+    padding-top: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.wd-sect .wd-desc .moreLinks-container .moreLinks-single {
+  margin-top: 2rem;
+}
+.wd-sect .wd-desc .moreLinks-container .moreLinks-single a > * {
+  color: #888888;
+  transition: 0.3s linear all;
+}
+.wd-sect .wd-desc .moreLinks-container .moreLinks-single a > *:hover {
+  color: black;
+}
+.wd-sect .wd-desc .moreLinks-container .moreLinks-single span {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .wd-sect .wd-desc .moreLinks-container .moreLinks-single span {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1700px) {
+  .wd-sect .wd-desc .moreLinks-container .moreLinks-single span {
+    font-size: 4rem;
+  }
+}
+.wd-sect .wd-desc .moreLinks-container .moreLinks-single h4 {
+  margin-top: -1.3rem;
+}
+@media (min-width: 768px) {
+  .wd-sect .wd-desc .moreLinks-container .moreLinks-single h4 {
+    margin-top: -1.5rem;
+  }
+}
 .wd-sect .wd-nextWork {
   height: 70vh;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   place-items: center;
   text-align: center;
@@ -1672,12 +1724,13 @@ ul {
   text-transform: uppercase;
   font-size: 0.6rem;
   font-weight: bold;
-  margin-bottom: -0.5rem;
+  margin-bottom: 1.4rem;
 }
 .wd-sect .wd-nextWork span {
   font-family: "Cinzel", serif;
   font-size: 2rem;
   letter-spacing: 1.3px;
+  line-height: 2.5rem;
 }
 
 /* ======================================================================== */

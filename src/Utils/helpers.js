@@ -9,9 +9,9 @@ export const pageVars = {
 };
 // Page Transitions General
 export const pageTrans = {
-  transition: 'linear',
+  transition: "linear",
   duration: 0.7,
-  ease: 'easeInOut',
+  ease: "easeInOut",
 };
 
 /* ======================================================================== */
@@ -41,7 +41,7 @@ export const varsHomeCta = {
 /* 2.About Page */
 /* ======================================================================== */
 export const varsAboutImgBg = {
-  from: { y: '110vh' },
+  from: { y: "110vh" },
   to: { y: 0 },
 };
 export const varsAboutScroll = {
@@ -56,7 +56,7 @@ export const varsContImg = {
   to: { scale: 1 },
 };
 export const varsContStag = {
-  from: { y: '-2rem', opacity: 0 },
+  from: { y: "-2rem", opacity: 0 },
   to: { y: 0, opacity: 1 },
 };
 
@@ -68,6 +68,6 @@ export const varsWp = {
   out: { opacity: 0 },
 };
 export const varsWpWorks = {
-  from: { y: '100vh' },
+  from: { y: "100vh" },
   to: { y: 0 },
 };
