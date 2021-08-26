@@ -14,22 +14,32 @@ import {
   varsHomeCta,
 } from "../Utils/helpers";
 
+function getWindowDimensions() {
+  const { innerHeight: height } = window;
+  return { height };
+}
+
 const Homepage = () => {
-  const [vh, setVh] = useState();
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
   const { setColorDark } = useNavigationContext();
 
   useEffect(() => {
     setColorDark();
-    const myH = window.innerHeight;
-    setVh(myH);
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(vh);
+  console.log(windowDimensions.height);
   return (
     <React.Fragment>
       <motion.section
         className="home-sect"
-        style={{ height: vh }}
+        style={{ height: windowDimensions.height }}
         initial="out"
         animate="in"
         exit="out"
