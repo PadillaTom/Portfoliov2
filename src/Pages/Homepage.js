@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import heroBg from "../Assets/Images/heroBg.jpg";
@@ -15,16 +15,21 @@ import {
 } from "../Utils/helpers";
 
 const Homepage = () => {
+  const [vh, setVh] = useState();
   const { setColorDark } = useNavigationContext();
 
   useEffect(() => {
     setColorDark();
+    const myH = window.innerHeight;
+    setVh(myH);
   }, []);
 
+  console.log(vh);
   return (
-    <>
+    <React.Fragment>
       <motion.section
         className="home-sect"
+        style={{ vh }}
         initial="out"
         animate="in"
         exit="out"
@@ -69,7 +74,7 @@ const Homepage = () => {
           </motion.button>
         </Link>
       </motion.section>
-    </>
+    </React.Fragment>
   );
 };
 
