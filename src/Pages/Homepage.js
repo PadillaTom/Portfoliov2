@@ -49,7 +49,7 @@ const Homepage = () => {
             initial="from"
             animate="to"
             variants={varsHomeBg}
-            transition={{ duration: 2.2, ease: "easeIn" }}
+            transition={{ duration: 2, ease: "easeIn" }}
             key="HomeBG"
           />
           <div className="home-bg-overlay"></div>
