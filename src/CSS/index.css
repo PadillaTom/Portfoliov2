@@ -1277,7 +1277,7 @@ ul {
 .works-sect .single-works-container .single-work-1 {
   cursor: pointer;
   transition: 0.3s linear all;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
 }
 @media (min-width: 992px) {
   .works-sect .single-works-container .single-work-1 a {
@@ -1375,7 +1375,7 @@ ul {
 .works-sect .single-works-container .single-work-2 {
   cursor: pointer;
   transition: 0.3s linear all;
-  margin-bottom: 5%;
+  margin-bottom: 12%;
 }
 @media (min-width: 992px) {
   .works-sect .single-works-container .single-work-2 {

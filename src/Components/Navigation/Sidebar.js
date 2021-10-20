@@ -26,7 +26,6 @@ const Sidebar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(windowDimensions.height);
   return (
     <aside
       className={color ? "sidebar" : "sidebar-light"}

@@ -7,6 +7,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 import kb from "../Assets/Images/Projects/KampaiBoutique.jpg";
 import tp from "../Assets/Images/Projects/TPFinal.png";
+import artStore from "../Assets/Images/Projects/ArtStoreProject.png";
 
 export const workDetails = [
   {
@@ -44,8 +45,8 @@ export const workDetails = [
     desc: `Final Project for Polotic's "Desarrollo Web Fullstack Con Java". Originally made with JSP-Servlet, then migrated to Spring Boot - React to be deployed. 
     It is a CRUD Application to manage Employees, Reservations and Hosts. Calculate Monthly and Daily earnings, Reservations made by Employees, List of Hosts, Display Room Information, and much more.`,
     stack: `React | Context API | SASS | RESTful Services | Spring Boot | Data JPA | MySQL`,
-    nextWork: "Kampai Boutique",
-    nextWorkUrl: `/works/kampai-boutique`,
+    nextWork: "Art And Store",
+    nextWorkUrl: `/works/art-store`,
     shortStack: "Fullstack Java",
     moreLinks: [
       {
@@ -67,6 +68,25 @@ export const workDetails = [
         icon: <AiOutlineGithub></AiOutlineGithub>,
       },
     ],
+  },
+  {
+    id: 3,
+    right: true,
+    slug: "art-store",
+    title: "Art And Store",
+    workImg: artStore,
+    client: "Practice Project",
+    location: "Geneva, Switzerland",
+    launch: "2021",
+    live: "https://artandstore.netlify.app/",
+    code: "https://github.com/PadillaTom/Art-Store-ReactJS",
+    desc: `Practice project for a Fictional Boutique. 100% Responsive using Styled Components and Media Queries. Users may browse and view Products through a variety of Filters, Add products to Cart and complete checkout with Stripe Gateway. Managing the Data with Context API, I am able to reduce the number of API Requests and avoid "Prop Drilling". `,
+    stack:
+      "React | John Smilga's Products API | AXIOS | Context API | Styled Components | Framer-Motion | React-Intersection-Observer | Auth0 | Stripe",
+    nextWork: "Kampai Boutique",
+    nextWorkUrl: `/works/kampai-boutique`,
+    shortStack: "ReactJS",
+    moreLinks: [],
   },
 ];
 
