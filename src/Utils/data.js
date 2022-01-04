@@ -4,6 +4,8 @@
 :::::::::::::::::::
 */
 import { AiOutlineGithub } from "react-icons/ai";
+import { SiSwagger } from "react-icons/si";
+import { FiExternalLink } from "react-icons/fi";
 
 import kb from "../Assets/Images/Projects/KampaiBoutique.jpg";
 import tp from "../Assets/Images/Projects/TPFinal.png";
@@ -106,7 +108,26 @@ export const workDetails = [
 		nextWork: "Kampai Boutique",
 		nextWorkUrl: `/works/kampai-boutique`,
 		shortStack: "Spring Boot",
-		moreLinks: [],
+		moreLinks: [
+			{
+				id: 1,
+				name: "Swagger Documentation",
+				url: "https://alkemy-ot111.herokuapp.com/api/docs/swagger-ui/index.html?configUrl=/api/docs/swagger-config",
+				icon: <SiSwagger></SiSwagger>,
+			},
+			{
+				id: 2,
+				name: "API Server URL",
+				url: "https://alkemy-ot111.herokuapp.com/",
+				icon: <FiExternalLink></FiExternalLink>,
+			},
+			{
+				id: 3,
+				name: "Spring Boot",
+				url: "https://github.com/PadillaTom/SpringBoot-FundacionArg",
+				icon: <AiOutlineGithub></AiOutlineGithub>,
+			},
+		],
 	},
 ];
 
