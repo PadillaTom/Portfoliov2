@@ -48,8 +48,8 @@ export const workDetails = [
 		desc: `Final Project for Polotic's "Desarrollo Web Fullstack Con Java". Originally made with JSP-Servlet, then migrated to Spring Boot - React to be deployed. 
     It is a CRUD Application to manage Employees, Reservations and Hosts. Calculate Monthly and Daily earnings, Reservations made by Employees, List of Hosts, Display Room Information, and much more.`,
 		stack: `React | Context API | SASS | RESTful Services | Spring Boot | Data JPA | MySQL`,
-		nextWork: "Art And Store",
-		nextWorkUrl: `/works/art-store`,
+		nextWork: "Fundacion Argentina",
+		nextWorkUrl: `/works/fundacion-arg`,
 		shortStack: "Fullstack Java",
 		moreLinks: [
 			{
@@ -74,25 +74,6 @@ export const workDetails = [
 	},
 	{
 		id: 3,
-		right: true,
-		slug: "art-store",
-		title: "Art And Store",
-		workImg: artStore,
-		client: "Practice Project",
-		location: "Geneva, Switzerland",
-		launch: "2021",
-		live: "https://artandstore.netlify.app/",
-		code: "https://github.com/PadillaTom/Art-Store-ReactJS",
-		desc: `Practice project for a Fictional Boutique. 100% Responsive using Styled Components and Media Queries. Users may browse and view Products through a variety of Filters, Add products to Cart and complete checkout with Stripe Gateway. Managing the Data with Context API, I am able to reduce the number of API Requests and avoid "Prop Drilling". `,
-		stack:
-			"React | John Smilga's Products API | AXIOS | Context API | Styled Components | Framer-Motion | React-Intersection-Observer | Auth0 | Stripe",
-		nextWork: "Fundacion Arg",
-		nextWorkUrl: `/works/fundacion-arg`,
-		shortStack: "ReactJS",
-		moreLinks: [],
-	},
-	{
-		id: 4,
 		right: false,
 		slug: "fundacion-arg",
 		title: "Fundacion Argentina",
@@ -105,8 +86,8 @@ export const workDetails = [
 		desc: `Applying Agile Practices (SCRUM): Developed a REST API - Secured Endpoints and handled Authorization with Spring Security - Integrated AWS S3 / SendGrid - Testing with JUnit and Mockito - Documentation with Swagger`,
 		stack:
 			"Spring Boot | PostgreSQL | Gradle | Spring Security | Swagger | JUnit | AWS S3 | SendGrid",
-		nextWork: "Kampai Boutique",
-		nextWorkUrl: `/works/kampai-boutique`,
+		nextWork: "Art And Store",
+		nextWorkUrl: `/works/art-store`,
 		shortStack: "Spring Boot",
 		moreLinks: [
 			{
@@ -128,6 +109,25 @@ export const workDetails = [
 				icon: <AiOutlineGithub></AiOutlineGithub>,
 			},
 		],
+	},
+	{
+		id: 4,
+		right: true,
+		slug: "art-store",
+		title: "Art And Store",
+		workImg: artStore,
+		client: "Practice Project",
+		location: "Geneva, Switzerland",
+		launch: "2021",
+		live: "https://artandstore.netlify.app/",
+		code: "https://github.com/PadillaTom/Art-Store-ReactJS",
+		desc: `Practice project for a Fictional Boutique. 100% Responsive using Styled Components and Media Queries. Users may browse and view Products through a variety of Filters, Add products to Cart and complete checkout with Stripe Gateway. Managing the Data with Context API, I am able to reduce the number of API Requests and avoid "Prop Drilling". `,
+		stack:
+			"React | John Smilga's Products API | AXIOS | Context API | Styled Components | Framer-Motion | React-Intersection-Observer | Auth0 | Stripe",
+		nextWork: "Kampai Boutique",
+		nextWorkUrl: `/works/kampai-boutique`,
+		shortStack: "React JS",
+		moreLinks: [],
 	},
 ];
 
